@@ -1,0 +1,6 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.FTPLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.FTPLib.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Debug\VelerSoftware.FTPLib.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Debug\VelerSoftware.FTPLib.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Debug\VelerSoftware.FTPLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Debug\VelerSoftware.FTPLib.pdb

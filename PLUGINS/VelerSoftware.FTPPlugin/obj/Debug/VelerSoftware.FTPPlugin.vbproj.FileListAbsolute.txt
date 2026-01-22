@@ -1,0 +1,147 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.FTPPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.FTPPlugin.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.FTPPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.FTPPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la liste des fichiers sur un serveur FTP\Liste_Fichier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la liste des dossiers sur un serveur FTP\Liste_Dossier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir une information sur le dossier courant d'un serveur FTP\Obtenir_Info_Dossier_Courant_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir le dossier courant d'un serveur FTP\Obtenir_Dossier_Courant_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Définir le dossier courant sur un serveur FTP\Definir_Dossier_Courant_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Télécharger un fichier depuis un serveur FTP\Telecharger_Fichier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Envoyer un fichier sur un serveur FTP\Envoyer_Fichier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Renommer un fichier sur un serveur FTP\Renommer_Fichier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la taille d'un fichier sur un serveur FTP\Fichier_Taille_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Envoyer une requête à un serveur FTP\Requete_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Supprimer un fichier d'un serveur FTP\Supprimer_Fichier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Supprimer un dossier d'un serveur FTP\Supprimer_Dossier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Déterminer si un fichier existe sur un serveur FTP\Fichier_Existe_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Déterminer si un dossier existe sur un serveur FTP\Dossier_Existe_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Créer un dossier sur un serveur FTP\Creer_Dossier_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Se déconnecter d'un serveur FTP\DéConnecter_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Se connecter à un serveur FTP\Connecter_FTP_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la liste des fichiers sur un serveur FTP\Liste_Fichier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la liste des dossiers sur un serveur FTP\Liste_Dossier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir une information sur le dossier courant d'un serveur FTP\Obtenir_Info_Dossier_Courant_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir le dossier courant d'un serveur FTP\Obtenir_Dossier_Courant_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Définir le dossier courant sur un serveur FTP\Definir_Dossier_Courant_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Télécharger un fichier depuis un serveur FTP\Telecharger_Fichier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Envoyer un fichier sur un serveur FTP\Envoyer_Fichier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Renommer un fichier sur un serveur FTP\Renommer_Fichier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Obtenir la taille d'un fichier sur un serveur FTP\Fichier_Taille_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Envoyer une requête à un serveur FTP\Requete_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Supprimer un fichier d'un serveur FTP\Supprimer_Fichier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Supprimer un dossier d'un serveur FTP\Supprimer_Dossier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Déterminer si un fichier existe sur un serveur FTP\Fichier_Existe_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Déterminer si un dossier existe sur un serveur FTP\Dossier_Existe_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Créer un dossier sur un serveur FTP\Creer_Dossier_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Se déconnecter d'un serveur FTP\DéConnecter_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\FTP (File Transfer Protocol)\Se connecter à un serveur FTP\Connecter_FTP_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.DéConnecter_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Fichier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Liste_Dossier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Info_Dossier_Courant_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Obtenir_Dossier_Courant_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Definir_Dossier_Courant_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Telecharger_Fichier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Envoyer_Fichier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Renommer_Fichier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Taille_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Requete_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Fichier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Supprimer_Dossier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Fichier_Existe_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Dossier_Existe_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Creer_Dossier_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.DéConnecter_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.DéConnecter_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.Connecter_FTP_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\en\VelerSoftware.FTPPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\fr\VelerSoftware.FTPPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.FTPPlugin\obj\Debug\VelerSoftware.FTPPlugin.pdb

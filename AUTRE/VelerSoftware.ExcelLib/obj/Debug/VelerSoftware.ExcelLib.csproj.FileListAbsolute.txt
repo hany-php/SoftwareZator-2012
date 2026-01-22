@@ -1,0 +1,2 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.csproj.CoreCompileInputs.cache

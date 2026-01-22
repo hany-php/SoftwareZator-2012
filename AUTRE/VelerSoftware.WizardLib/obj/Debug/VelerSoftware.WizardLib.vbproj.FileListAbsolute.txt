@@ -1,0 +1,12 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.WizardLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.WizardLib.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.AeroForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.AeroWindowsForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.Wizard97Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.AeroWizardForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Debug\VelerSoftware.WizardLib.pdb

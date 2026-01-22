@@ -1,0 +1,62 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.SerialPortPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.SerialPortPlugin.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.SerialPortPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.SerialPortPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Recevoir une donnée textuelle\Recevoir_Text_Port_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Envoyer une donnée textuelle\Envoyer_Text_Port_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Déterminer si un port série est connecté\Déterminer_Port_Connecte_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Se déconnecter d'un port\Fermer_Ports_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Se connecter à un port\Ouvrir_Ports_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Obtenir la liste des ports\Obtenir_Liste_Ports_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Recevoir une donnée textuelle\Recevoir_Text_Port_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Envoyer une donnée textuelle\Envoyer_Text_Port_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Déterminer si un port série est connecté\Déterminer_Port_Connecte_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Se déconnecter d'un port\Fermer_Ports_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Se connecter à un port\Ouvrir_Ports_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\Ports séries\Obtenir la liste des ports\Obtenir_Liste_Ports_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Recevoir_Text_Port_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Envoyer_Text_Port_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Déterminer_Port_Connecte_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Fermer_Ports_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Ouvrir_Ports_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.Obtenir_Liste_Ports_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\en\VelerSoftware.SerialPortPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\fr\VelerSoftware.SerialPortPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.SerialPortPlugin\obj\Debug\VelerSoftware.SerialPortPlugin.pdb

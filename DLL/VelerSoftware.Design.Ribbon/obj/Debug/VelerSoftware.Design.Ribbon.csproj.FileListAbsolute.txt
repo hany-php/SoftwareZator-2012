@@ -1,0 +1,17 @@
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL COMPILE\VelerSoftware.Design.Ribbon.dll
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL COMPILE\VelerSoftware.Design.Ribbon.pdb
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.LicenseInstallForm.resources
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.Properties.Resources.resources
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.csproj.GenerateResource.Cache
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.dll
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Ribbon.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Ribbon.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.LicenseInstallForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.Properties.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.csproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSof.3E82F5C7.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Debug\VelerSoftware.Design.Ribbon.pdb

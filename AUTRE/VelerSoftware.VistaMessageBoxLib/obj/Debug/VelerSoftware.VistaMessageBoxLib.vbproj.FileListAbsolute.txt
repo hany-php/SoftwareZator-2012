@@ -1,0 +1,10 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.VistaMessageBoxLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.VistaMessageBoxLib.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.ChevronButton.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.VistaMessageBoxForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VistaMessageBoxLib\obj\Debug\VelerSoftware.VistaMessageBoxLib.pdb

@@ -1,0 +1,182 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.MySQLPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.MySQLPlugin.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.MySQLPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.MySQLPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Changer de base de données MySQL\Changer_Base_de_Donnees_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Charger une table MySQL dans un DataGridView\Charger_Table_DatagridView_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Ajouter une colonne à une table MySQL\Ajouter_Colonne_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Ajouter une ligne à une table MySQL\Ajouter_Ligne_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir une cellule d'une table MySQL\Obtenir_Cellule_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Modifier une ligne dans une table MySQL\Modifier_Ligne_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Supprimer une ligne dans une table MySQL\Supprimer_Ligne_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Enregistrer une table MySQL dans un DataGridView\Enregistrer_Table_DatagridView_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le nombre d'éléments dans une table MySQL\Nombre_Elements_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le nombre de colonnes dans une table MySQL\Nombre_Colonnes_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Renommer une table MySQL\Renommer_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des colonnes d'une table MySQL\Liste_Colonnes_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Supprimer une table MySQL\Supprimer_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Créer une table MySQL\Creer_Table_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Exécuter une requête MySQL\Requete_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des tables d'une base de données MySQL\Liste_Table_Base_de_Donnees_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des bases de données MySQL\Liste_Base_de_Donnees_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Créer une base de données MySQL\Creer_Base_de_Donnees_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le statut d'une connexion MySQL\Statut_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Se déconnecter d'un serveur MySQL\Se_deconnecter_serveur_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Se connecter à un serveur MySQL\Se_connecter_serveur_MySQL_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Changer de base de données MySQL\Changer_Base_de_Donnees_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Charger une table MySQL dans un DataGridView\Charger_Table_DatagridView_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Ajouter une colonne à une table MySQL\Ajouter_Colonne_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Ajouter une ligne à une table MySQL\Ajouter_Ligne_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir une cellule d'une table MySQL\Obtenir_Cellule_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Modifier une ligne dans une table MySQL\Modifier_Ligne_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Supprimer une ligne dans une table MySQL\Supprimer_Ligne_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Enregistrer une table MySQL dans un DataGridView\Enregistrer_Table_DatagridView_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le nombre d'éléments dans une table MySQL\Nombre_Elements_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le nombre de colonnes dans une table MySQL\Nombre_Colonnes_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Renommer une table MySQL\Renommer_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des colonnes d'une table MySQL\Liste_Colonnes_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Supprimer une table MySQL\Supprimer_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Créer une table MySQL\Creer_Table_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Exécuter une requête MySQL\Requete_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des tables d'une base de données MySQL\Liste_Table_Base_de_Donnees_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir la liste des bases de données MySQL\Liste_Base_de_Donnees_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Créer une base de données MySQL\Creer_Base_de_Donnees_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Obtenir le statut d'une connexion MySQL\Statut_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Se déconnecter d'un serveur MySQL\Se_deconnecter_serveur_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\MySQL\Se connecter à un serveur MySQL\Se_connecter_serveur_MySQL_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Changer_Base_de_Donnees_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Charger_Table_DatagridView_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Colonne_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Ajouter_Ligne_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Obtenir_Cellule_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Modifier_Ligne_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Ligne_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Enregistrer_Table_DatagridView_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Elements_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Nombre_Colonnes_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Renommer_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Colonnes_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Supprimer_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Table_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Requete_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Table_Base_de_Donnees_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Liste_Base_de_Donnees_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Creer_Base_de_Donnees_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Statut_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_deconnecter_serveur_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.Se_connecter_serveur_MySQL_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\en\VelerSoftware.MySQLPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\fr\VelerSoftware.MySQLPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.MySQLPlugin\obj\Debug\VelerSoftware.MySQLPlugin.pdb

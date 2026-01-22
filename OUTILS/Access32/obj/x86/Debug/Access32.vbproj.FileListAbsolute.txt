@@ -1,0 +1,12 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Access32.exe.config
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Access32.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Access32.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.vbproj.ResolveComReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Debug\Access32.exe.config

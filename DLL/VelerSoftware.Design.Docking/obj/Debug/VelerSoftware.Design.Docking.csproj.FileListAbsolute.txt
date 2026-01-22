@@ -1,0 +1,17 @@
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL COMPILE\VelerSoftware.Design.Docking.dll
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL COMPILE\VelerSoftware.Design.Docking.pdb
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.Properties.Resources.resources
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.LicenseInstallForm.resources
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.csproj.GenerateResource.Cache
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.dll
+D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Docking.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Docking.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.Properties.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.LicenseInstallForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.csproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSof.3F3F67D0.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Debug\VelerSoftware.Design.Docking.pdb

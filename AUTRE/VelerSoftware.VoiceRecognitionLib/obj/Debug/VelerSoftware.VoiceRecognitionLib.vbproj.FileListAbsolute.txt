@@ -1,0 +1,6 @@
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.VoiceRecognitionLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.VoiceRecognitionLib.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Debug\VelerSoftware.VoiceRecognitionLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Debug\VelerSoftware.VoiceRecognitionLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Debug\VelerSoftware.VoiceRecognitionLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Debug\VelerSoftware.VoiceRecognitionLib.pdb
