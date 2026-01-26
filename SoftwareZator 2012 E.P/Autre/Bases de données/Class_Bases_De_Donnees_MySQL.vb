@@ -156,10 +156,10 @@ Public Class ClassBasesDeDonneesMySQL
                 resultat.Add(reader.GetString(0))
             End While
         Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show("Impossible d'obtenir la liste de base de données : " + ex.Message)
+            MessageBox.Show("Unable to get database list: " + ex.Message)
             resultat = Nothing
         Catch ex As System.Exception
-            MessageBox.Show("Impossible d'obtenir la liste de base de données : " + ex.Message)
+            MessageBox.Show("Unable to get database list: " + ex.Message)
             resultat = Nothing
         Finally
             reader.Close()
@@ -186,9 +186,9 @@ Public Class ClassBasesDeDonneesMySQL
                 resultat.Add(reader.GetString(0))
             End While
         Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show("Impossible d'obtenir la liste de tables : " + ex.Message)
+            MessageBox.Show("Unable to get table list: " + ex.Message)
         Catch ex As System.Exception
-            MessageBox.Show("Impossible d'obtenir la liste de tables : " + ex.Message)
+            MessageBox.Show("Unable to get table list: " + ex.Message)
         Finally
             reader.Close()
         End Try
@@ -214,9 +214,9 @@ Public Class ClassBasesDeDonneesMySQL
                 resultat.Add(reader.GetString(0))
             End While
         Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show("Impossible d'obtenir la liste de tables : " + ex.Message)
+            MessageBox.Show("Unable to get table list: " + ex.Message)
         Catch ex As System.Exception
-            MessageBox.Show("Impossible d'obtenir la liste de tables : " + ex.Message)
+            MessageBox.Show("Unable to get table list: " + ex.Message)
         Finally
             reader.Close()
         End Try
@@ -234,9 +234,9 @@ Public Class ClassBasesDeDonneesMySQL
             Dim cb As New MySql.Data.MySqlClient.MySqlCommandBuilder(das)
             das.Fill(resultat)
         Catch ex As MySql.Data.MySqlClient.MySqlException
-            MessageBox.Show("Impossible d'obtenir le DataTable de la table " & table_name & " : " + ex.Message)
+            MessageBox.Show("Unable to get DataTable for table " & table_name & " : " + ex.Message)
         Catch ex As System.Exception
-            MessageBox.Show("Impossible d'obtenir le DataTable de la table " & table_name & " : " + ex.Message)
+            MessageBox.Show("Unable to get DataTable for table " & table_name & " : " + ex.Message)
         End Try
 
         Return resultat

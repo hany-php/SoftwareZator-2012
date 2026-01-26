@@ -31,12 +31,12 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         With Me
-            ' Initialisation des ressources
+            ' Initialize resources
             RM = New System.Resources.ResourceManager("Updater.Custom", System.Reflection.Assembly.GetExecutingAssembly())
 
             If Mode_Silence Then .Visible = False
 
-            ' Initialisation de la fenêtre                                                     
+            ' Initialize the window                                                     
             .Text = My.Application.Info.CompanyName & " - " & My.Application.Info.ProductName
 
             .CheckBox1.Checked = My.Settings.CheckBeta
@@ -132,8 +132,8 @@ Public Class Form1
             If .DirectoryExists(Application.StartupPath & "\Temp") Then
 
                 If .FileExists(Application.StartupPath & "\Temp\update.xml") Then
-                    Dim XmlRead As Xml.XmlTextReader ' Lecture de XML
-                    ' Teste de la version de la solution
+                    Dim XmlRead As Xml.XmlTextReader ' Read XML
+                    ' Check solution version
                     XmlRead = New Xml.XmlTextReader(Application.StartupPath & "\Temp\update.xml")
                     If XmlRead IsNot Nothing Then
                         Do While XmlRead.Read()

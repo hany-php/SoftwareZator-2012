@@ -34,3 +34,21 @@ D:\Development\Projets\Sources\SoftwareZator 2012\bin\Updater.exe.config
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Updater.exe
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\en\Updater.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\fr\Updater.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Updater.exe.config
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Updater.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\en\Updater.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\fr\Updater.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Form1.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Custom.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Form1.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Form1.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Custom.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.Custom.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\en\Updater.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\fr\Updater.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.vbproj.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.exe

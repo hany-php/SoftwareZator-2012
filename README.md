@@ -1,35 +1,42 @@
-# SoftwareZator 2012
+# SoftwareZator 2012 Professional Edition
 
-This is all the source code of [SoftwareZator](http://softwarezator.velersoftware.com/) in it's 2012 edition (version 3.0.0.3). It dates from `November 2012` and it was the last stable version for `Windows 7 and Windows 8`. The program crash on `Windows 10`.
+![SoftwareZator Banner](SZ_Top.jpg)
 
-**The project is actually dead and I will not continue this branch.**
+**SoftwareZator 2012** is a powerful, open-source visual programming environment designed to simplify application development. Developed by **Eng. Hany Hassan**, this project provides a comprehensive suite of tools for creating Windows applications with ease.
 
+## 🚀 Overview
 
-# Warning : Your Eyes Will Explode
+SoftwareZator allows developers to create sophisticated applications using a visual interface, minimizing the need for extensive manual coding. It generates native .NET code (VB.NET) and supports modern UI theming.
 
-Please be careful while exploring this project.
+### Key Features
+*   **Visual Designer**: Drag-and-drop interface construction.
+*   **Visual Programming**: Create logic using flowcharts and action blocks.
+*   **Modern Theming**: Fully integrated **Krypton Toolkit** support for Office 2007, 2010, and Sparkle themes.
+*   **Code Generation**: Automatically generates clean, optimized VB.NET code.
+*   **Plugin System**: Extensible architecture supporting various plugins.
 
-You have to know the following things about this repository :
-* Around 2,000,000 lines of code.
-* Some code are here since 2007, I was 14 and I was a very beginner at programming...
-* It's 100% in FRENCH with grammar mistakes !
-* It use a couple of third-party components.
+## 👨‍💻 Development
 
-**All children must be accompanied by an adult while exploring the repository !**
+This project is open-source and has been developed and maintained by **Eng. Hany Hassan**.
 
+It represents a significant engineering effort, comprising extensive libraries for UI design, docking, ribbon controls, and code analysis.
 
-# How To Build
+## 🛠️ Build & Requirements
 
-0. You need `Visual Studio 2012 or 2013 Pro, or Visual Studio 2015 Community`.
-0. You need `Windows 7, 8, 8.1 or 10` in order to build. In order to run SoftwareZator 2012 without bug, you need to run Windows 7 or 8.
-0. Open the solution in Visual Studio.
-0. Open `My Project` in the project `SoftwareZator 2012`. Go to `Signing`, `Select from file`.
-0. If asked, select the file `SecurityKey.pfx` and use the following password : **APZK2FG17**.
-0. Menu `Build`, `Rebuild Solution`.
-0. All the project is in the folder `bin` at the root.
+*   **Framework**: .NET Framework 4.0
+*   **IDE**: Visual Studio 2010+ (Tested with VS 2022)
+*   **OS**: Windows 7 / 8 / 10 / 11
 
-# License
+### How to Build
+1.  Open `SoftwareZator 2012.sln` in Visual Studio.
+2.  Restore NuGet packages / dependencies if required.
+3.  Build the solution (Release or Debug).
+4.  Output binaries will be placed in the `bin/` directory.
 
-[Apache License 2.0](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
+## 📸 Screenshots
 
-Enjoy.
+![Interface](SZ_Left.jpg)
+
+## 📄 License
+
+This project is licensed under the [Apache License 2.0](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)).

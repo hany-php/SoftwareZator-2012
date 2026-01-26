@@ -66,3 +66,37 @@ D:\Development\Projets\Sources\SoftwareZator 2012\bin\Help.exe.config
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Help.exe
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\en\Help.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\fr\Help.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Help.exe.config
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Help.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\en\Help.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\fr\Help.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.A_Propos_De.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.BoxExplorateur.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.DocNavigateur.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Form1.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Licence.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Custom.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Options.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.PremierDemarrage.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.A_Propos_De.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.A_Propos_De.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.BoxExplorateur.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.BoxExplorateur.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.DocNavigateur.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.DocNavigateur.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Form1.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Form1.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Licence.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Licence.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Custom.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Custom.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Options.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.Options.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\en\Help.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\fr\Help.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.vbproj.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.exe

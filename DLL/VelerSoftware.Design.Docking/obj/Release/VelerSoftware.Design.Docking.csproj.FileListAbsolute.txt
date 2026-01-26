@@ -10,3 +10,11 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docki
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.LicenseInstallForm.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.csproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Docking.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.Properties.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.LicenseInstallForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.csproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSof.3F3F67D0.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Docking\obj\Release\VelerSoftware.Design.Docking.dll

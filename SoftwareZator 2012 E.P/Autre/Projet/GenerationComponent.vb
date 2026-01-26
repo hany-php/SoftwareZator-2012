@@ -1254,6 +1254,18 @@ Public Class GenerationComponent
             For i As Integer = 0 To Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members.Count - 1
                 Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members(i).Attributes = CodeDom.MemberAttributes.Public Or CodeDom.MemberAttributes.Final
                 If Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members(i).Name = "Main" Then i_remove = i
+
+                ' Inject Theme Initialization in Constructor
+                If TypeOf Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members(i) Is CodeDom.CodeConstructor AndAlso PROJET.Type = VelerSoftware.SZVB.Projet.Projet.Types.ApplicationWindows Then
+                    Try
+                        With DirectCast(Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members(i), CodeDom.CodeConstructor)
+                            .Statements.Add(New CodeDom.CodeMethodInvokeExpression(New CodeDom.CodeTypeReferenceExpression("Variables"), "InitializeTheme"))
+                            .Statements.Add(New CodeDom.CodeMethodInvokeExpression(New CodeDom.CodeTypeReferenceExpression("Variables"), "ApplyThemeToForm", New CodeDom.CodeThisReferenceExpression()))
+                        End With
+                    Catch ex As Exception
+                        ' Ignore error if injection fails
+                    End Try
+                End If
             Next
             If i_remove > -1 Then Tmp_SZW_File2.WINDOWS.Namespaces(0).Types(0).Members.RemoveAt(i_remove)
 
@@ -1479,6 +1491,110 @@ Public Class GenerationComponent
             ElseIf PROJET.Type = VelerSoftware.SZVB.Projet.Projet.Types.ApplicationWindows Then
                 .AppendLine("      Public _manager As My.MyApplication = New My.MyApplication")
                 .AppendLine("      Public _computer As Microsoft.VisualBasic.Devices.Computer = New Microsoft.VisualBasic.Devices.Computer")
+                
+                ' Add Krypton Manager for theming
+                .AppendLine("      ' Krypton Theme Manager")
+                .AppendLine("      Public _kryptonManager As New ComponentFactory.Krypton.Toolkit.KryptonManager()")
+                
+                ' Add theme palette mode based on WindowTheme selection
+                .AppendLine("      ' Theme palette setting")
+                Select Case PROJET.WindowTheme
+                    Case 0 ' Office 2007 Blue
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue")
+                    Case 1 ' Office 2007 Silver
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Silver")
+                    Case 2 ' Office 2007 Black
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Black")
+                    Case 3 ' Office 2010 Blue
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue")
+                    Case 4 ' Office 2010 Silver
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Silver")
+                    Case 5 ' Office 2010 Black
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black")
+                    Case 6 ' Sparkle Blue
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue")
+                    Case 7 ' Sparkle Purple
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparklePurple")
+                    Case 8 ' Sparkle Orange
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange")
+                    Case Else ' Default - Office 2007 Blue
+                        .AppendLine("      Public ReadOnly ThemePaletteMode As ComponentFactory.Krypton.Toolkit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue")
+                End Select
+                
+                ' Add theme color variables for fallback/custom use
+                .AppendLine("      ' Theme colors for custom use")
+                Select Case PROJET.WindowTheme
+                    Case 0 ' Office 2007 Blue
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(212, 224, 242)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(58, 110, 165)")
+                    Case 1 ' Office 2007 Silver
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(232, 232, 236)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(123, 123, 123)")
+                    Case 2 ' Office 2007 Black
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(51, 51, 51)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.White")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(80, 80, 80)")
+                    Case 3 ' Office 2010 Blue
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(220, 230, 244)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(46, 116, 181)")
+                    Case 4 ' Office 2010 Silver
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(240, 240, 240)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(128, 128, 128)")
+                    Case 5 ' Office 2010 Black
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(45, 45, 48)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.White")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(30, 30, 30)")
+                    Case 6 ' Sparkle Blue
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(230, 239, 249)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(91, 155, 213)")
+                    Case 7 ' Sparkle Purple
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(240, 230, 249)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(112, 48, 160)")
+                    Case 8 ' Sparkle Orange
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(251, 229, 214)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(237, 125, 49)")
+                    Case Else ' Default - Office 2007 Blue
+                        .AppendLine("      Public ReadOnly ThemeBackColor As System.Drawing.Color = System.Drawing.Color.FromArgb(212, 224, 242)")
+                        .AppendLine("      Public ReadOnly ThemeForeColor As System.Drawing.Color = System.Drawing.Color.Black")
+                        .AppendLine("      Public ReadOnly ThemeAccentColor As System.Drawing.Color = System.Drawing.Color.FromArgb(58, 110, 165)")
+                End Select
+                
+                ' Add InitializeTheme helper to set up KryptonManager
+                .AppendLine("      Public Sub InitializeTheme()")
+                .AppendLine("          _kryptonManager.GlobalPaletteMode = ThemePaletteMode")
+                .AppendLine("      End Sub")
+                
+                ' Add ApplyThemeToForm helper function (for standard controls)
+                .AppendLine("      Public Sub ApplyThemeToForm(ByVal frm As System.Windows.Forms.Form)")
+                .AppendLine("          frm.BackColor = ThemeBackColor")
+                .AppendLine("          frm.ForeColor = ThemeForeColor")
+                .AppendLine("          ApplyThemeToControls(frm.Controls)")
+                .AppendLine("      End Sub")
+                .AppendLine("      Private Sub ApplyThemeToControls(ByVal controls As System.Windows.Forms.Control.ControlCollection)")
+                .AppendLine("          For Each ctrl As System.Windows.Forms.Control In controls")
+                .AppendLine("              If TypeOf ctrl Is System.Windows.Forms.Button Then")
+                .AppendLine("                  ctrl.BackColor = ThemeAccentColor")
+                .AppendLine("                  ctrl.ForeColor = System.Drawing.Color.White")
+                .AppendLine("              ElseIf TypeOf ctrl Is System.Windows.Forms.TextBox OrElse TypeOf ctrl Is System.Windows.Forms.RichTextBox Then")
+                .AppendLine("                  ctrl.BackColor = System.Drawing.Color.White")
+                .AppendLine("                  ctrl.ForeColor = System.Drawing.Color.Black")
+                .AppendLine("              ElseIf TypeOf ctrl Is System.Windows.Forms.Panel OrElse TypeOf ctrl Is System.Windows.Forms.GroupBox Then")
+                .AppendLine("                  ctrl.BackColor = ThemeBackColor")
+                .AppendLine("                  ctrl.ForeColor = ThemeForeColor")
+                .AppendLine("                  ApplyThemeToControls(ctrl.Controls)")
+                .AppendLine("              Else")
+                .AppendLine("                  ctrl.ForeColor = ThemeForeColor")
+                .AppendLine("                  If ctrl.HasChildren Then ApplyThemeToControls(ctrl.Controls)")
+                .AppendLine("              End If")
+                .AppendLine("          Next")
+                .AppendLine("      End Sub")
             End If
             For Each var As VelerSoftware.SZVB.Projet.Variable In PROJET.Variables
                 If var.Array Then
@@ -1599,6 +1715,18 @@ Public Class GenerationComponent
                         End If
                     End If
                 Next
+                
+                ' Add Krypton Toolkit reference for theming (if WindowTheme is set)
+                If PROJET.Type = VelerSoftware.SZVB.Projet.Projet.Types.ApplicationWindows Then
+                    Dim kryptonDll As String = Application.StartupPath & "\Sources\ComponentFactory.Krypton.Toolkit.dll"
+                    If My.Computer.FileSystem.FileExists(kryptonDll) Then
+                        ' Copy Krypton DLL to output directory
+                        My.Computer.FileSystem.CopyFile(kryptonDll, My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\ComponentFactory.Krypton.Toolkit.dll"), True)
+                        ' Add as reference
+                        para.ReferencedAssemblies.Add(My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\ComponentFactory.Krypton.Toolkit.dll"))
+                        Log_Generation.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Info, "Added Krypton Toolkit reference for theming"))
+                    End If
+                End If
             End With
 
             Log_Generation.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Info, String.Format(System.Globalization.CultureInfo.InvariantCulture, RM_Log.GetString("Generation_Config"))))

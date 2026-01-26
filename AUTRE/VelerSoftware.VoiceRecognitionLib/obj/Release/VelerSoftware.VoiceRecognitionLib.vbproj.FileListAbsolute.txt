@@ -2,3 +2,7 @@ D:\DEVELOPPEMENT\Projets\Projets Compilés\SoftwareZator 2012\Sources\VelerSoftw
 D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Release\VelerSoftware.VoiceRecognitionLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Sources\VelerSoftware.VoiceRecognitionLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Release\VelerSoftware.VoiceRecognitionLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.VoiceRecognitionLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Release\VelerSoftware.VoiceRecognitionLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Release\VelerSoftware.VoiceRecognitionLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.VoiceRecognitionLib\obj\Release\VelerSoftware.VoiceRecognitionLib.dll

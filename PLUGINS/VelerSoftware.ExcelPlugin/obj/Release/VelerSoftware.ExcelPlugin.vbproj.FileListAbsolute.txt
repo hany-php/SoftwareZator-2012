@@ -228,3 +228,119 @@ D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.ExcelPlu
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\en\VelerSoftware.ExcelPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\fr\VelerSoftware.ExcelPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.ExcelPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.ExcelPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.ExcelPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Ajouter une feuille à un classeur Excel\Ajouter_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Imprimer une feuille d'un classeur Excel\Imprimer_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir la liste des feuilles\Obtenir_Liste_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir le nombre de feuilles\Obtenir_Nombre_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir la feuille actuelle\Obtenir_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir une cellule d'un classeur Excel\Obtenir_Cellule_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Définir une cellule d'un classeur Excel\Definir_Cellule_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Définir la feuille actuelle\Définir_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Supprimer une feuille à un classeur Excel\Supprimer_Feuille_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Enregistrer un classeur Excel\Enregistrer_Donnee_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Fermer un classeur Excel\Fermer_Donnee_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Ouvrir un classeur Excel\Ouvrir_Fichier_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Créer un nouveau classeur Excel\Creer_Donnee_Excel_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Ajouter une feuille à un classeur Excel\Ajouter_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Imprimer une feuille d'un classeur Excel\Imprimer_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir la liste des feuilles\Obtenir_Liste_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir le nombre de feuilles\Obtenir_Nombre_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir la feuille actuelle\Obtenir_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Obtenir une cellule d'un classeur Excel\Obtenir_Cellule_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Définir une cellule d'un classeur Excel\Definir_Cellule_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Définir la feuille actuelle\Définir_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Supprimer une feuille à un classeur Excel\Supprimer_Feuille_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Enregistrer un classeur Excel\Enregistrer_Donnee_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Fermer un classeur Excel\Fermer_Donnee_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Ouvrir un classeur Excel\Ouvrir_Fichier_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\Excel\Créer un nouveau classeur Excel\Creer_Donnee_Excel_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ajouter_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Imprimer_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Liste_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Nombre_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Obtenir_Cellule_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Definir_Cellule_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Définir_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Supprimer_Feuille_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Enregistrer_Donnee_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Fermer_Donnee_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Ouvrir_Fichier_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.Creer_Donnee_Excel_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\en\VelerSoftware.ExcelPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\fr\VelerSoftware.ExcelPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.ExcelPlugin\obj\Release\VelerSoftware.ExcelPlugin.dll

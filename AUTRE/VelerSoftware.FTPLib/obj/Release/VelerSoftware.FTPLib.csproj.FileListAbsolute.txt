@@ -2,3 +2,7 @@ D:\DEVELOPPEMENT\Projets\Projets Compilés\SoftwareZator 2012\Sources\VelerSoftw
 D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\AUTRE\VelerSoftware.FTPLib\obj\Release\VelerSoftware.FTPLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Sources\VelerSoftware.FTPLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.FTPLib\obj\Release\VelerSoftware.FTPLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.FTPLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Release\VelerSoftware.FTPLib.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Release\VelerSoftware.FTPLib.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.FTPLib\obj\Release\VelerSoftware.FTPLib.dll

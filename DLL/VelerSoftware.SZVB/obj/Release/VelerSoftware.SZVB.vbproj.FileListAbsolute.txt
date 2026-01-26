@@ -32,3 +32,22 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZVB\obj\Rel
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZVB\obj\Release\en\VelerSoftware.SZVB.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZVB\obj\Release\fr\VelerSoftware.SZVB.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.SZVB.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\en\VelerSoftware.SZVB.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\fr\VelerSoftware.SZVB.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.CommandLink.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.Info_Bar.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.Form_UIImageEditor.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.VistaDialog.ChevronButton.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.VistaDialog.VDialogForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.AeroWindowsForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.AeroWizardForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.Form_UIImageEditor.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.Form_UIImageEditor.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\en\VelerSoftware.SZVB.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\fr\VelerSoftware.SZVB.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.dll

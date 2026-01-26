@@ -10,3 +10,11 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Works
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.Properties.Resources.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Workspace.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.LicenseInstallForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.Properties.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSof.16C0B1CE.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.dll

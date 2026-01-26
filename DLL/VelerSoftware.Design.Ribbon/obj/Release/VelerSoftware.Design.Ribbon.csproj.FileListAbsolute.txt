@@ -10,3 +10,11 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbo
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.Properties.Resources.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Ribbon.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.LicenseInstallForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.Properties.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSof.3E82F5C7.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.dll

@@ -2,3 +2,7 @@ D:\DEVELOPPEMENT\Projets\Projets Compilés\SoftwareZator 2012\Sources\VelerSoftw
 D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\AUTRE\VelerSoftware.PrintLib\obj\Release\VelerSoftware.PrintLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Sources\VelerSoftware.PrintLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.PrintLib\obj\Release\VelerSoftware.PrintLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.PrintLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.PrintLib\obj\Release\VelerSoftware.PrintLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.PrintLib\obj\Release\VelerSoftware.PrintLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.PrintLib\obj\Release\VelerSoftware.PrintLib.dll

@@ -196,3 +196,103 @@ D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.PrintPlu
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\en\VelerSoftware.PrintPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\fr\VelerSoftware.PrintPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.PrintPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.PrintPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.PrintPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter la représentation d'un contrôle à une impression\Ajouter_Controle_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter une en-tête à une impression\Ajouter_Enete_Impression_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter du texte à une impression\Ajouter_Texte_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter une image à une impression\Ajouter_Image_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Apercu avant impression d'un éditeur de texte\Apercu_TextBox_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Apercu avant impression d'un navigateur web\Apercu_WebBrowser_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer un navigateur web\Imprimer_WebBrowser_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer un éditeur de texte\Imprimer_TextBox_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Définir les marges d'une feuille d'impression\Definir_Marges_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer\Imprimer_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Nouvelle impression\Nouvelle_Impression_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter la représentation d'un contrôle à une impression\Ajouter_Controle_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter une en-tête à une impression\Ajouter_Enete_Impression_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter du texte à une impression\Ajouter_Texte_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Ajouter une image à une impression\Ajouter_Image_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Apercu avant impression d'un éditeur de texte\Apercu_TextBox_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Apercu avant impression d'un navigateur web\Apercu_WebBrowser_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer un navigateur web\Imprimer_WebBrowser_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer un éditeur de texte\Imprimer_TextBox_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Définir les marges d'une feuille d'impression\Definir_Marges_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Imprimer\Imprimer_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\Impression\Nouvelle impression\Nouvelle_Impression_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Controle_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Enete_Impression.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Texte_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Ajouter_Image_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_TextBox_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Apercu_WebBrowser_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_WebBrowser_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_TextBox_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Definir_Marges_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Imprimer_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.Nouvelle_Impression_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\en\VelerSoftware.PrintPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\fr\VelerSoftware.PrintPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.PrintPlugin\obj\Release\VelerSoftware.PrintPlugin.dll

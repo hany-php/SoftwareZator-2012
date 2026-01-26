@@ -15,3 +15,13 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZC35\obj\Re
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZC35\obj\Release\themes\generic.baml
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.g.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.SZC35.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35_MarkupCompile.lref
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\TextEditor.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\themes\generic.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.dll

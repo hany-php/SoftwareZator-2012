@@ -59,7 +59,10 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -124,10 +127,10 @@
     <value>Unable to download the update describe. Please try later or contact Veler Software.</value>
   </data>
   <data name="Content3" xml:space="preserve">
-    <value>An error has been encontred</value>
+    <value>An error has been encountered</value>
   </data>
   <data name="Content4" xml:space="preserve">
-    <value>Received: {0}KB, Total: {1}KB, Speed: {2}KB/s, Time lest:{4}sec</value>
+    <value>Received: {0}KB, Total: {1}KB, Speed: {2}KB/s, Time left:{4}sec</value>
   </data>
   <data name="Content5" xml:space="preserve">
     <value>Received: {0}KB, Total: {1}KB, Speed: {2}KB/s</value>

@@ -53,6 +53,7 @@ Partial Class Options
         Me.Interfaces = New System.Windows.Forms.TabPage()
         Me.Pause_CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.ThemePreviewPictureBox = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Activer_Aero_CheckBox = New System.Windows.Forms.CheckBox()
         Me.Barre_Acces_Rapide_En_Dessous_CheckBox = New System.Windows.Forms.CheckBox()
@@ -302,6 +303,7 @@ Partial Class Options
         'Interfaces
         '
         Me.Interfaces.Controls.Add(Me.Pause_CheckBox1)
+        Me.Interfaces.Controls.Add(Me.ThemePreviewPictureBox)
         Me.Interfaces.Controls.Add(Me.ComboBox1)
         Me.Interfaces.Controls.Add(Me.Label7)
         Me.Interfaces.Controls.Add(Me.Activer_Aero_CheckBox)
@@ -321,13 +323,23 @@ Partial Class Options
         Me.ToolTip1.SetToolTip(Me.Pause_CheckBox1, resources.GetString("Pause_CheckBox1.ToolTip"))
         Me.Pause_CheckBox1.UseVisualStyleBackColor = True
         '
+        'ThemePreviewPictureBox
+        '
+        Me.ThemePreviewPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ThemePreviewPictureBox.Location = New System.Drawing.Point(280, 28)
+        Me.ThemePreviewPictureBox.Name = "ThemePreviewPictureBox"
+        Me.ThemePreviewPictureBox.Size = New System.Drawing.Size(180, 100)
+        Me.ThemePreviewPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ThemePreviewPictureBox.TabIndex = 10
+        Me.ThemePreviewPictureBox.TabStop = False
+        '
         'ComboBox1
         '
         Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Default
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         resources.ApplyResources(Me.ComboBox1, "ComboBox1")
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {resources.GetString("ComboBox1.Items"), resources.GetString("ComboBox1.Items1"), resources.GetString("ComboBox1.Items2")})
+        Me.ComboBox1.Items.AddRange(New Object() {"Office 2007 Blue", "Office 2007 Silver", "Office 2007 Black", "Office 2010 Blue", "Office 2010 Silver", "Office 2010 Black", "Sparkle Blue", "Sparkle Purple", "Sparkle Orange"})
         Me.ComboBox1.Name = "ComboBox1"
         '
         'Label7
@@ -718,5 +730,6 @@ Partial Class Options
     Friend WithEvents Correcteur_Orthographique_CheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents Splash_Screen_CheckBox As System.Windows.Forms.CheckBox
     Friend WithEvents Pause_CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents ThemePreviewPictureBox As System.Windows.Forms.PictureBox
 
 End Class

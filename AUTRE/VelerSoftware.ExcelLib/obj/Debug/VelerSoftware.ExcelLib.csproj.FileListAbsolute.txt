@@ -1,2 +1,6 @@
 C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.csproj.AssemblyReference.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.ExcelLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.ExcelLib.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Debug\VelerSoftware.ExcelLib.pdb

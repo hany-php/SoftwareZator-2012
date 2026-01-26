@@ -184,6 +184,18 @@ Public Class DocParametresDuProjet
                 ' Style visuel
                 .Style_Visuel_KryptonCheckBox.Checked = proj.StyleXP
 
+                ' Window Theme
+                ' Ensure items are populated before setting index
+                If Theme_KryptonComboBox.Items.Count = 0 Then
+                    Theme_KryptonComboBox.Items.AddRange(New Object() {"Office 2007 Blue", "Office 2007 Silver", "Office 2007 Black", "Office 2010 Blue", "Office 2010 Silver", "Office 2010 Black", "Sparkle Blue", "Sparkle Purple", "Sparkle Orange"})
+                End If
+                If proj.WindowTheme >= 0 AndAlso proj.WindowTheme <= 8 AndAlso Theme_KryptonComboBox.Items.Count > 0 Then
+                    Theme_KryptonComboBox.SelectedIndex = proj.WindowTheme
+                ElseIf Theme_KryptonComboBox.Items.Count > 0 Then
+                    Theme_KryptonComboBox.SelectedIndex = 0
+                End If
+                UpdateThemePreview()
+
                 ' Instance unique
                 .Instance_Unique_KryptonCheckBox.Checked = proj.Instance
 
@@ -403,6 +415,9 @@ Public Class DocParametresDuProjet
                 ' Style XP
                 proj.StyleXP = .Style_Visuel_KryptonCheckBox.Checked
 
+                ' Window Theme
+                proj.WindowTheme = Theme_KryptonComboBox.SelectedIndex
+
                 ' Type de projet
                 Select Case .Type_Projet_KryptonComboBox.SelectedIndex
                     Case 0
@@ -545,6 +560,11 @@ Public Class DocParametresDuProjet
 
     Private listviewsorter_lv1, listviewsorter_lv2, listviewsorter_lv3, listviewsorter_lv4 As New VelerSoftware.SZC.ListViewStored.ListViewSorter
 
+    ' Theme controls
+    Private WithEvents Theme_KryptonLabel As New VelerSoftware.Design.Toolkit.KryptonLabel()
+    Private WithEvents Theme_KryptonComboBox As New VelerSoftware.Design.Toolkit.KryptonComboBox()
+    Private WithEvents ThemePreviewPictureBox As New System.Windows.Forms.PictureBox()
+
     Private Sub Box_Proprietes_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         With Me
             .FinishLoad = False
@@ -579,6 +599,36 @@ Public Class DocParametresDuProjet
             .ToolTip1.SetToolTip(.Generation_KryptonTextBox.TextBox, .ToolTip1.GetToolTip(Generation_KryptonTextBox))
             .ToolTip1.SetToolTip(.Unite_Central_Cible_KryptonComboBox.ComboBox, .ToolTip1.GetToolTip(Unite_Central_Cible_KryptonComboBox))
             .ToolTip1.SetToolTip(.Obfuscation_KryptonComboBox.ComboBox, .ToolTip1.GetToolTip(Obfuscation_KryptonComboBox))
+
+            ' Setup Theme controls dynamically
+            With Theme_KryptonLabel
+                .Text = "Window Theme :"
+                .Location = New System.Drawing.Point(247, 388)
+                .Size = New System.Drawing.Size(95, 20)
+            End With
+            .KryptonPage1.Controls.Add(Theme_KryptonLabel)
+
+            With Theme_KryptonComboBox
+                .DropDownStyle = ComboBoxStyle.DropDownList
+                .Location = New System.Drawing.Point(345, 385)
+                .Size = New System.Drawing.Size(165, 21)
+                ' Only add items if not already populated
+                If .Items.Count = 0 Then
+                    .Items.AddRange(New Object() {"Office 2007 Blue", "Office 2007 Silver", "Office 2007 Black", "Office 2010 Blue", "Office 2010 Silver", "Office 2010 Black", "Sparkle Blue", "Sparkle Purple", "Sparkle Orange"})
+                End If
+                If .Items.Count > 0 Then .SelectedIndex = 0
+            End With
+            .KryptonPage1.Controls.Add(Theme_KryptonComboBox)
+            AddHandler Theme_KryptonComboBox.SelectedIndexChanged, AddressOf Theme_KryptonComboBox_SelectedIndexChanged
+
+            With ThemePreviewPictureBox
+                .Location = New System.Drawing.Point(520, 365)
+                .Size = New System.Drawing.Size(90, 50)
+                .SizeMode = PictureBoxSizeMode.Zoom
+                .BorderStyle = BorderStyle.FixedSingle
+            End With
+            .KryptonPage1.Controls.Add(ThemePreviewPictureBox)
+            UpdateThemePreview()
 
             VelerSoftware.SZC.Windows.User32.SetWindowTheme(.ListView1.Handle, "explorer", Nothing)
             VelerSoftware.SZC.Windows.User32.SendMessage(.ListView1.Handle, 4096 + 54, 65536, 65536)
@@ -642,6 +692,28 @@ Public Class DocParametresDuProjet
         End If
         Return True
     End Function
+
+    Private Sub UpdateThemePreview()
+        Try
+            Dim themeNames() As String = {"Office2007Blue", "Office2007Silver", "Office2007Black", "Office2010Blue", "Office2010Silver", "Office2010Black", "SparkleBlue", "SparklePurple", "SparkleOrange"}
+            Dim selectedIndex As Integer = Theme_KryptonComboBox.SelectedIndex
+            If selectedIndex >= 0 AndAlso selectedIndex < themeNames.Length Then
+                Dim imagePath As String = My.Computer.FileSystem.CombinePath(Application.StartupPath, "themes\" & themeNames(selectedIndex) & "_preview.png")
+                If My.Computer.FileSystem.FileExists(imagePath) Then
+                    ThemePreviewPictureBox.Image = System.Drawing.Image.FromFile(imagePath)
+                Else
+                    ThemePreviewPictureBox.Image = Nothing
+                End If
+            End If
+        Catch ex As Exception
+            ThemePreviewPictureBox.Image = Nothing
+        End Try
+    End Sub
+
+    Private Sub Theme_KryptonComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        UpdateThemePreview()
+        DocumentModifier()
+    End Sub
 
     Private Sub OnGlobalPaletteChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         '' Use the current font from the global palette

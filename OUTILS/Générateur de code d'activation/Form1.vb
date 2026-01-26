@@ -20,13 +20,13 @@
             Edition = .ComboBox1.SelectedIndex
 
             CodeActivation.Clear()
-            ' NOM
+            ' NAME
             For Each cha As Char In Nom.ToCharArray
                 tmp1 = System.Math.Truncate(System.Math.Sqrt((System.Math.Pow((System.Math.Exp(System.Math.Sqrt(Microsoft.VisualBasic.Asc(cha))) / 35), 3) / 3874)))
                 CodeActivation.Append(tmp1)
             Next
 
-            ' PRENOM
+            ' FIRST NAME
             For Each cha As Char In Prenom.ToCharArray
                 tmp1 = System.Math.Truncate(System.Math.Sqrt((System.Math.Pow((System.Math.Exp(System.Math.Sqrt(Microsoft.VisualBasic.Asc(cha))) / 12), 2) / 1256)))
                 CodeActivation.Append(tmp1)
@@ -36,29 +36,29 @@
             tmp1 = System.Math.Truncate(System.Math.Pow(Edition + 3, 5))
             CodeActivation.Append(tmp1)
 
-            ' PAYS
+            ' COUNTRY
             For Each cha As Char In Pays.ToCharArray
                 tmp1 = System.Math.Truncate(System.Math.Sqrt((System.Math.Pow((System.Math.Exp(System.Math.Sqrt(Microsoft.VisualBasic.Asc(cha))) / 24), 2) / 3874)))
                 CodeActivation.Append(tmp1)
             Next
 
-            ' CODE POSTAL
+            ' POSTAL CODE
             For Each cha As Char In CodePosal.ToCharArray
                 tmp1 = System.Math.Truncate(System.Math.Sqrt((System.Math.Pow((System.Math.Exp(System.Math.Sqrt(Microsoft.VisualBasic.Asc(cha))) / 35), 3) / 5431)))
                 CodeActivation.Append(tmp1)
             Next
 
-            ' NUMERO DE FACTURE :
+            ' INVOICE NUMBER :
             tmp1 = System.Math.Pow(System.Math.Log(System.Math.Exp(No_Facture)), 2)
             CodeActivation.Append(tmp1)
 
-            ' ADRESSE DE MESSAGERIE
+            ' EMAIL ADDRESS
             For Each cha As Char In Email.ToCharArray
                 tmp1 = System.Math.Truncate(System.Math.Sqrt((System.Math.Pow((System.Math.Exp(System.Math.Sqrt(Microsoft.VisualBasic.Asc(cha))) / 47), 4) / 2346)))
                 CodeActivation.Append(tmp1)
             Next
 
-            ' FINITION
+            ' FINISHING
             tmp2 = CodeActivation.ToString().Replace("27", "A").Replace("76", "H").Replace("16", "B").Replace("09", "Z").Replace("65", "G").Replace("25", "U").Replace("35", "X").Replace("61", "J").Replace("94", "K").Replace("01", "E").Replace("46", "T").Replace("66", "Y").Replace("32", "O").Replace("57", "P").Replace("04", "F").Replace("10", "W").Replace("71", "M").Replace("83", "C").Replace("60", "N")
 
             .TextBox_Code.Text = tmp2

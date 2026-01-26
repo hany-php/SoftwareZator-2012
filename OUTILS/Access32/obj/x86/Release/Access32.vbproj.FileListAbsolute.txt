@@ -12,3 +12,12 @@ D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Access32\obj\x86\Releas
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.ResolveComReference.cache
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Access32\obj\x86\Release\Access32.Resources.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.GenerateResource.Cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Access32.exe.config
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Access32.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Interop.ADOX.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.ResolveComReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.exe

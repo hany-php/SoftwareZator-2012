@@ -59,7 +59,10 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema id="root"
+    xmlns=""
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -118,267 +121,267 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Ajout_Reference_Echec" xml:space="preserve">
-    <value>La référence '{0}' n'a pas pu être ajouté au projet '{1}' pour une raison inconnue.</value>
+    <value>Reference '{0}' could not be added to project '{1}' for an unknown reason.</value>
   </data>
   <data name="Ajout_Reference_Succes" xml:space="preserve">
-    <value>La référence '{0}' a été ajouté au projet '{1}' avec succès.</value>
+    <value>Reference '{0}' was successfully added to project '{1}'.</value>
   </data>
   <data name="Association_Fichier" xml:space="preserve">
-    <value>Les fichiers de type '{0}' ont été associé au logiciel.</value>
+    <value>Files of type '{0}' have been associated with the software.</value>
   </data>
   <data name="Aucun_Plugin_Chargé" xml:space="preserve">
-    <value>Aucun plugin n'a été chargé ou trouvé.</value>
+    <value>No plugin loaded or found.</value>
   </data>
   <data name="Chargement_Plugins" xml:space="preserve">
-    <value>Chargement des plugins...</value>
+    <value>Loading plugins...</value>
   </data>
   <data name="Chargement_Plugins_Terminé" xml:space="preserve">
-    <value>Chargement des plugins terminé.</value>
+    <value>Loading plugins finished.</value>
   </data>
   <data name="Chargement_Toolbox_Fonctions" xml:space="preserve">
-    <value>Chargement de la Boîte à outils pour l'éditeur de fonctions...</value>
+    <value>Loading Toolbox for function editor...</value>
   </data>
   <data name="Chargement_Toolbox_Fonctions1" xml:space="preserve">
-    <value>La Boîte à outils pour l'éditeur de fonctions a été chargé.</value>
+    <value>Toolbox for function editor loaded.</value>
   </data>
   <data name="Chargement_Toolbox_Windows_Designer" xml:space="preserve">
-    <value>Chargement de la Boîte à outils pour le concepteur de fenêtre...</value>
+    <value>Loading Toolbox for window designer...</value>
   </data>
   <data name="Chargement_Toolbox_Windows_Designer1" xml:space="preserve">
-    <value>La Boîte à outils pour le concepteur de fenêtre a été chargé.</value>
+    <value>Toolbox for window designer loaded.</value>
   </data>
   <data name="Enregistrement_Projet" xml:space="preserve">
-    <value>Enregistrement du projet '{0}' en cours...</value>
+    <value>Saving project '{0}'...</value>
   </data>
   <data name="Enregistrement_Projet_Annulé" xml:space="preserve">
-    <value>L'enregistrement du projet '{0}' a été annulé.</value>
+    <value>Saving of project '{0}' cancelled.</value>
   </data>
   <data name="Enregistrement_Projet_Terminé" xml:space="preserve">
-    <value>Enregistrement du projet '{0}' terminé.</value>
+    <value>Saving of project '{0}' finished.</value>
   </data>
   <data name="Enregistrement_Solution" xml:space="preserve">
-    <value>Enregistrement de la solution '{0}' en cours...</value>
+    <value>Saving solution '{0}'...</value>
   </data>
   <data name="Enregistrement_Solution_Annulé" xml:space="preserve">
-    <value>L'enregistrement de la solution '{0}' a été annulé.</value>
+    <value>Saving of solution '{0}' cancelled.</value>
   </data>
   <data name="Enregistrement_Solution_Terminé" xml:space="preserve">
-    <value>Enregistrement de la solution '{0}' terminé.</value>
+    <value>Saving of solution '{0}' finished.</value>
   </data>
   <data name="Enregistrement_Stat" xml:space="preserve">
-    <value>Enregistrement des statistiques du projet '{0}' en cours...</value>
+    <value>Saving statistics for project '{0}'...</value>
   </data>
   <data name="Enregistrement_Stat_Annulé" xml:space="preserve">
-    <value>L'enregistrement des statistiques du projet '{0}' a été annulé.</value>
+    <value>Saving of statistics for project '{0}' cancelled.</value>
   </data>
   <data name="Enregistrement_Stat_Terminé" xml:space="preserve">
-    <value>Enregistrement des statistiques du projet '{0}' terminé.</value>
+    <value>Saving of statistics for project '{0}' finished.</value>
   </data>
   <data name="Fermeture_Document" xml:space="preserve">
-    <value>Fermeture du document '{0}'.</value>
+    <value>Closing document '{0}'.</value>
   </data>
   <data name="Fermeture_Page_Demarrage" xml:space="preserve">
-    <value>Fermeture de la page de démarrage.</value>
+    <value>Closing start page.</value>
   </data>
   <data name="Generation_Action" xml:space="preserve">
-    <value>Génération de l'action '{0}' trouvé dans la fonction '{1}' du fichier '{2}'.</value>
+    <value>Building action '{0}' found in function '{1}' of file '{2}'.</value>
   </data>
   <data name="Generation_Ajout_Paramètre" xml:space="preserve">
-    <value>Ajout du paramètre '{0}'.</value>
+    <value>Adding parameter '{0}'.</value>
   </data>
   <data name="Generation_Chargement_Fichier" xml:space="preserve">
-    <value>Chargement du fichier '{0}' en mémoire...</value>
+    <value>Loading file '{0}' into memory...</value>
   </data>
   <data name="Generation_Chargement_Fichier_Terminé" xml:space="preserve">
-    <value>Chargement du fichier '{0}' terminé.</value>
+    <value>Loading file '{0}' finished.</value>
   </data>
   <data name="Generation_Chargement_Fonction" xml:space="preserve">
-    <value>Chargement de la séquence d'actions numéro {0}</value>
+    <value>Loading action sequence number {0}</value>
   </data>
   <data name="Generation_Chargement_Fonction_Terminer" xml:space="preserve">
-    <value>Chargement de la séquence d'actions terminé.</value>
+    <value>Loading action sequence finished.</value>
   </data>
   <data name="Generation_Code" xml:space="preserve">
-    <value>Génération des codes du document '{0}' en cours...</value>
+    <value>Building codes for document '{0}'...</value>
   </data>
   <data name="Generation_Code_Terminé" xml:space="preserve">
-    <value>Génération des codes du document '{0}' terminé.</value>
+    <value>Building codes for document '{0}' finished.</value>
   </data>
   <data name="Generation_Compile" xml:space="preserve">
-    <value>Compilation du code...</value>
+    <value>Compiling code...</value>
   </data>
   <data name="Generation_Compile_Echec" xml:space="preserve">
-    <value>===== La compilation du projet a échoué. =====</value>
+    <value>===== Project build failed. =====</value>
   </data>
   <data name="Generation_Compile_Succès" xml:space="preserve">
-    <value>===== La compilation du projet s'est terminé avec succès. =====</value>
+    <value>===== Project build finished successfully. =====</value>
   </data>
   <data name="Generation_Config" xml:space="preserve">
-    <value>Compilateur configuré avec succès.</value>
+    <value>Compiler configured successfully.</value>
   </data>
   <data name="Generation_Creation_Dossier" xml:space="preserve">
-    <value>Création du dossier de génération à l'emplacement '{0}'.</value>
+    <value>Creating build folder at location '{0}'.</value>
   </data>
   <data name="Generation_Debut" xml:space="preserve">
-    <value>Début de la génération du projet '{0}'.</value>
+    <value>Starting build for project '{0}'.</value>
   </data>
   <data name="Generation_Evenement_Application" xml:space="preserve">
-    <value>Génération des évènements d'application en cours...</value>
+    <value>Building application events...</value>
   </data>
   <data name="Generation_Evenement_Application_Terminé" xml:space="preserve">
-    <value>Génération des évènements d'application terminé.</value>
+    <value>Building application events finished.</value>
   </data>
   <data name="Generation_Initialisation_CodeDom" xml:space="preserve">
-    <value>Initialisation du système CodeDom en cours...</value>
+    <value>Initializing CodeDom system...</value>
   </data>
   <data name="Generation_Initialisation_CodeDom_Terminé" xml:space="preserve">
-    <value>Initialisation du système CodeDom terminé.</value>
+    <value>Initializing CodeDom system finished.</value>
   </data>
   <data name="Generation_Mode_Debug" xml:space="preserve">
-    <value>Choix de la génération : Debug</value>
+    <value>Build choice : Debug</value>
   </data>
   <data name="Generation_Mode_Normal" xml:space="preserve">
-    <value>Choix de la génération : Release</value>
+    <value>Build choice : Release</value>
   </data>
   <data name="Generation_Obfuscation" xml:space="preserve">
-    <value>Obfuscation du projet : {0}</value>
+    <value>Project obfuscation : {0}</value>
   </data>
   <data name="Generation_Resx" xml:space="preserve">
-    <value>Génération des ressources en cours...</value>
+    <value>Building resources...</value>
   </data>
   <data name="Generation_Resx_Fichier" xml:space="preserve">
-    <value>Génération du fichier de ressources '{0}' en cours...</value>
+    <value>Building resource file '{0}'...</value>
   </data>
   <data name="Generation_Resx_Fichier_Terminer" xml:space="preserve">
-    <value>Génération du fichier de ressources '{0}' terminé.</value>
+    <value>Building resource file '{0}' finished.</value>
   </data>
   <data name="Generation_Resx_Terminé" xml:space="preserve">
-    <value>Génération des ressources terminé.</value>
+    <value>Building resources finished.</value>
   </data>
   <data name="Generation_Solution_Debut" xml:space="preserve">
-    <value>Début de la génération de la solution '{0}'.</value>
+    <value>Starting build for solution '{0}'.</value>
   </data>
   <data name="Generation_Suppression_Temp" xml:space="preserve">
-    <value>Suppression des données temporaires inutiles.</value>
+    <value>Deleting unnecessary temporary files.</value>
   </data>
   <data name="Generation_Temp" xml:space="preserve">
-    <value>La solution a été générée en {0}</value>
+    <value>The solution was built in {0}</value>
   </data>
   <data name="Generation_UserControl" xml:space="preserve">
-    <value>La fenêtre de démarrage ou l'écran de démarrage ne peuvent pas être un Contrôle Utilisateur</value>
+    <value>The startup window or screen cannot be a User Control</value>
   </data>
   <data name="Generation_VB" xml:space="preserve">
-    <value>Enregistrement du code source.</value>
+    <value>Saving source code.</value>
   </data>
   <data name="Nouveau_Document" xml:space="preserve">
-    <value>Création d'un nouveau document nommé '{0}' dans le projet '{1}'...</value>
+    <value>Creating a new document named '{0}' in project '{1}'...</value>
   </data>
   <data name="Nouveau_Document_Terminé" xml:space="preserve">
-    <value>Le document '{0}' a été créé avec succès.</value>
+    <value>Document '{0}' successfully created.</value>
   </data>
   <data name="Obfuscation_Echec" xml:space="preserve">
-    <value>===== L'obfuscation de la solution a échoué. =====</value>
+    <value>===== Solution obfuscation failed. =====</value>
   </data>
   <data name="Obfuscation_Err" xml:space="preserve">
-    <value>L'obfuscation a rencontrée une erreur : {0}</value>
+    <value>Obfuscation encountered an error : {0}</value>
   </data>
   <data name="Obfuscation_Fichier_Introuvable" xml:space="preserve">
-    <value>Le fichier '{0}' est introuvable sur le disque dur.</value>
+    <value>File '{0}' not found on hard disk.</value>
   </data>
   <data name="Obfuscation_Message" xml:space="preserve">
-    <value>Obfuscation en cours : {0}</value>
+    <value>Obfuscation in progress : {0}</value>
   </data>
   <data name="Obfuscation_Move" xml:space="preserve">
-    <value>Déplacement du fichier '{0}' vers le dossier de génération du projet principal de la solution...</value>
+    <value>Moving file '{0}' to build folder of main project in solution...</value>
   </data>
   <data name="Obfuscation_Started" xml:space="preserve">
-    <value>Obfuscation en cours...</value>
+    <value>Obfuscation in progress...</value>
   </data>
   <data name="Obfuscation_Starting" xml:space="preserve">
-    <value>Initialisation de l'obfuscation en cours...</value>
+    <value>Initializing obfuscation...</value>
   </data>
   <data name="Obfuscation_Succès" xml:space="preserve">
-    <value>===== L'obfuscation de la solution s'est terminé avec succès. =====</value>
+    <value>===== Solution obfuscation finished successfully. =====</value>
   </data>
   <data name="Obfuscation_Temp" xml:space="preserve">
-    <value>L'encryptage du code a été effectué en {0}</value>
+    <value>Code encryption performed in {0}</value>
   </data>
   <data name="Ouverture_Document" xml:space="preserve">
-    <value>Ouverture du document '{0}'...</value>
+    <value>Opening document '{0}'...</value>
   </data>
   <data name="Ouverture_Page_Demarrage" xml:space="preserve">
-    <value>Ouverture de la page de démarrage...</value>
+    <value>Opening start page...</value>
   </data>
   <data name="Ouverture_Panneau_DataBase" xml:space="preserve">
-    <value>Ouverture du panneau 'Bases de données'...</value>
+    <value>Opening 'Database' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Debogage" xml:space="preserve">
-    <value>Ouverture du panneau 'Débogage'...</value>
+    <value>Opening 'Debug' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Erreurs" xml:space="preserve">
-    <value>Ouverture du panneau 'Erreurs de génération'...</value>
+    <value>Opening 'Build Errors' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Explorateur" xml:space="preserve">
-    <value>Ouverture du panneau 'Explorateur de solutions'...</value>
+    <value>Opening 'Solution Explorer' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Help" xml:space="preserve">
-    <value>Ouverture du panneau 'Aide rapide'...</value>
+    <value>Opening 'Quick Help' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Propriété" xml:space="preserve">
-    <value>Ouverture du panneau 'Propriétés'...</value>
+    <value>Opening 'Properties' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Sortie" xml:space="preserve">
-    <value>Ouverture du panneau 'Sortie'...</value>
+    <value>Opening 'Output' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Toolbox" xml:space="preserve">
-    <value>Ouverture du panneau 'Boîte à outils'...</value>
+    <value>Opening 'Toolbox' panel...</value>
   </data>
   <data name="Ouverture_Panneau_Vocal" xml:space="preserve">
-    <value>Ouverture du panneau 'Reconnaissance vocale'...</value>
+    <value>Opening 'Voice Recognition' panel...</value>
   </data>
   <data name="Ouverture_Parametre" xml:space="preserve">
-    <value>Ouverture des paramètres du projet '{0}'...</value>
+    <value>Opening settings for project '{0}'...</value>
   </data>
   <data name="Ouverture_Projet" xml:space="preserve">
-    <value>Ouverture du projet '{0}'...</value>
+    <value>Opening project '{0}'...</value>
   </data>
   <data name="Ouverture_Solution" xml:space="preserve">
-    <value>Ouverture de la solution '{0}'...</value>
+    <value>Opening solution '{0}'...</value>
   </data>
   <data name="Ouverture_Stat" xml:space="preserve">
-    <value>Ouverture des statistiques du projet '{0}'...</value>
+    <value>Opening statistics for project '{0}'...</value>
   </data>
   <data name="Plugin_Chargé" xml:space="preserve">
-    <value>Le plugin '{0}, Version={1}' a été chargé avec succès.</value>
+    <value>Plugin '{0}, Version={1}' successfully loaded.</value>
   </data>
   <data name="Projet_Chargé" xml:space="preserve">
-    <value>Le projet '{0}' a été chargé.</value>
+    <value>Project '{0}' loaded.</value>
   </data>
   <data name="Projet_Chargé_Explorateur" xml:space="preserve">
-    <value>Le projet '{0}' a été chargé dans l'Explorateur de solutions.</value>
+    <value>Project '{0}' loaded in Solution Explorer.</value>
   </data>
   <data name="Projet_Incompatible" xml:space="preserve">
-    <value>Le projet n'a pas été chargé car il est incompatible avec ce logiciel.</value>
+    <value>Project was not loaded because it is incompatible with this software.</value>
   </data>
   <data name="Projet_Introuvable" xml:space="preserve">
-    <value>Le projet '{0}' n'a pas été chargé car le fichier '{1}' est introuvable.</value>
+    <value>Project '{0}' was not loaded because file '{1}' cannot be found.</value>
   </data>
   <data name="Solution_Chargé" xml:space="preserve">
-    <value>La solution '{0}' a été chargé.</value>
+    <value>Solution '{0}' loaded.</value>
   </data>
   <data name="Solution_Fermé" xml:space="preserve">
-    <value>La solution '{0}' a été fermé.</value>
+    <value>Solution '{0}' closed.</value>
   </data>
   <data name="Solution_Incompatible" xml:space="preserve">
-    <value>La solution n'a pu être chargé correctement car elle est incompatible avec ce logiciel.</value>
+    <value>Solution could not be loaded correctly because it is incompatible with this software.</value>
   </data>
   <data name="Utilisateur_Banni" xml:space="preserve">
-    <value>L'authenticité du logiciel a été vérifié.</value>
+    <value>Software authenticity verified.</value>
   </data>
   <data name="Validation_Projet" xml:space="preserve">
-    <value>Validation du projet '{0}' en cours...</value>
+    <value>Validating project '{0}'...</value>
   </data>
   <data name="Validation_Projet_Terminé" xml:space="preserve">
-    <value>Validation du projet '{0}' terminé.</value>
+    <value>Validation of project '{0}' finished.</value>
   </data>
 </root>

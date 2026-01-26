@@ -188,7 +188,7 @@ Namespace Print
                 my_DocumentRect = New System.Drawing.Rectangle(0, 0, 0, 0)
                 my_HeaderDocumentRect = New System.Drawing.Rectangle(0, 0, 0, 0)
             Catch ex As Exception
-                System.Windows.Forms.MessageBox.Show("L'impression à rencontrée une erreure. Veuillez re-essayer ou contacter votre administrateur", "Erreur d'impression", System.Windows.Forms.MessageBoxButtons.OKCancel, System.Windows.Forms.MessageBoxIcon.[Error])
+                System.Windows.Forms.MessageBox.Show("Printing encountered an error. Please try again or contact your administrator.", "Printing Error", System.Windows.Forms.MessageBoxButtons.OKCancel, System.Windows.Forms.MessageBoxIcon.[Error])
             End Try
             If my_Orientation = Orientation.Lanscape Then
                 my_PrintDocument.DefaultPageSettings.Landscape = True
@@ -575,7 +575,7 @@ Namespace Print
                                 ev.Graphics.DrawString(theCurrentObj.my_String, theCurrentObj.my_Font, theCurrentObj.my_TextBrush, theTextRect, theCurrentObj.my_StringFormat)
                             End If
                         Case ObjectType.DataGrid
-                            System.Windows.Forms.MessageBox.Show(" - datagrid en cours d'integration - ")
+                            System.Windows.Forms.MessageBox.Show(" - datagrid integration in progress - ")
                         Case ObjectType.Rectangle
                             DrawBox(ev, theCurrentObj)
                             ev.Graphics.DrawString(theCurrentObj.my_String, theCurrentObj.my_Font, theCurrentObj.my_TextBrush, theCurrentObj.my_RectBorder, theCurrentObj.my_StringFormat)

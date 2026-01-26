@@ -121,6 +121,9 @@ Namespace Projet
         ' STYLE XP
         Public Property StyleXP As Boolean
 
+        ' WINDOW THEME (0=Office2007Blue, 1=Office2007Silver, 2=Office2007Black, 3=Office2010Blue, 4=Office2010Silver, 5=Office2010Black, 6=SparkleBlue, 7=SparklePurple, 8=SparkleOrange)
+        Public Property WindowTheme As Integer = 0
+
         ' INSTANCE UNIQUE
         Public Property Instance As Boolean
 

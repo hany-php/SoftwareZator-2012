@@ -36,3 +36,23 @@ D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VistaMes
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\en\VelerSoftware.VistaMessageBox.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\fr\VelerSoftware.VistaMessageBox.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.VistaMessageBox.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.VistaMessageBox.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.VistaMessageBox.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\Intéraction\Afficher un message (avancé)\Afficher_Message_Avance_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\Intéraction\Afficher un message (avancé)\Afficher_Message_Avance_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.Afficher_Message_Avance_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\en\VelerSoftware.VistaMessageBox.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\fr\VelerSoftware.VistaMessageBox.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VistaMessageBox\obj\Release\VelerSoftware.VistaMessageBox.dll

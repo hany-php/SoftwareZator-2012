@@ -470,6 +470,8 @@ Public Class ClassProjet
                                         Case "StyleXP" ' StyleXP
                                             .StyleXP = CBool(XmlRead.GetAttribute("value"))
                                             ClassApplication.Status_Application(Nothing, True, 20)
+                                        Case "WindowTheme" ' WindowTheme
+                                            .WindowTheme = CInt(XmlRead.GetAttribute("value"))
                                         Case "Instance" ' Instance
                                             .Instance = CBool(XmlRead.GetAttribute("value"))
                                         Case "MySettings" ' Enregistrer les paramètres
@@ -989,6 +991,13 @@ Public Class ClassProjet
                 elemSub.Attributes.Append(XmlAttribut)
                 elemBox.AppendChild(elemSub)
 
+                ' Window Theme
+                elemSub = XmlDoc.CreateElement("WindowTheme")
+                XmlAttribut = XmlDoc.CreateAttribute("value")
+                XmlAttribut.Value = proj.WindowTheme
+                elemSub.Attributes.Append(XmlAttribut)
+                elemBox.AppendChild(elemSub)
+
                 ' Instance unique
                 elemSub = XmlDoc.CreateElement("Instance")
                 XmlAttribut = XmlDoc.CreateAttribute("value")
@@ -1345,6 +1354,13 @@ Public Class ClassProjet
                 elemSub = XmlDoc.CreateElement("StyleXP")
                 XmlAttribut = XmlDoc.CreateAttribute("value")
                 XmlAttribut.Value = proj.StyleXP
+                elemSub.Attributes.Append(XmlAttribut)
+                elemBox.AppendChild(elemSub)
+
+                ' Window Theme
+                elemSub = XmlDoc.CreateElement("WindowTheme")
+                XmlAttribut = XmlDoc.CreateAttribute("value")
+                XmlAttribut.Value = proj.WindowTheme
                 elemSub.Attributes.Append(XmlAttribut)
                 elemBox.AppendChild(elemSub)
 

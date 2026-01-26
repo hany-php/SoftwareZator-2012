@@ -178,23 +178,23 @@ Module Module1
 
 
 
-    'Déclarer la connexion
+    'Declare the connection
     Private Cnx As System.Data.OleDb.OleDbConnection
 
 #Region "Connexion"
 
-    ' Se connecter à une base de donnée 
-    ' Paramètres :
-    ' NomFichierMDB = nom du fichier .mdb à lire
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = base de donnée n'existe pas
-    ' 1 = connecté à la base de donnée
-    ' 2 = la base de donnée a été trouvé mais il est impossible de s'y connecter
+    ' Connect to a database 
+    ' Parameters :
+    ' NomFichierMDB = name of the .mdb file to read
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = database does not exist
+    ' 1 = connected to database
+    ' 2 = database found but unable to connect to it
     Private Function Connect(ByVal NomFichierMDB As String, ByVal Password As String) As Integer
         Try
             If My.Computer.FileSystem.FileExists(NomFichierMDB) Then
-                Disconnect() ' se déconnecter
+                Disconnect() ' disconnect
                 Cnx = New System.Data.OleDb.OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & NomFichierMDB & ";Jet OLEDB:Database Password=" & Password)
                 Cnx.Open()
                 If Cnx.State = ConnectionState.Open Then
@@ -211,11 +211,11 @@ Module Module1
         End Try
     End Function
 
-    ' Se déconnecter d'une base de donnée
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = impossible de se déconnecter pour une raison inconnue
-    ' 1 = déconnecté de la base de donnée
+    ' Disconnect from a database
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = unable to disconnect for an unknown reason
+    ' 1 = disconnected from database
     Private Function Disconnect() As Integer
         Try
             If Cnx IsNot Nothing AndAlso Cnx.State = ConnectionState.Open Then
@@ -237,15 +237,15 @@ Module Module1
         End Try
     End Function
 
-    ' Détermine si l'on est connecté à une base de donnée ou pas.
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = déconnecté
-    ' 1 = connecté
-    ' 2 = Interrompu
-    ' 3 = connexion en cours
-    ' 4 = En cours d'exécution
-    ' 5 = En cours de réception
+    ' Determines if connected to a database or not.
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = disconnected
+    ' 1 = connected
+    ' 2 = Broken
+    ' 3 = Connecting
+    ' 4 = Executing
+    ' 5 = Fetching
     Private Function GetConnectStatus() As Integer
         Try
             If Cnx IsNot Nothing Then
@@ -278,13 +278,13 @@ Module Module1
 
 #Region "General"
 
-    ' Créer une nouvelle base de donnée
-    ' Paramètres :
-    ' NomFichierMDB = nom du fichier .mdb à créer
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = base de donnée existe déjà
-    ' 1 = base de donnée créée
+    ' Create a new database
+    ' Parameters :
+    ' NomFichierMDB = name of the .mdb file to create
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = database already exists
+    ' 1 = database created
     Private Function CreateNewDataBase(ByVal NomFichierMDB As String, ByVal Password As String) As Integer
         Try
             If Not My.Computer.FileSystem.FileExists(NomFichierMDB) Then
@@ -302,11 +302,11 @@ Module Module1
         End Try
     End Function
 
-    ' Exécuter une requête 
-    ' Paramètres :
-    ' request = requête à exécuter
-    ' Valeur retourné :
-    ' liste d'objets
+    ' Execute a request 
+    ' Parameters :
+    ' request = request to execute
+    ' Return value :
+    ' list of objects
     Private Function ExecuteRequest(ByVal request As String) As System.Collections.Generic.List(Of Object)
         Dim resultat As New System.Collections.Generic.List(Of Object)
         Try
@@ -329,9 +329,9 @@ Module Module1
 
 #Region "Table"
 
-    ' Récupère le nom de toutes les Tables de la base de donnée.
-    ' Valeur retourné :
-    ' liste de valeur textuelle
+    ' Gets the name of all Tables in the database.
+    ' Return value :
+    ' list of text values
     Private Function GetTableList() As Generic.List(Of String)
         Dim resultat As New Generic.List(Of String)
         Try
@@ -346,11 +346,11 @@ Module Module1
         Return resultat
     End Function
 
-    ' Créer une nouvelle Table.
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table existe déjà
-    ' 1 = la table a été créé
+    ' Create a new Table.
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table already exists
+    ' 1 = table created
     Private Function CreateNewTable(ByVal table_name As String, ByVal columns As Generic.List(Of String), ByVal types As Generic.List(Of String)) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -362,11 +362,11 @@ Module Module1
 
                     If Not param.ToString = Nothing Then
                         Using cmd As New System.Data.OleDb.OleDbCommand("CREATE TABLE " & table_name & "(Id integer PRIMARY KEY, " & param.ToString.TrimEnd(" ").TrimEnd(",") & ");", Cnx)
-                            cmd.ExecuteReader().Close() ' exécution de la requête
+                            cmd.ExecuteReader().Close() ' execute query
                         End Using
                     Else
                         Using cmd As New System.Data.OleDb.OleDbCommand("CREATE TABLE " & table_name & "(Id integer PRIMARY KEY);", Cnx)
-                            cmd.ExecuteReader().Close() ' exécution de la requête
+                            cmd.ExecuteReader().Close() ' execute query
                         End Using
                     End If
                     param.Clear()
@@ -384,11 +384,11 @@ Module Module1
         End Try
     End Function
 
-    ' Supprimer une Table.
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la table a été suprimée
+    ' Delete a Table.
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = table deleted
     Private Function DeleteTable(ByVal table_name As String) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -409,22 +409,22 @@ Module Module1
         End Try
     End Function
 
-    ' Renommer une Table.
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la table a été renommée
-    ' 2 = le nouveau nom est déjà utilisée par une autre table
+    ' Rename a Table.
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = table renamed
+    ' 2 = new name is already used by another table
     Private Function RenameTable(ByVal table_name As String, ByVal new_name As String) As Integer
         Try
             If GetConnectStatus() = 1 Then
                 If GetTableList.Contains(table_name) Then
                     If Not GetTableList.Contains(new_name) Then
                         Using cmd As New System.Data.OleDb.OleDbCommand("SELECT * INTO " & new_name & " FROM " & table_name & ";", Cnx)
-                            cmd.ExecuteReader().Close() ' exécution de la requête
+                            cmd.ExecuteReader().Close() ' execute query
                         End Using
                         Using cmd As New System.Data.OleDb.OleDbCommand("DROP TABLE " & table_name & ";", Cnx)
-                            cmd.ExecuteReader().Close() ' exécution de la requête
+                            cmd.ExecuteReader().Close() ' execute query
                         End Using
                         Return 1
                     Else
@@ -446,11 +446,11 @@ Module Module1
 
 #Region "Valeurs"
 
-    ' Obtenir le nombre de lignes dans une Table.
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' -2 = la table n'existe pas
-    ' autre = nombre de ligne dans la table
+    ' Get the number of rows in a Table.
+    ' Return value :
+    ' -1 = unknown error
+    ' -2 = table does not exist
+    ' other = number of rows in the table
     Private Function GetRowsCountTable(ByVal table_name As String) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -476,15 +476,15 @@ Module Module1
         End Try
     End Function
 
-    ' Ajouter une ligne à une Table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' index = index auquel la ligne sera ajouté
-    ' values = valeurs à mettre dans la ligne
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la ligne a correctement été ajoutée
+    ' Add a row to a Table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' index = index at which the row will be added
+    ' values = values to put in the row
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = row successfully added
     Private Function AddRowTable(ByVal table_name As String, ByVal index As Integer, ByVal values As Generic.List(Of Object)) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -517,16 +517,16 @@ Module Module1
         End Try
     End Function
 
-    ' Changer une ligne à une Table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' index = index auquel la ligne sera modifiée
-    ' column_name = nom de la colonne à modifier
-    ' value = valeurs à mettre dans la colonne
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la ligne a correctement été modifiée
+    ' Change a row in a Table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' index = index at which the row will be modified
+    ' column_name = name of the column to modify
+    ' value = values to put in the column
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = row successfully modified
     Private Function ChangeRowTable(ByVal table_name As String, ByVal index As Integer, ByVal column_name As String, ByVal value As Object) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -553,14 +553,14 @@ Module Module1
         End Try
     End Function
 
-    ' Supprimer une ligne dans une Table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' index = index auquel la ligne sera supprimée
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la ligne a correctement été supprimée
+    ' Delete a row in a Table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' index = index at which the row will be deleted
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = row successfully deleted
     Private Function DeleteRowTable(ByVal table_name As String, ByVal index As Integer) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -581,14 +581,14 @@ Module Module1
         End Try
     End Function
 
-    ' Récupère une valeur dans une Table.
-    ' Paramètres :
-    ' table_name = nom de la table concerné  
-    ' column_name = nom de la colonne dans laquelle se trouve la valeur
-    ' index (optionel) = index de la valeur dans la table
-    ' condition (optionel) = si on ne connais pas l'index, on peut spécifié, par exemple "la ligne sur laquelle le champ Téléphone = 0671665378"
-    ' Valeur retourné :
-    ' objet
+    ' Get a single value in a Row.
+    ' Parameters :
+    ' table_name = name of the table concerned
+    ' column_name = name of the column where the value is located
+    ' index (optional) = index of the value in the table
+    ' condition (optional) = if index is unknown, can specify e.g. "the row where Phone field = 0671665378"
+    ' Return value :
+    ' object
     Private Function GetSingleValueOfRow(ByVal table_name As String, ByVal column_name As String, Optional ByVal index As Integer = -1, Optional ByVal condition As String = Nothing) As Object
         Try
             If GetConnectStatus() = 1 AndAlso GetTableList.Contains(table_name) Then
@@ -618,14 +618,14 @@ Module Module1
         Return Nothing
     End Function
 
-    ' Récupère une valeur dans une Table.
-    ' Paramètres :
-    ' table_name = nom de la table concerné  
-    ' column_name = nom de la colonne dans laquelle se trouve la valeur
-    ' index (optionel) = index de la valeur dans la table
-    ' condition (optionel) = si on ne connais pas l'index, on peut spécifié, par exemple "la ligne sur laquelle le champ Téléphone = 0671665378"
-    ' Valeur retourné :
-    ' liste d'objets
+    ' Get values in a Row.
+    ' Parameters :
+    ' table_name = name of the table concerned
+    ' column_name = name of the column where the value is located
+    ' index (optional) = index of the value in the table
+    ' condition (optional) = if index is unknown, can specify e.g. "the row where Phone field = 0671665378"
+    ' Return value :
+    ' list of objects
     Private Function GetValuesOfRows(ByVal table_name As String, ByVal column_name As String, ByVal condition As String) As System.Collections.Generic.List(Of Object)
         Dim resultat As New System.Collections.Generic.List(Of Object)
         Try
@@ -658,11 +658,11 @@ Module Module1
 
 #Region "Colonnes"
 
-    ' Récupère le nom de toutes les colonnes d'une Table.
-    ' Paramètres :
-    ' table_name = nom de la table concerné
-    ' Valeur retourné :
-    ' liste de valeur textuelle
+    ' Get the name of all columns in a Table.
+    ' Parameters :
+    ' table_name = name of the table concerned
+    ' Return value :
+    ' list of text values
     Private Function GetColumnsList(ByVal table_name As String) As Generic.List(Of String)
         Dim resultat As New Generic.List(Of String)
         Try
@@ -677,13 +677,13 @@ Module Module1
         Return resultat
     End Function
 
-    ' Récupère le nombre de colonnes d'une Table.
-    ' Paramètres :
-    ' table_name = nom de la table concerné
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' -2 = la table n'existe pas
-    ' autre = nombre de colonne dans la table
+    ' Get the number of columns in a Table.
+    ' Parameters :
+    ' table_name = name of the table concerned
+    ' Return value :
+    ' -1 = unknown error
+    ' -2 = table does not exist
+    ' other = number of columns in the table
     Private Function GetColumnsCountTable(ByVal table_name As String) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -701,15 +701,15 @@ Module Module1
         End Try
     End Function
 
-    ' Ajouter une colonne à une Table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' column_name = nom de la colonne à ajouter
-    ' typed = type de valeur pour cette colonne
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = la table n'existe pas
-    ' 1 = la colonne a correctement été ajoutée
+    ' Add a column to a Table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' column_name = name of the column to add
+    ' typed = type of value for this column
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = table does not exist
+    ' 1 = column successfully added
     Private Function AddColumnTable(ByVal table_name As String, ByVal column_name As String, ByVal typed As String) As Integer
         Try
             If GetConnectStatus() = 1 Then
@@ -734,11 +734,11 @@ Module Module1
 
 #Region "DataTable"
 
-    ' Obtenir la DataTable issue d'une table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' Valeur retourné :
-    ' valeur de type System.Data.DataTable
+    ' Get the DataTable from a table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' Return value :
+    ' value of type System.Data.DataTable
     Private Function GetDataTable(ByVal table_name As String) As System.Data.DataTable
         Dim resultat As New System.Data.DataTable
         Try
@@ -759,14 +759,14 @@ Module Module1
         Return resultat
     End Function
 
-    ' Obtenir la DataTable issue d'une table.
-    ' Paramètres :
-    ' table_name = nom de la table
-    ' Valeur retourné :
-    ' -1 = erreur inconnu
-    ' 0 = La mise à jour de la table n'a pas été effectué car aucune table n'a été trouvé
-    ' 1 = mise à jour effectué avec succès
-    ' 2 = il n'y a rien à mettre à jour
+    ' Get the DataTable from a table.
+    ' Parameters :
+    ' table_name = name of the table
+    ' Return value :
+    ' -1 = unknown error
+    ' 0 = Table update not performed because no table was found
+    ' 1 = update successfully performed
+    ' 2 = there is nothing to update
     Private Function UpdateDataTable(ByVal dat As System.Data.DataTable, ByVal old_table_name As String) As Integer
         Try
             If GetConnectStatus() = 1 Then

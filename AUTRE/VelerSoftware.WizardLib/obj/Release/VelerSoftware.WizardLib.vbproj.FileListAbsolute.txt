@@ -14,3 +14,13 @@ D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.WizardLib\
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.AeroWizardForm.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.vbproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.WizardLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.AeroForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.AeroWindowsForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.Wizard97Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.AeroWizardForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.WizardLib\obj\Release\VelerSoftware.WizardLib.dll

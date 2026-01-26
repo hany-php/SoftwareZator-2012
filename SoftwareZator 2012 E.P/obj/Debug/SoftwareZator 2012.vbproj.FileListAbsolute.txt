@@ -189,6 +189,7 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\bin\SoftwareZator 2012.pdb
 C:\Users\hany_\Desktop\SoftwareZator-2012\bin\en\SoftwareZator 2012.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\bin\fr\SoftwareZator 2012.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator 2012.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator 2012.exe.config
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator.AjouterBaseAccessExistante.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator.AjouterBaseSQLServerExistante.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator.AjouterBaseMySQLExistante.resources
@@ -370,4 +371,3 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\fr\So
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\Software.9E152DB9.Up2Date
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator 2012.exe
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator 2012.pdb
-C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Debug\SoftwareZator 2012.exe.config

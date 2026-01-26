@@ -52,3 +52,31 @@ D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VoiceRec
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\en\VelerSoftware.VoiceRecognitionPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\fr\VelerSoftware.VoiceRecognitionPlugin.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\VelerSoftware.VoiceRecognitionPlugin.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\en\VelerSoftware.VoiceRecognitionPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Plugins\fr\VelerSoftware.VoiceRecognitionPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\Reconnaissance vocale\Arrêter la reconnaissance vocale\Arreter_Vocale_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\Reconnaissance vocale\Demarrer la reconnaissance vocale\Demarrer_Vocale_Designer.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\Reconnaissance vocale\Arrêter la reconnaissance vocale\Arreter_Vocale_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\Reconnaissance vocale\Demarrer la reconnaissance vocale\Demarrer_Vocale_Designer.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale_Form.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Arreter_Vocale_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale_Form.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.Demarrer_Vocale_Form.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\en\VelerSoftware.VoiceRecognitionPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\fr\VelerSoftware.VoiceRecognitionPlugin.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\PLUGINS\VelerSoftware.VoiceRecognitionPlugin\obj\Release\VelerSoftware.VoiceRecognitionPlugin.dll

@@ -10,3 +10,11 @@ D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Générateur de code d'
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur_de_code_d_activation.Resources.resources
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\bin\Générateur de code d'activation.exe.config
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\bin\Générateur de code d'activation.exe
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur_de_code_d_activation.Form1.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur_de_code_d_activation.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.exe

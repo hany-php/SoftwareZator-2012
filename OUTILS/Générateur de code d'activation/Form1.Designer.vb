@@ -48,7 +48,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(35, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nom :"
+        Me.Label1.Text = "Name :"
         '
         'Label2
         '
@@ -57,7 +57,7 @@ Partial Class Form1
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Prénom :"
+        Me.Label2.Text = "First Name :"
         '
         'Label3
         '
@@ -66,7 +66,7 @@ Partial Class Form1
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(36, 13)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Pays :"
+        Me.Label3.Text = "Country :"
         '
         'Label4
         '
@@ -75,7 +75,7 @@ Partial Class Form1
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Code postal :"
+        Me.Label4.Text = "Postal Code :"
         '
         'Label5
         '
@@ -84,7 +84,7 @@ Partial Class Form1
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(101, 13)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Numéro de facture :"
+        Me.Label5.Text = "Invoice Number :"
         '
         'Label6
         '
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(122, 13)
         Me.Label6.TabIndex = 8
-        Me.Label6.Text = "Adresse de messagerie :"
+        Me.Label6.Text = "Email Address :"
         '
         'TextBox_Nom
         '
@@ -144,7 +144,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(384, 23)
         Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Générer le code d'activation"
+        Me.Button1.Text = "Generate Activation Code"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox_Code
@@ -172,7 +172,7 @@ Partial Class Form1
         '
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Standard", "Education", "Professionnelle"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Standard", "Education", "Professional"})
         Me.ComboBox1.Location = New System.Drawing.Point(12, 142)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(384, 21)
@@ -202,7 +202,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Générateur de code pour SoftwareZator 2012"
+        Me.Text = "Activation Code Generator for SoftwareZator 2012"
         CType(Me.NumericUpDown_No_Facture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

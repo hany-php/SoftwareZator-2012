@@ -3,3 +3,7 @@ D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\AUTRE\VelerSoftware.
 D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\AUTRE\VelerSoftware.ExcelLib\obj\Release\VelerSoftware.ExcelLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\bin\Sources\VelerSoftware.ExcelLib.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\AUTRE\VelerSoftware.ExcelLib\obj\Release\VelerSoftware.ExcelLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Release\VelerSoftware.ExcelLib.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Release\VelerSoftware.ExcelLib.csproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\bin\Sources\VelerSoftware.ExcelLib.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\AUTRE\VelerSoftware.ExcelLib\obj\Release\VelerSoftware.ExcelLib.dll

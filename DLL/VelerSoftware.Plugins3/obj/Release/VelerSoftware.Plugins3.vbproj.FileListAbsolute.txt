@@ -44,3 +44,28 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Plugins3\obj
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Plugins3\obj\Release\en\VelerSoftware.Plugins3.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Plugins3\obj\Release\fr\VelerSoftware.Plugins3.resources.dll
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Plugins3.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\en\VelerSoftware.Plugins3.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\fr\VelerSoftware.Plugins3.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.vbproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\Actions\ActionDesigner.baml
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\Actions\ActionDesigner.g.vb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3_MarkupCompile.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.g.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ActionForm.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.Custom.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.Resources.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ActionTextBox.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ValueEdit.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ActionForm.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ActionForm.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.Custom.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.Custom.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ValueEdit.en.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.ValueEdit.fr.resources
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.vbproj.GenerateResource.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.vbproj.CoreCompileInputs.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\en\VelerSoftware.Plugins3.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\fr\VelerSoftware.Plugins3.resources.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSof.2AA2DAD5.Up2Date
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Plugins3\obj\Release\VelerSoftware.Plugins3.dll

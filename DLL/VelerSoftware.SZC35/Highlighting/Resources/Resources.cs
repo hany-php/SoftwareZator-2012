@@ -1,6 +1,6 @@
 // *****************************************************************************
 // 
-//  © Veler Software 2012. All rights reserved.
+//   Veler Software 2012. All rights reserved.
 //  The current code and the associated software are the proprietary 
 //  information of Etienne Baudoux from Veler Software and are
 //  supplied subject to licence terms.
@@ -35,8 +35,8 @@ namespace VelerSoftware.SZC35.Highlighting
 		internal static void RegisterBuiltInHighlightings(HighlightingManager.DefaultHighlightingManager hlm)
 		{
             hlm.RegisterHighlighting("XmlDoc", null, "XmlDoc.xshd");
-            hlm.RegisterHighlighting("Action", null, "Action-Mode.xshd");
             hlm.RegisterHighlighting("VBNET", new[] { ".vb" }, "VBNET-Mode.xshd");
+            hlm.RegisterHighlighting("Action", null, "Action-Mode.xshd");
 			hlm.RegisterHighlighting("XML", (".xml;.xsl;.xslt;.xsd;.manifest;.config;.addin;" +
 			                                 ".xshd;.wxs;.wxi;.wxl;.proj;.csproj;.vbproj;.ilproj;" +
 			                                 ".booproj;.build;.xfrm;.targets;.xaml;.xpt;" +
