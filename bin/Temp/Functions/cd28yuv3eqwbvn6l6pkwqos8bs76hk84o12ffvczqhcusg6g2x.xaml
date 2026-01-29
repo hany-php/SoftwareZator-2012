@@ -1,0 +1,59 @@
+﻿<Fonction mc:Ignorable="sads sap" ClassCode="{x:Null}" CustomVBCode="{x:Null}" FileHelp="{x:Null}" Id="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param2="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param3="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param4="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Added="True" Category="Général" CompatibleClass="True" CompatibleFonctions="True" Description="Créer une nouvelle fonction" DisplayName="Fenêtre_MDI1" sap:VirtualizedContainerService.HintSize="351,308" Param1="Fenêtre_MDI1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" UseCustomVBCode="False"
+ xmlns="clr-namespace:VelerSoftware.GeneralPlugin;assembly=VelerSoftware.GeneralPlugin"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:SoftwareZator;assembly=SoftwareZator 2012"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sc="clr-namespace:System.CodeDom;assembly=System"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:vp="clr-namespace:VelerSoftware.Plugins3;assembly=VelerSoftware.Plugins3"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Fonction.Children_Actions>
+    <scg:List x:TypeArguments="vp:Action" Capacity="4">
+      <Commentaire ClassCode="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param2="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param3="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param4="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Added="True" Category="Général" CompatibleClass="True" CompatibleFonctions="True" Description="Un commentaire est une action qui ne s'exécute pas. Elle est là pour apporter un commentaire à un ensemble d'actions." DisplayName="Commentaire" FileHelp="VelerSoftware.GeneralPlugin\Commentaire.html" sap:VirtualizedContainerService.HintSize="327,224" Id="tqiwpjs1onf6o4cm0lcewomivt9oeigoq1fgmtqalycple1776hjevf1pmetmgpwkkb3l10j7i9btljfrp6k264bdn34agdx9lzc" Param1="Vous êtes dans l'éditeur de fonctions.&#xA;Chaque onglet représente une fonction, à l'exception de celui-ci.&#xA;En effet, cet onglet représente la &quot;racine&quot; de cet ensemble de&#xA;fonctions. Grace à cette racine, vous pourrez effectuer&#xA;principalement des &quot;déclarations&quot;.&#xA;Exemple : déclaration d'une fonction API de Windows (action&#xA;Déclarer une API).&#xA;&#xA;You are in the functions editor.&#xA;Each tab represents a function, except this one. Indeed, this tab&#xA;is the &quot;root &quot; of this set of functions. Thanks to this root, you can&#xA;make mostly &quot;declaration&quot;.&#xA;Example: declaring a function of Windows API (action Declare&#xA;an API)." UseCustomVBCode="False">
+        <Commentaire.Children_Actions>
+          <scg:List x:TypeArguments="vp:Action" Capacity="0" />
+        </Commentaire.Children_Actions>
+        <Commentaire.CustomVBCode>
+          <sc:CodeSnippetStatement LinePragma="{x:Null}" Value="' Cliquez sur le bouton ci-dessous à gauche pour mettre à jour&#xA;' le code Visual Basic.Net généré en fonctiondes&#xA;' paramètres ci-dessus.&#xA;&#xA;" />
+        </Commentaire.CustomVBCode>
+        <Commentaire.References>
+          <scg:List x:TypeArguments="x:String" Capacity="4">
+            <x:String>System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</x:String>
+            <x:String>mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</x:String>
+          </scg:List>
+        </Commentaire.References>
+        <Commentaire.Tools>
+          <s:ClassActionTools />
+        </Commentaire.Tools>
+        <Commentaire.Voice_Recognition_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="4">
+            <x:String>Commentaire</x:String>
+            <x:String>Commenter</x:String>
+          </scg:List>
+        </Commentaire.Voice_Recognition_Dictionary>
+        <Commentaire.Voice_Recognition_Expressions_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="0" />
+        </Commentaire.Voice_Recognition_Expressions_Dictionary>
+      </Commentaire>
+    </scg:List>
+  </Fonction.Children_Actions>
+  <Fonction.References>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.References>
+  <Fonction.Tools>
+    <s:ClassActionTools />
+  </Fonction.Tools>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Fonction.Voice_Recognition_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Dictionary>
+  <Fonction.Voice_Recognition_Expressions_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Expressions_Dictionary>
+</Fonction>

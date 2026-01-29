@@ -15,4 +15,6 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.Properties.Resources.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csprojResolveAssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.CoreCompileInputs.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSof.AE01A51C.Up2Date

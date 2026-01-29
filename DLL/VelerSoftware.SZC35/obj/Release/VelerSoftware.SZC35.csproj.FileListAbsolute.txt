@@ -23,4 +23,5 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\Te
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\themes\generic.baml
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.g.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.csprojResolveAssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZC35\obj\Release\VelerSoftware.SZC35.csproj.CoreCompileInputs.cache

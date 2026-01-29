@@ -126,7 +126,8 @@ Public Class AIControllerLogic
                  Return result
             End If
         Catch ex As Exception
-            ' Ignore concurrent access errors
+             ' Log error to file or show message if critical
+             ' MessageBox.Show("CheckPipeResponse Error: " & ex.Message)
         End Try
         Return Nothing
     End Function
@@ -137,13 +138,14 @@ Public Class AIControllerLogic
         {"dashboard", "[{'action':'CREATE_FORM','name':'DashboardForm'},{'action':'ADD_CONTROL','type':'Label','text':'Sales Overview','location':'10 10'},{'action':'ADD_CONTROL','type':'Chart','location':'20 50','size':'300 200'},{'action':'ADD_CONTROL','type':'DataGrid','location':'20 260','size':'300 150'}]"},
         {"واجهة إحصائيات", "[{'action':'CREATE_FORM','name':'StatsForm'},{'action':'ADD_CONTROL','type':'Label','text':'الإحصائيات العامة','location':'10 10'},{'action':'ADD_CONTROL','type':'Chart','location':'20 50','size':'400 200'},{'action':'ADD_CONTROL','type':'Button','text':'تحديث','location':'20 270'}]"},
         {"login", "[{'action':'CREATE_FORM','name':'LoginForm'},{'action':'ADD_CONTROL','type':'Label','text':'Username:','location':'20 20'},{'action':'ADD_CONTROL','type':'TextBox','location':'20 40'},{'action':'ADD_CONTROL','type':'Label','text':'Password:','location':'20 70'},{'action':'ADD_CONTROL','type':'TextBox','location':'20 90'},{'action':'ADD_CONTROL','type':'Button','text':'Login','location':'20 130'}]"},
-        {"calculator", "[{'action':'CREATE_FORM','name':'CalcForm'},{'action':'ADD_CONTROL','type':'TextBox','name':'txtDisplay','location':'10 10','size':'220 30'},{'action':'ADD_CONTROL','type':'Button','name':'btn1','text':'1','location':'10 50','size':'50 50'},{'action':'ADD_CODE','control':'btn1','event':'Click','code':'txtDisplay.Text &= ""1""'},{'action':'ADD_CONTROL','type':'Button','name':'btn2','text':'2','location':'70 50','size':'50 50'},{'action':'ADD_CODE','control':'btn2','event':'Click','code':'txtDisplay.Text &= ""2""'},{'action':'ADD_CONTROL','type':'Button','name':'btnClear','text':'Clear','location':'130 50','size':'50 50'},{'action':'ADD_CODE','control':'btnClear','event':'Click','code':'txtDisplay.Text = """"'},{'action':'ADD_CONTROL','type':'Button','name':'btnExit','text':'Exit','location':'10 110','size':'100 30'},{'action':'ADD_CODE','control':'btnExit','event':'Click','code':'Me.Close()'}]"}
+        {"calculator", "[{'action':'CREATE_FORM','name':'CalcForm'},{'action':'ADD_CONTROL','type':'TextBox','name':'txtDisplay','location':'10 10','size':'220 30'},{'action':'ADD_CONTROL','type':'Button','name':'btn1','text':'1','location':'10 50','size':'50 50'},{'action':'ADD_CODE','control':'btn1','event':'Click','code':'txtDisplay.Text &= ""1""'},{'action':'ADD_CONTROL','type':'Button','name':'btn2','text':'2','location':'70 50','size':'50 50'},{'action':'ADD_CODE','control':'btn2','event':'Click','code':'txtDisplay.Text &= ""2""'},{'action':'ADD_CONTROL','type':'Button','name':'btnClear','text':'Clear','location':'130 50','size':'50 50'},{'action':'ADD_CODE','control':'btnClear','event':'Click','code':'txtDisplay.Text = """"'},{'action':'ADD_CONTROL','type':'Button','name':'btnExit','text':'Exit','location':'10 110','size':'100 30'},{'action':'ADD_CODE','control':'btnExit','event':'Click','code':'Me.Close()'}]"},
+        {"computer_shop", "[{'action':'CREATE_FORM','name':'SalesForm'},{'action':'ADD_CONTROL','type':'Label','text':'Sales Management','location':'20 20'},{'action':'ADD_CONTROL','type':'DataGridView','name':'gridSales','location':'20 50','size':'500 300'},{'action':'CREATE_FORM','name':'AddProductForm'},{'action':'ADD_CONTROL','type':'Label','text':'Product Name:','location':'20 20'},{'action':'ADD_CONTROL','type':'TextBox','name':'txtName','location':'120 20'},{'action':'ADD_CONTROL','type':'Label','text':'Price:','location':'20 60'},{'action':'ADD_CONTROL','type':'TextBox','name':'txtPrice','location':'120 60','text':'0.00'},{'action':'ADD_CONTROL','type':'Button','name':'btnAdd','text':'Add Product','location':'120 100'},{'action':'CREATE_TABLE','name':'Products','columns':'ProdName,ProdPrice','types':'VARCHAR(50),DECIMAL','db_type':'Access'},{'action':'CREATE_FORM','name':'AccountsForm'},{'action':'ADD_CONTROL','type':'Label','text':'Daily Accounts','location':'20 20'}]"}
     }
 
-    Public Shared Sub ProcessNaturalLanguage(ByVal prompt As String, ByVal simulator As BoxSimulator)
+    Public Shared Sub ProcessNaturalLanguage(ByVal prompt As String)
         If String.IsNullOrEmpty(prompt) Then Return
 
-        simulator.LogToConsole("AI thinking about: " & prompt & "...")
+        ' Console.WriteLine("AI thinking about: " & prompt & "...")
 
         ' Simulate Latency
         Threading.Thread.Sleep(500)
@@ -151,78 +153,30 @@ Public Class AIControllerLogic
         ' Simple keyword matching for the Mock
         Dim scriptToRun As String = ""
         For Each key In MockResponses.Keys
-            If prompt.ToLower().Contains(key.ToLower()) OrElse prompt.Contains("إحصائيات") OrElse prompt.Contains("آلة حاسبة") Then
+            If prompt.ToLower().Contains(key.ToLower()) OrElse prompt.Contains("إحصائيات") OrElse prompt.Contains("آلة حاسبة") OrElse prompt.Contains("محل") OrElse prompt.Contains("shop") Then
                 scriptToRun = MockResponses(key)
                 If prompt.Contains("إحصائيات") Then scriptToRun = MockResponses("واجهة إحصائيات")
                 If prompt.Contains("آلة حاسبة") Then scriptToRun = MockResponses("calculator")
+                If prompt.Contains("محل") OrElse prompt.Contains("shop") Then scriptToRun = MockResponses("computer_shop")
                 Exit For
             End If
         Next
 
         If scriptToRun <> "" Then
-            simulator.LogToConsole("Plan generated. Executing script...")
-            simulator.SetScript(scriptToRun)
-            RunScript(scriptToRun, simulator)
+            ApplyScriptToProject(scriptToRun, False)
         Else
-            simulator.LogToConsole("I heard you, but I don't have a mock response for that specific phrase yet. Try 'dashboard' or 'واجهة إحصائيات'.")
+            ' Fallback or Log
         End If
     End Sub
 
-    Public Shared Sub RunScript(ByVal jsonScript As String, ByVal simulator As BoxSimulator)
-        ' Very simple manual JSON parser for the requirement (avoiding external dependencies if possible for now)
-        ' In production, use NewtonSoft.Json
-        
-        ' Use JavaScriptSerializer for robust JSON parsing
-        Try
-            Dim serializer As New System.Web.Script.Serialization.JavaScriptSerializer()
-            Dim commands As New List(Of Dictionary(Of String, Object))
-            commands = serializer.Deserialize(Of List(Of Dictionary(Of String, Object)))(jsonScript)
-
-            simulator.ClearPreview()
-
-            For Each dict As Dictionary(Of String, Object) In commands
-                Dim props As New Dictionary(Of String, String)
-                For Each kvp In dict
-                    props.Add(kvp.Key, kvp.Value.ToString())
-                Next
-
-                ExecuteAction(props, simulator)
-                Threading.Thread.Sleep(200) ' Animation delay
-            Next
-
-        Catch ex As Exception
-             simulator.LogToConsole("Error parsing/executing script: " & ex.Message)
-             ' Fallback to manual parser if needed (Old Mock format compatible?)
-             ' No, relying on standard JSON from now on.
-        End Try
-        
-        simulator.LogToConsole("Execution Complete.")
+    ' Deprecated: Simulator RunScript - Redirecting to Project
+    Public Shared Sub RunScript(ByVal jsonScript As String, ByVal simulator As Object)
+        ApplyScriptToProject(jsonScript, False)
     End Sub
 
-    Private Shared Sub ExecuteAction(ByVal props As Dictionary(Of String, String), ByVal simulator As BoxSimulator)
-        If Not props.ContainsKey("action") Then Return
-
-        Select Case props("action")
-            Case "CREATE_FORM"
-                simulator.LogToConsole("Creating Form: " & props("name"))
-                ' Simulator already is a container, we just clear it usually, but we could set a title
-                
-            Case "ADD_CONTROL"
-                Dim type As String = props("type")
-                Dim text As String = If(props.ContainsKey("text"), props("text"), "")
-                Dim locStr As String = If(props.ContainsKey("location"), props("location"), "0 0")
-                Dim sizeStr As String = If(props.ContainsKey("size"), props("size"), "100 30")
-
-                Dim locParts() As String = locStr.Split(" "c)
-                Dim loc As New Point(0, 0)
-                If locParts.Length >= 2 Then loc = New Point(CInt(locParts(0)), CInt(locParts(1)))
-                
-                Dim sizeParts() As String = sizeStr.Split(" "c)
-                Dim sz As New Size(100, 30)
-                If sizeParts.Length >= 2 Then sz = New Size(CInt(sizeParts(0)), CInt(sizeParts(1)))
-
-                simulator.RenderControl(type, text, loc, sz)
-        End Select
+    ' Deprecated: Simulator ExecuteAction
+    Private Shared Sub ExecuteAction(ByVal props As Dictionary(Of String, String), ByVal simulator As Object)
+        ' No-op or redirect
     End Sub
 
     Public Shared Sub ApplyScriptToProject(ByVal jsonScript As String, Optional ByVal forceNewForm As Boolean = False)
@@ -263,7 +217,9 @@ Public Class AIControllerLogic
         If forceNewForm Then
              Dim hasCreateForm As Boolean = False
              For Each dict In commands
-                 If dict.ContainsKey("action") AndAlso dict("action").ToString() = "CREATE_FORM" Then
+                 Dim actionName As String = If(dict.ContainsKey("action"), dict("action").ToString(), "")
+                 ' Don't create a new form if script contains OPEN_FORM, CREATE_FORM, GET_CONTROLS, or SET_PROPERTY
+                 If actionName = "CREATE_FORM" OrElse actionName = "OPEN_FORM" OrElse actionName = "GET_CONTROLS" OrElse actionName = "SET_PROPERTY" Then
                      hasCreateForm = True
                      Exit For
                  End If
@@ -365,8 +321,8 @@ Public Class AIControllerLogic
                         Dim host As IDesignerHost = Nothing
                         Try
                             Dim flags As BindingFlags = BindingFlags.Public Or BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.IgnoreCase
-                            Dim prop As PropertyInfo = doc.GetType().GetProperty("Host", flags)
-                            If prop IsNot Nothing Then host = TryCast(prop.GetValue(doc, Nothing), IDesignerHost)
+                            Dim hostField As FieldInfo = doc.GetType().GetField("Host", flags)
+                            If hostField IsNot Nothing Then host = TryCast(hostField.GetValue(doc), IDesignerHost)
                         Catch
                         End Try
 
@@ -539,6 +495,332 @@ Public Class AIControllerLogic
             
             Case "RESET_LAYOUT"
                 RestoreOutputPanel()
+
+            Case "CREATE_TABLE"
+                ' Supported db_type: MySQL, SQLServer, Access. Default: Access
+                If props.ContainsKey("name") AndAlso props.ContainsKey("columns") AndAlso props.ContainsKey("types") Then
+                    Try
+                        Dim dbType As String = "Access"
+                        If props.ContainsKey("db_type") Then dbType = props("db_type")
+
+                        Dim tableName As String = props("name")
+                        Dim colsStr As String = props("columns") ' e.g. "Name,Age"
+                        Dim typesStr As String = props("types")   ' e.g. "VARCHAR(50),INT"
+                        
+                        Dim cols As New List(Of String)(colsStr.Split(","c))
+                        Dim types As New List(Of String)(typesStr.Split(","c))
+
+                        Dim pluginTypeName As String = ""
+                        Dim methodName As String = ""
+
+                        Select Case dbType.ToLower()
+                            Case "sqlserver"
+                                ' Keep SQL Server reflection for now, or implement similar direct logic if needed
+                                pluginTypeName = "VelerSoftware.SQLServerPlugin.VelerSoftware_SQLServerPlugin"
+                                methodName = "CreateNewTable_SQLServer"
+                            Case "mysql"
+                                pluginTypeName = "VelerSoftware.MySQLPlugin.VelerSoftware_MySQLPlugin"
+                                methodName = "CreateNewTable_MySQL"
+                            Case Else ' Access (Direct Implementation)
+                                CreateAccessTable_Direct(tableName, cols, types)
+                                Return ' Skip reflection
+                        End Select
+
+                        ' Load Assembly (Only for SQL/MySQL now)
+                        Dim pluginType As Type = Nothing
+
+                        For Each asm As Assembly In AppDomain.CurrentDomain.GetAssemblies()
+                            pluginType = asm.GetType(pluginTypeName)
+                            If pluginType IsNot Nothing Then Exit For
+                        Next
+
+                        ' If not found, try to load from file
+                        If pluginType Is Nothing Then
+                            Try
+                                Dim dllName As String = pluginTypeName.Split("."c)(1) & ".dll" ' e.g. VelerSoftware.AccessPlugin.dll
+                                Dim dllPath As String = System.IO.Path.Combine(System.Windows.Forms.Application.StartupPath, "Plugins", dllName)
+                                If System.IO.File.Exists(dllPath) Then
+                                    Dim asm As Assembly = Assembly.LoadFrom(dllPath)
+                                    pluginType = asm.GetType(pluginTypeName)
+                                End If
+                            Catch exLoad As Exception
+                                ' Log or ignore
+                            End Try
+                        End If
+
+                        If pluginType IsNot Nothing Then
+                            Dim method As MethodInfo = pluginType.GetMethod(methodName, BindingFlags.Public Or BindingFlags.Static)
+                            If method IsNot Nothing Then
+                                ' Args: nom, columns, types
+                                method.Invoke(Nothing, New Object() {tableName, cols, types})
+                            End If
+                        Else
+                            MessageBox.Show(dbType & " Plugin not found.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        End If
+                    Catch ex As Exception
+                         Dim typeInfo As String = "Unknown DB"
+                         If props.ContainsKey("db_type") Then typeInfo = props("db_type")
+                         MessageBox.Show("Error creating table (" & typeInfo & "): " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End Try
+                End If
+
+            Case "BIND_DATA"
+                If props.ContainsKey("control") AndAlso props.ContainsKey("table") Then
+                    Dim ctrlName As String = props("control")
+                    Dim tableName As String = props("table")
+                    
+                    Dim dbType As String = "Access"
+                    If props.ContainsKey("db_type") Then dbType = props("db_type")
+
+                    Dim getTableMethod As String = ""
+
+                    Select Case dbType.ToLower()
+                        Case "sqlserver"
+                            getTableMethod = "VelerSoftware.SQLServerPlugin.VelerSoftware_SQLServerPlugin.GetDataTable_SQLServer"
+                        Case "mysql"
+                            getTableMethod = "VelerSoftware.MySQLPlugin.VelerSoftware_MySQLPlugin.GetDataTable_MySQL"
+                        Case Else ' default to access
+                            getTableMethod = "VelerSoftware.AccessPlugin.VelerSoftware_AccessPlugin.GetDataTable_Access"
+                    End Select
+                    
+                    ' Reference the specialized method in the generated code
+                    Dim code As String = "Dim dt As System.Data.DataTable = " & getTableMethod & "(""" & tableName & """)" & vbCrLf & _
+                                         "If dt IsNot Nothing Then " & ctrlName & ".DataSource = dt"
+                    
+                    Dim newProps As New Dictionary(Of String, String)
+                    newProps.Add("action", "ADD_CODE")
+                    newProps.Add("control", "Form1")
+                    newProps.Add("event", "Load")
+                    newProps.Add("code", code)
+                    
+                    ExecuteRealAction(newProps, False)
+                End If
+
+            Case "SET_PROPERTY"
+                ' Modify properties of existing controls
+                ' Example: {"action":"SET_PROPERTY","control":"btnSave","property":"Text","value":"Save Changes"}
+                ' Example: {"action":"SET_PROPERTY","control":"Form1","property":"RightToLeft","value":"Yes"}
+                If props.ContainsKey("control") AndAlso props.ContainsKey("property") AndAlso props.ContainsKey("value") Then
+                    Try
+                        Dim ctrlName As String = props("control")
+                        Dim propName As String = props("property")
+                        Dim propValue As String = props("value")
+
+                        ' Find the DocConcepteurFenetre (Designer)
+                        Dim doc As DocConcepteurFenetre = Nothing
+                        If Form1.KryptonDockableWorkspace1.ActivePage IsNot Nothing AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 Then
+                            doc = TryCast(Form1.KryptonDockableWorkspace1.ActivePage.Controls(0), DocConcepteurFenetre)
+                        End If
+                        If doc Is Nothing Then
+                            For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockingManager1.Pages
+                                If page.Controls.Count > 0 AndAlso TypeOf page.Controls(0) Is DocConcepteurFenetre Then
+                                    doc = DirectCast(page.Controls(0), DocConcepteurFenetre)
+                                    Exit For
+                                End If
+                            Next
+                        End If
+
+                        If doc IsNot Nothing Then
+                            ' Get Designer Host
+                            Dim host As IDesignerHost = Nothing
+                            Dim flags As BindingFlags = BindingFlags.Public Or BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.IgnoreCase
+                            Dim hostField As FieldInfo = doc.GetType().GetField("Host", flags)
+                            If hostField IsNot Nothing Then host = TryCast(hostField.GetValue(doc), IDesignerHost)
+
+                            If host IsNot Nothing Then
+                                Dim comp As IComponent = host.Container.Components(ctrlName)
+                                If comp IsNot Nothing Then
+                                    Dim targetProp As PropertyInfo = comp.GetType().GetProperty(propName, flags)
+                                    If targetProp IsNot Nothing AndAlso targetProp.CanWrite Then
+                                        ' Convert value based on property type
+                                        Dim convertedValue As Object = Nothing
+                                        Dim propType As Type = targetProp.PropertyType
+
+                                        If propType Is GetType(String) Then
+                                            convertedValue = propValue
+                                        ElseIf propType Is GetType(Integer) Then
+                                            convertedValue = Integer.Parse(propValue)
+                                        ElseIf propType Is GetType(Boolean) Then
+                                            convertedValue = Boolean.Parse(propValue)
+                                        ElseIf propType Is GetType(System.Drawing.Point) Then
+                                            Dim parts() As String = propValue.Split(" "c)
+                                            convertedValue = New System.Drawing.Point(Integer.Parse(parts(0)), Integer.Parse(parts(1)))
+                                        ElseIf propType Is GetType(System.Drawing.Size) Then
+                                            Dim parts() As String = propValue.Split(" "c)
+                                            convertedValue = New System.Drawing.Size(Integer.Parse(parts(0)), Integer.Parse(parts(1)))
+                                        ElseIf propType Is GetType(System.Drawing.Color) Then
+                                            convertedValue = System.Drawing.Color.FromName(propValue)
+                                        ElseIf propType Is GetType(System.Windows.Forms.RightToLeft) Then
+                                            Select Case propValue.ToLower()
+                                                Case "yes", "true", "1"
+                                                    convertedValue = System.Windows.Forms.RightToLeft.Yes
+                                                Case "no", "false", "0"
+                                                    convertedValue = System.Windows.Forms.RightToLeft.No
+                                                Case Else
+                                                    convertedValue = System.Windows.Forms.RightToLeft.Inherit
+                                            End Select
+                                        ElseIf propType.IsEnum Then
+                                            convertedValue = [Enum].Parse(propType, propValue, True)
+                                        Else
+                                            ' Fallback: try TypeConverter
+                                            Dim converter As System.ComponentModel.TypeConverter = System.ComponentModel.TypeDescriptor.GetConverter(propType)
+                                            If converter IsNot Nothing AndAlso converter.CanConvertFrom(GetType(String)) Then
+                                                convertedValue = converter.ConvertFromString(propValue)
+                                            Else
+                                                convertedValue = propValue ' Last resort
+                                            End If
+                                        End If
+
+                                        targetProp.SetValue(comp, convertedValue, Nothing)
+                                        doc.Modifier = True ' Mark document as modified
+                                    Else
+                                        MessageBox.Show("Property '" & propName & "' not found or not writable on control '" & ctrlName & "'.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                    End If
+                                Else
+                                    MessageBox.Show("Control '" & ctrlName & "' not found in designer.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                End If
+                            End If
+                        End If
+                    Catch ex As Exception
+                        MessageBox.Show("SET_PROPERTY Error: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End Try
+                End If
+
+            Case "DELETE_CONTROL"
+                ' Remove a control from the designer
+                ' Example: {"action":"DELETE_CONTROL","control":"btnOld"}
+                If props.ContainsKey("control") Then
+                    Try
+                        Dim ctrlName As String = props("control")
+
+                        Dim doc As DocConcepteurFenetre = Nothing
+                        If Form1.KryptonDockableWorkspace1.ActivePage IsNot Nothing AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 Then
+                            doc = TryCast(Form1.KryptonDockableWorkspace1.ActivePage.Controls(0), DocConcepteurFenetre)
+                        End If
+                        If doc Is Nothing Then
+                            For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockingManager1.Pages
+                                If page.Controls.Count > 0 AndAlso TypeOf page.Controls(0) Is DocConcepteurFenetre Then
+                                    doc = DirectCast(page.Controls(0), DocConcepteurFenetre)
+                                    Exit For
+                                End If
+                            Next
+                        End If
+
+                        If doc IsNot Nothing Then
+                            Dim host As IDesignerHost = Nothing
+                            Dim flags As BindingFlags = BindingFlags.Public Or BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.IgnoreCase
+                            Dim hostField As FieldInfo = doc.GetType().GetField("Host", flags)
+                            If hostField IsNot Nothing Then host = TryCast(hostField.GetValue(doc), IDesignerHost)
+
+                            If host IsNot Nothing Then
+                                Dim comp As IComponent = host.Container.Components(ctrlName)
+                                If comp IsNot Nothing Then
+                                    host.DestroyComponent(comp)
+                                    doc.Modifier = True
+                                Else
+                                    MessageBox.Show("Control '" & ctrlName & "' not found.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                End If
+                            End If
+                        End If
+                    Catch ex As Exception
+                        MessageBox.Show("DELETE_CONTROL Error: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End Try
+                End If
+
+            Case "OPEN_FORM"
+                ' Open an existing form in the designer
+                ' Example: {"action":"OPEN_FORM","name":"Form2"}
+                If props.ContainsKey("name") Then
+                    Try
+                        Dim formName As String = props("name")
+                        
+                        ' Check if already open
+                        For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockingManager1.Pages
+                            If page.Text = formName OrElse page.Text = formName & ".szw" Then
+                                ' Already open, just bring it to front using KryptonDockingManager
+                                Form1.KryptonDockingManager1.ShowPage(page)
+                                Exit Sub
+                            End If
+                        Next
+                        
+                        ' Search for the form file in the project
+                        If SOLUTION IsNot Nothing AndAlso SOLUTION.Projets.Count > 0 Then
+                            Dim proj As VelerSoftware.SZVB.Projet.Projet = SOLUTION.Projets(0)
+                            Dim formPath As String = System.IO.Path.Combine(proj.Emplacement, formName & ".szw")
+                            
+                            If Not System.IO.File.Exists(formPath) Then
+                                ' Try without extension
+                                formPath = System.IO.Path.Combine(proj.Emplacement, formName)
+                            End If
+                            
+                            If System.IO.File.Exists(formPath) Then
+                                Dim filess() As String = {formPath}
+                                Dim Safefiles() As String = {System.IO.Path.GetFileName(formPath)}
+                                Dim projects() As VelerSoftware.SZVB.Projet.Projet = {proj}
+                                
+                                ClassProjet.Ouvrir_Document(filess, Safefiles, projects, formName)
+                                WaitForDesignerLoad(formName)
+                            Else
+                                MessageBox.Show("Form file not found: " & formName, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                            End If
+                        End If
+                    Catch ex As Exception
+                        MessageBox.Show("OPEN_FORM Error: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End Try
+                End If
+
+            Case "GET_CONTROLS"
+                ' Get a list of all controls in the current form and write to AI_Pipe.json
+                ' Example: {"action":"GET_CONTROLS"}
+                Try
+                    Dim controlsList As New List(Of Dictionary(Of String, String))
+                    
+                    Dim doc As DocConcepteurFenetre = Nothing
+                    If Form1.KryptonDockableWorkspace1.ActivePage IsNot Nothing AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 Then
+                        doc = TryCast(Form1.KryptonDockableWorkspace1.ActivePage.Controls(0), DocConcepteurFenetre)
+                    End If
+                    
+                    If doc IsNot Nothing Then
+                        Dim host As IDesignerHost = Nothing
+                        Dim flags As BindingFlags = BindingFlags.Public Or BindingFlags.NonPublic Or BindingFlags.Instance Or BindingFlags.IgnoreCase
+                        Dim hostField As FieldInfo = doc.GetType().GetField("Host", flags)
+                        If hostField IsNot Nothing Then host = TryCast(hostField.GetValue(doc), IDesignerHost)
+                        
+                        If host IsNot Nothing Then
+                            For Each comp As IComponent In host.Container.Components
+                                Dim ctrlInfo As New Dictionary(Of String, String)
+                                ctrlInfo.Add("name", comp.Site.Name)
+                                ctrlInfo.Add("type", comp.GetType().Name)
+                                
+                                ' Try to get common properties
+                                Dim ctrl As Control = TryCast(comp, Control)
+                                If ctrl IsNot Nothing Then
+                                    ctrlInfo.Add("text", ctrl.Text)
+                                    ctrlInfo.Add("location", ctrl.Location.X & " " & ctrl.Location.Y)
+                                    ctrlInfo.Add("size", ctrl.Size.Width & " " & ctrl.Size.Height)
+                                    ctrlInfo.Add("visible", ctrl.Visible.ToString())
+                                End If
+                                
+                                controlsList.Add(ctrlInfo)
+                            Next
+                        End If
+                    End If
+                    
+                    ' Write response to AI_Pipe.json
+                    Dim response As New Dictionary(Of String, Object)
+                    response.Add("status", "CONTROLS_LIST")
+                    response.Add("last_update", DateTime.Now.ToString("s"))
+                    response.Add("form_name", If(Form1.KryptonDockableWorkspace1.ActivePage IsNot Nothing, Form1.KryptonDockableWorkspace1.ActivePage.Text, ""))
+                    response.Add("controls", controlsList)
+                    response.Add("count", controlsList.Count)
+                    
+                    Dim serializer As New System.Web.Script.Serialization.JavaScriptSerializer()
+                    System.IO.File.WriteAllText(PipePath, serializer.Serialize(response))
+                    
+                Catch ex As Exception
+                    MessageBox.Show("GET_CONTROLS Error: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+
         End Select
     End Sub
 
@@ -791,6 +1073,82 @@ Public Class AIControllerLogic
         Else
              MessageBox.Show("The active tab is not a Form Designer.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End If
+    End Sub
+
+    ''' <summary>
+    ''' Direct implementation of Access table creation using OLEDB.
+    ''' This bypasses the plugin which is source-code only and not a compiled API.
+    ''' </summary>
+    Private Shared Sub CreateAccessTable_Direct(ByVal tableName As String, ByVal columns As List(Of String), ByVal types As List(Of String))
+        Try
+            ' Find the Access Database file in the current project
+            Dim dbPath As String = Nothing
+            If Global.SoftwareZator.SOLUTION IsNot Nothing AndAlso Global.SoftwareZator.SOLUTION.Projets.Count > 0 Then
+                Dim projectPath As String = Global.SoftwareZator.SOLUTION.Projets(0).Emplacement
+                If Not String.IsNullOrEmpty(projectPath) Then
+                    ' Search for .accdb or .mdb in project folder
+                    For Each f As String In System.IO.Directory.GetFiles(projectPath, "*.accdb")
+                        dbPath = f
+                        Exit For
+                    Next
+                    If dbPath Is Nothing Then
+                        For Each f As String In System.IO.Directory.GetFiles(projectPath, "*.mdb")
+                            dbPath = f
+                            Exit For
+                        Next
+                    End If
+                    
+                    ' Also check parent directory (Solution folder)
+                    If dbPath Is Nothing Then
+                        Dim parentPath As String = System.IO.Path.GetDirectoryName(projectPath)
+                        If Not String.IsNullOrEmpty(parentPath) AndAlso System.IO.Directory.Exists(parentPath) Then
+                            For Each f As String In System.IO.Directory.GetFiles(parentPath, "*.accdb")
+                                dbPath = f
+                                Exit For
+                            Next
+                            If dbPath Is Nothing Then
+                                For Each f As String In System.IO.Directory.GetFiles(parentPath, "*.mdb")
+                                    dbPath = f
+                                    Exit For
+                                Next
+                            End If
+                        End If
+                    End If
+                End If
+            End If
+
+            If String.IsNullOrEmpty(dbPath) Then
+                MessageBox.Show("No Access database file (.accdb or .mdb) found in the project directory. Please add one first.", "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return
+            End If
+
+            ' Build SQL Column Definition
+            Dim colDef As New System.Text.StringBuilder()
+            For i As Integer = 0 To columns.Count - 1
+                If i > 0 Then colDef.Append(", ")
+                colDef.Append("[" & columns(i) & "] " & types(i))
+            Next
+
+            Dim sql As String = "CREATE TABLE [" & tableName & "] (Id COUNTER PRIMARY KEY"
+            If colDef.Length > 0 Then
+                sql &= ", " & colDef.ToString()
+            End If
+            sql &= ")"
+
+            ' Execute using OLEDB
+            Using conn As New System.Data.OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & dbPath)
+                conn.Open()
+                Using cmd As New System.Data.OleDb.OleDbCommand(sql, conn)
+                    cmd.ExecuteNonQuery()
+                End Using
+                conn.Close()
+            End Using
+
+            MessageBox.Show("Table '" & tableName & "' created successfully in Access database.", "AI Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        Catch ex As Exception
+            MessageBox.Show("Error creating Access table: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
 End Class

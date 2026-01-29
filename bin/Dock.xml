@@ -2,24 +2,11 @@
 <KD V="1">
   <DGD />
   <DM N="DockingManager" C="3">
-    <DW N="Workspace" O="0" S="733, 839">
-      <KW V="1" A="Simulator">
+    <DW N="Workspace" O="0" S="695, 839">
+      <KW V="1" A="(null)">
         <CGD />
         <WS UN="769BA9E61C494212088C598ACF39BA87" S="T,0,50:T,0,50" D="Horizontal">
-          <WC UN="58D09B9EEC35454902BB53FE7D7A8BF4" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="Simulator">
-            <KP UN="Simulator" S="False">
-              <CPD />
-            </KP>
-            <KP UN="Aide rapide" S="True" V="False">
-              <CPD />
-            </KP>
-            <KP UN="Erreurs de génération" S="True" V="False">
-              <CPD />
-            </KP>
-            <KP UN="Débogage" S="True" V="False">
-              <CPD />
-            </KP>
-          </WC>
+          <WC UN="1472D1DB865A432DE28CC425BC47D903" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="(null)" />
         </WS>
       </KW>
     </DW>
@@ -31,82 +18,33 @@
         </DED>
       </DE>
       <DE N="Bottom" C="2">
-        <DEAH N="AutoHidden" C="4">
-          <DAHG N="ECC00DD6547D4E88B4B473D4C55EF688" C="1">
+        <DEAH N="AutoHidden" C="1">
+          <DAHG N="24DF79EF0D42420302902EF46B42653A" C="4">
+            <KP UN="Sortie" V="True" S="False">
+              <CPD />
+            </KP>
+            <KP UN="Aide rapide" V="True" S="False">
+              <CPD />
+            </KP>
+            <KP UN="Erreurs de génération" V="True" S="False">
+              <CPD />
+            </KP>
             <KP UN="Débogage" V="True" S="False">
               <CPD />
             </KP>
           </DAHG>
-          <DAHG N="AF0CD65A5723467B2A830791389FE96B" C="1">
-            <KP UN="Aide rapide" V="True" S="False">
-              <CPD />
-            </KP>
-          </DAHG>
-          <DAHG N="9A6C5B95125042C249833595DDAC5899" C="1">
-            <KP UN="Sortie" V="True" S="False">
-              <CPD />
-            </KP>
-          </DAHG>
-          <DAHG N="77A26893AFDD4BF059818F5D6A264A74" C="1">
-            <KP UN="Erreurs de génération" V="True" S="False">
-              <CPD />
-            </KP>
-          </DAHG>
         </DEAH>
-        <DED N="Docked" C="4">
-          <DD N="F1652B81712A46D9D7BA7BE2C9263168" O="0" S="751, 250">
-            <KW V="1" A="(null)">
-              <CGD />
-              <WS UN="E7AEFCAD305B4E4EDBBA373CF4C07EF3" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="3E9C2EE70B5E443C7F84E145305F875C" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                  <KP UN="Erreurs de génération" S="True" V="False">
-                    <CPD />
-                  </KP>
-                </WC>
-              </WS>
-            </KW>
-          </DD>
-          <DD N="D63122C078B14BA72CA0D8F217515F10" O="1" S="751, 250">
-            <KW V="1" A="(null)">
-              <CGD />
-              <WS UN="FD8B2979B9DF4B840CB438F12AE816EA" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="DD95608DA5664F91579E8E4EC20EA402" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                  <KP UN="Sortie" S="True" V="False">
-                    <CPD />
-                  </KP>
-                </WC>
-              </WS>
-            </KW>
-          </DD>
-          <DD N="F071E51307974D6639A6AE2AC2A4E91F" O="2" S="751, 250">
-            <KW V="1" A="(null)">
-              <CGD />
-              <WS UN="D267F3D0B1D24CFEC591687B1BACDBB3" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="C7598EF6256A423CD7BE354D90EBBF38" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                  <KP UN="Aide rapide" S="True" V="False">
-                    <CPD />
-                  </KP>
-                </WC>
-              </WS>
-            </KW>
-          </DD>
-          <DD N="1CE09FFC3554453F1A93AE13C6B8C44E" O="3" S="751, 250">
-            <KW V="1" A="(null)">
-              <CGD />
-              <WS UN="F3C8842A649A4A326F97F29D1BE4DD48" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="19B26C7F84EC48BA598182294937A769" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                  <KP UN="Débogage" S="True" V="False">
-                    <CPD />
-                  </KP>
-                </WC>
-              </WS>
-            </KW>
-          </DD>
+        <DED N="Docked" C="0">
         </DED>
       </DE>
       <DE N="Left" C="2">
         <DEAH N="AutoHidden" C="2">
-          <DAHG N="9B7EB61A584647D4B0822B13281EC211" C="2">
+          <DAHG N="CFFD7BC1BE8543B6F5927A226E47EF10" C="1">
+            <KP UN="Bases de données" V="True" S="False">
+              <CPD />
+            </KP>
+          </DAHG>
+          <DAHG N="1552E198066B4D9003833E3D5507C78A" C="2">
             <KP UN="Boîte à outils" V="True" S="False">
               <CPD />
             </KP>
@@ -114,34 +52,17 @@
               <CPD />
             </KP>
           </DAHG>
-          <DAHG N="4D11BBB02408467490A3289BC03337B0" C="1">
-            <KP UN="Bases de données" V="True" S="False">
-              <CPD />
-            </KP>
-          </DAHG>
         </DEAH>
-        <DED N="Docked" C="2">
-          <DD N="327622EF845F4EE77791FD5EE6A3E76E" O="4" S="250, 140">
+        <DED N="Docked" C="1">
+          <DD N="912D1F2A88C14D1F43BFA570EBC0A4FA" O="0" S="169, 140">
             <KW V="1" A="(null)">
               <CGD />
-              <WS UN="0AC500FA2C6D42891296646DF5690BC6" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="84171FA87FCA45144080CD3504B2BE37" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
+              <WS UN="E8787924766C477447A2F9AC16EBA5A4" S="T,0,50:T,0,50" D="Horizontal">
+                <WC UN="F9064309B107471F2D8B9C5303ED0FBD" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
                   <KP UN="Boîte à outils" S="True" V="False">
                     <CPD />
                   </KP>
                   <KP UN="Reconnaissance vocale" S="True" V="False">
-                    <CPD />
-                  </KP>
-                </WC>
-              </WS>
-            </KW>
-          </DD>
-          <DD N="ED32E53093DA462517A3816B863E1370" O="6" S="250, 140">
-            <KW V="1" A="(null)">
-              <CGD />
-              <WS UN="368BC748A1714738E99C7A189D29E2F0" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="6C55EF082231447FC4892FCE981942D9" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                  <KP UN="Bases de données" S="True" V="False">
                     <CPD />
                   </KP>
                 </WC>
@@ -154,11 +75,11 @@
         <DEAH N="AutoHidden" C="0">
         </DEAH>
         <DED N="Docked" C="1">
-          <DD N="0F346B750CCC4348AAAAE916148C2EFC" O="5" S="195, 839">
-            <KW V="1" A="Explorateur de solution">
+          <DD N="2AE8B0A6E31E499D3DB69B4BB57CCCC3" O="1" S="233, 839">
+            <KW V="1" A="Propriétés">
               <CGD />
-              <WS UN="C38C7213C3184DE7EC8A7DA53AB4D7A7" S="T,0,50:T,0,50" D="Horizontal">
-                <WC UN="7FFBEAE62ECB4A2F1691FF82F150684A" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" SP="Explorateur de solution">
+              <WS UN="C904B957912F4B909BB7FC9A76A9BC22" S="T,0,50:T,0,50" D="Horizontal">
+                <WC UN="4678AD4CC70C425A4C9F4C493BA3D1DB" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" SP="Propriétés">
                   <KP UN="Explorateur de solution" S="False">
                     <CPD />
                   </KP>
@@ -172,63 +93,7 @@
         </DED>
       </DE>
     </DC>
-    <DF N="Floating" C="4">
-      <DFW N="845A95D176964FD1B2930CCC4C958C8B" C="1" L="775, 593" S="400, 400">
-        <DF N="Floatspace" O="0" S="400, 400">
-          <KW V="1" A="(null)">
-            <CGD />
-            <WS UN="AF3EEC03AB9E41938BA6E4A1739FAED3" S="T,0,50:T,0,50" D="Horizontal">
-              <WC UN="775A438D10B3445C279CF12BE713CB9F" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                <KP UN="Sortie" S="True" V="False">
-                  <CPD />
-                </KP>
-              </WC>
-            </WS>
-          </KW>
-        </DF>
-      </DFW>
-      <DFW N="3EE5BE41AB9B4C6E00910B121B1C0BD5" C="1" L="743, 593" S="400, 400">
-        <DF N="Floatspace" O="0" S="400, 400">
-          <KW V="1" A="(null)">
-            <CGD />
-            <WS UN="C62E3E20A86845B11186A2A9F57B061E" S="T,0,50:T,0,50" D="Horizontal">
-              <WC UN="DF87DADA5B6641534E875B8663AD050B" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                <KP UN="Erreurs de génération" S="True" V="False">
-                  <CPD />
-                </KP>
-              </WC>
-            </WS>
-          </KW>
-        </DF>
-      </DFW>
-      <DFW N="D572D3C92A484C2F6C93B074E13591D2" C="1" L="907, 593" S="400, 400">
-        <DF N="Floatspace" O="0" S="400, 400">
-          <KW V="1" A="(null)">
-            <CGD />
-            <WS UN="9144AB5FDA40467A96A84E71F94ED9A1" S="T,0,50:T,0,50" D="Horizontal">
-              <WC UN="F9BFBD0EE07F45C80DB6090C337AF72B" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                <KP UN="Débogage" S="True" V="False">
-                  <CPD />
-                </KP>
-              </WC>
-            </WS>
-          </KW>
-        </DF>
-      </DFW>
-      <DFW N="314AC93DB1844FB0AA8BB2C1EA5D2295" C="1" L="923, 593" S="400, 400">
-        <DF N="Floatspace" O="0" S="400, 400">
-          <KW V="1" A="(null)">
-            <CGD />
-            <WS UN="13366F2C8EED4931EEAA529ACFABBD45" S="T,0,50:T,0,50" D="Horizontal">
-              <WC UN="4DD4E7D8B9014F4279B2C6612AEE3310" S="T,0,50:T,0,50" NM="HeaderBarCheckButtonGroup" AR="True" V="False" SP="(null)">
-                <KP UN="Aide rapide" S="True" V="False">
-                  <CPD />
-                </KP>
-              </WC>
-            </WS>
-          </KW>
-        </DF>
-      </DFW>
+    <DF N="Floating" C="0">
     </DF>
   </DM>
 </KD>

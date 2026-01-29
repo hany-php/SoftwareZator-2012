@@ -49,6 +49,16 @@ namespace VelerSoftware.SZC.WindowsDesigner
 
         public void Save()
         {
+            // Check if file exists before trying to read it
+            if (!File.Exists(path))
+            {
+                // Create an empty resx file if it doesn't exist
+                using (ResXResourceWriter newWriter = new ResXResourceWriter(path))
+                {
+                    newWriter.Generate();
+                }
+            }
+
             // Create a ResXResourceReader for the file items.resx.
             ResXResourceReader rsxr = new ResXResourceReader(path);
             ResXResourceWriter rsxTranslated = new ResXResourceWriter(path + "_2");
@@ -64,6 +74,7 @@ namespace VelerSoftware.SZC.WindowsDesigner
             rsxTranslated.Generate();
             rsxTranslated.Close();
             rsxTranslated.Dispose();
+            rsxr.Close();
         }
 
         #region Implementation of IResourceService

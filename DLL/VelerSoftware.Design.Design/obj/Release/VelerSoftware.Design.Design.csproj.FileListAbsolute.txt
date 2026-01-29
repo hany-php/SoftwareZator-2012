@@ -21,4 +21,6 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Re
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Toolkit.PaletteDrawBordersSelector.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Design.csproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Design.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Design.csprojResolveAssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Design.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSoftware.Design.Design.csproj.CoreCompileInputs.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Design\obj\Release\VelerSof.B3DCE302.Up2Date

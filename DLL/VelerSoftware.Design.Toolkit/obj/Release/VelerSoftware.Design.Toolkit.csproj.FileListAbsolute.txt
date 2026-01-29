@@ -23,4 +23,5 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\R
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.ModalWaitDialog.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.csproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.csprojResolveAssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Release\VelerSoftware.Design.Toolkit.csproj.CoreCompileInputs.cache

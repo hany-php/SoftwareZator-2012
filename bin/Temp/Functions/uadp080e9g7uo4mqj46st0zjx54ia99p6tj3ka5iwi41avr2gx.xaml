@@ -1,0 +1,66 @@
+﻿<Fonction mc:Ignorable="sads sap" ClassCode="{x:Null}" CustomVBCode="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Added="True" Category="Général" CompatibleClass="False" CompatibleFonctions="False" Description="Créer une nouvelle fonction" DisplayName="nouveauToolStripMenuItem_Click" FileHelp="VelerSoftware.GeneralPlugin\Fonction.html" sap:VirtualizedContainerService.HintSize="224,133" Id="f9xb1qwbjqb3hq9t3q92zgrq9th84u4tgh46j37kjpmku2xwcd" Param1="nouveauToolStripMenuItem_Click" Param2="nouveauToolStripMenuItem.Click" Param3="ByVal sender As System.Object, ByVal e As System.EventArgs" Param4="False" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" UseCustomVBCode="False"
+ xmlns="clr-namespace:VelerSoftware.GeneralPlugin;assembly=VelerSoftware.GeneralPlugin"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:s="clr-namespace:SoftwareZator;assembly=SoftwareZator 2012"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sc="clr-namespace:System.CodeDom;assembly=System"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:vp="clr-namespace:VelerSoftware.Plugins3;assembly=VelerSoftware.Plugins3"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Fonction.Children_Actions>
+    <scg:List x:TypeArguments="vp:Action" Capacity="4">
+      <Ajouter_Fenetre_Enfant ClassCode="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Added="True" Category="Fenêtres" CompatibleClass="False" CompatibleFonctions="True" Description="Ajouter une fenêtre enfant à une fenêtre dont la propriété MDIContainer est True." DisplayName="Ajouter une fenêtre enfant" FileHelp="VelerSoftware.GeneralPlugin\Ajouter une fenêtre enfant.html" sap:VirtualizedContainerService.HintSize="200,49" Id="adn51x4m42w4ik2qlh8tqba5i2wy63j0ten1s04s9tyrq8etqt" Param1="Me" Param2="Fenêtre1" Param3="Form" Param4="Temp_Form" UseCustomVBCode="False">
+        <Ajouter_Fenetre_Enfant.Children_Actions>
+          <scg:List x:TypeArguments="vp:Action" Capacity="0" />
+        </Ajouter_Fenetre_Enfant.Children_Actions>
+        <Ajouter_Fenetre_Enfant.CustomVBCode>
+          <sc:CodeSnippetStatement LinePragma="{x:Null}" Value="' Cliquez sur le bouton ci-dessous à gauche pour mettre à jour&#xA;' le code Visual Basic.Net généré en fonctiondes&#xA;' paramètres ci-dessus." />
+        </Ajouter_Fenetre_Enfant.CustomVBCode>
+        <Ajouter_Fenetre_Enfant.References>
+          <scg:List x:TypeArguments="x:String" Capacity="0" />
+        </Ajouter_Fenetre_Enfant.References>
+        <Ajouter_Fenetre_Enfant.Tools>
+          <s:ClassActionTools />
+        </Ajouter_Fenetre_Enfant.Tools>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Ajouter_Fenetre_Enfant.Voice_Recognition_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="4">
+            <x:String>Ajouter</x:String>
+            <x:String>Fenêtre</x:String>
+          </scg:List>
+        </Ajouter_Fenetre_Enfant.Voice_Recognition_Dictionary>
+        <Ajouter_Fenetre_Enfant.Voice_Recognition_Expressions_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="4">
+            <x:String>multi document</x:String>
+            <x:String>ajouter une fenêtre</x:String>
+            <x:String>ajouter une nouvelle fenêtre</x:String>
+          </scg:List>
+        </Ajouter_Fenetre_Enfant.Voice_Recognition_Expressions_Dictionary>
+      </Ajouter_Fenetre_Enfant>
+    </scg:List>
+  </Fonction.Children_Actions>
+  <Fonction.References>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.References>
+  <Fonction.Tools>
+    <s:ClassActionTools />
+  </Fonction.Tools>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Fonction.Voice_Recognition_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Dictionary>
+  <Fonction.Voice_Recognition_Expressions_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Expressions_Dictionary>
+</Fonction>

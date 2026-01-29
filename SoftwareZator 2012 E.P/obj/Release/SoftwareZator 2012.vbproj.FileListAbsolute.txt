@@ -550,3 +550,4 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Release\en\
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Release\fr\SoftwareZator 2012.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Release\Software.9E152DB9.Up2Date
 C:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Release\SoftwareZator 2012.exe
+c:\Users\hany_\Desktop\SoftwareZator-2012\SoftwareZator 2012 E.P\obj\Release\SoftwareZator 2012.exe.config

@@ -21,3 +21,4 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.vbproj.CoreCompileInputs.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.exe
+c:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Access32\obj\x86\Release\Access32.exe.config

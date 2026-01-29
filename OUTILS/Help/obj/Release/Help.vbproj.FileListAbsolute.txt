@@ -100,3 +100,4 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\en\Help.resour
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\fr\Help.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.vbproj.Up2Date
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.exe
+c:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Help\obj\Release\Help.exe.config

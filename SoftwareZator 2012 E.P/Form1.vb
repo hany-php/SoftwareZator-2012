@@ -36,6 +36,9 @@ Public Class Form1
     ' Composant de génération
     Friend GenerationComponent1 As New GenerationComponent
 
+    ' AI Polling Timer (Replaces Box_Simulator timer)
+    Friend WithEvents AIPollTimer As New Timer()
+
 #End Region
 
 #Region "Log"
@@ -248,13 +251,20 @@ Public Class Form1
             ' Ajout des panneaux
             With .KryptonDockingManager1
                 .AddAutoHiddenGroup("Control", VelerSoftware.Design.Docking.DockingEdge.Bottom, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Sortie(), Dock_Nouveau_Aide_Rapide(), Dock_Nouveau_Erreur_Generation(), Dock_Nouveau_Debogage()})
-                .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Right, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Explorateur_Solution(), Dock_Nouveau_Propriete(), Dock_Nouveau_Simulator()})
+                .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Right, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Explorateur_Solution(), Dock_Nouveau_Propriete()})
                 .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Left, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Boite_A_Outils(), Dock_Nouveau_Reconnaissance_Vocale()})
                 .AddAutoHiddenGroup("Control", VelerSoftware.Design.Docking.DockingEdge.Left, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Bases_Donnees()})
             End With
             
             ' Initialize View Tab
             AddSimulatorToTools()
+
+            ' Start AI Polling
+            AIPollTimer.Interval = 2000
+            AIPollTimer.Start()
+            
+            ' DEBUG CONFIRMATION
+            MessageBox.Show("AI Listener Started!", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
             Select Case My.Settings.WindowTheme
                 Case 0 ' Office2007Blue (NEW DEFAULT)
@@ -4635,39 +4645,8 @@ Public Class Form1
 #Region "Live Simulator Logic"
 
     Private Sub AddSimulatorToTools()
-        Try
-            ' Check if tab exists
-            If Me.Outils_KryptonRibbonTab Is Nothing Then Return
-
-            ' Check if button already exists to avoid duplicates
-            For Each grp As VelerSoftware.Design.Ribbon.KryptonRibbonGroup In Me.Outils_KryptonRibbonTab.Groups
-                If grp.TextLine1 = "AI Studio" Then Return
-            Next
-
-            ' Create a new group in the Tools tab
-            Dim group As New VelerSoftware.Design.Ribbon.KryptonRibbonGroup()
-            group.TextLine1 = "AI Studio"
-            group.Visible = True
-            
-            Dim lines As New VelerSoftware.Design.Ribbon.KryptonRibbonGroupLines()
-            lines.Visible = True
-            
-            ' Live Simulator Button
-            Dim btnSim As New VelerSoftware.Design.Ribbon.KryptonRibbonGroupButton()
-            btnSim.TextLine1 = "Live Simulator"
-            btnSim.Tag = "Simulator"
-            btnSim.ImageLarge = My.Resources.actualiser
-            btnSim.ImageSmall = My.Resources.actualiser
-            btnSim.Visible = True
-            AddHandler btnSim.Click, AddressOf View_Panel_Click
-            lines.Items.Add(btnSim)
-
-            group.Items.Add(lines)
-            Me.Outils_KryptonRibbonTab.Groups.Add(group)
-
-        Catch ex As Exception
-            ' Silently fail to avoid crashing the whole ribbon if tab is not ready
-        End Try
+        ' Live Simulator is disabled for AI-Driven Workflow
+        Return
     End Sub
 
     Private Sub View_Panel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -4704,6 +4683,25 @@ Public Class Form1
                  End If
             End If
         Catch ex As Exception
+        End Try
+    End Sub
+
+#End Region
+
+#Region "AI Polling"
+
+    Private Sub AIPollTimer_Tick(sender As Object, e As EventArgs) Handles AIPollTimer.Tick
+        Try
+            Dim response As Dictionary(Of String, String) = Global.SoftwareZator.AIControllerLogic.CheckPipeResponse()
+            If response IsNot Nothing Then
+                 If response.ContainsKey("script") Then 
+                     ' Execute directly without Simulator UI
+                     ' MessageBox.Show("Script received! Executing...", "AI Debug", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                     Global.SoftwareZator.AIControllerLogic.ApplyScriptToProject(response("script"), True)
+                 End If
+            End If
+        Catch ex As Exception
+             MessageBox.Show("AI Poll Error: " & ex.Message, "AI Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 

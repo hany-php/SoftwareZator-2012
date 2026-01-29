@@ -18,3 +18,4 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activati
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.vbproj.CoreCompileInputs.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.exe
+c:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Générateur de code d'activation\obj\Release\Générateur de code d'activation.exe.config

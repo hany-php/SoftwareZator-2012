@@ -51,4 +51,3 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\Vel
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\en\VelerSoftware.SZVB.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\fr\VelerSoftware.SZVB.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.SZVB\obj\Release\VelerSoftware.SZVB.vbprojResolveAssemblyReference.cache

@@ -52,3 +52,4 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\en\Updater.
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\fr\Updater.resources.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.vbproj.Up2Date
 C:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.exe
+c:\Users\hany_\Desktop\SoftwareZator-2012\OUTILS\Updater\obj\Release\Updater.exe.config

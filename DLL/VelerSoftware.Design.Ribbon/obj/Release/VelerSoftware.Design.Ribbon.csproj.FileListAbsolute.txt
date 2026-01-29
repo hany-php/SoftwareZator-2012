@@ -15,3 +15,6 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Re
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.Properties.Resources.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.dll
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSoftware.Design.Ribbon.csproj.CoreCompileInputs.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Ribbon\obj\Release\VelerSof.3E82F5C7.Up2Date

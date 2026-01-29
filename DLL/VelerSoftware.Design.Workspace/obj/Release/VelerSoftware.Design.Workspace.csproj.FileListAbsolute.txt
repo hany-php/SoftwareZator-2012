@@ -15,4 +15,6 @@ C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.Properties.Resources.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.GenerateResource.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csprojResolveAssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.AssemblyReference.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSoftware.Design.Workspace.csproj.CoreCompileInputs.cache
+c:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Workspace\obj\Release\VelerSof.16C0B1CE.Up2Date
