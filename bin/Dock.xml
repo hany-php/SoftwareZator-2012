@@ -2,7 +2,7 @@
 <KD V="1">
   <DGD />
   <DM N="DockingManager" C="3">
-    <DW N="Workspace" O="0" S="1695, 848">
+    <DW N="Workspace" O="0" S="733, 839">
       <KW V="1" A="Simulator">
         <CGD />
         <WS UN="769BA9E61C494212088C598ACF39BA87" S="T,0,50:T,0,50" D="Horizontal">
@@ -154,7 +154,7 @@
         <DEAH N="AutoHidden" C="0">
         </DEAH>
         <DED N="Docked" C="1">
-          <DD N="0F346B750CCC4348AAAAE916148C2EFC" O="5" S="195, 848">
+          <DD N="0F346B750CCC4348AAAAE916148C2EFC" O="5" S="195, 839">
             <KW V="1" A="Explorateur de solution">
               <CGD />
               <WS UN="C38C7213C3184DE7EC8A7DA53AB4D7A7" S="T,0,50:T,0,50" D="Horizontal">

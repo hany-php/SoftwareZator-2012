@@ -2,11 +2,11 @@
 <KD V="1">
   <DGD />
   <DM N="DockingManager" C="3">
-    <DW N="Workspace" O="0" S="1417, 822">
-      <KW V="1" A="Document 1">
+    <DW N="Workspace" O="0" S="1533, 938">
+      <KW V="1" A="Document 3">
         <CGD />
         <WS UN="769BA9E61C494212088C598ACF39BA87" S="T,0,50:T,0,50" D="Horizontal">
-          <WC UN="666E8BEB9252487B88BDD420264F4D51" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="Document 1" />
+          <WC UN="C844B8E00B3D4B2AB1A8B3FD6E7E1E61" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="Document 3" />
         </WS>
       </KW>
     </DW>
@@ -27,7 +27,7 @@
         <DEAH N="AutoHidden" C="0">
         </DEAH>
         <DED N="Docked" C="1">
-          <DD N="2CE792D18DE945D388BF5F85A5FB501A" O="0" S="382, 822">
+          <DD N="2CE792D18DE945D388BF5F85A5FB501A" O="0" S="382, 938">
             <KW V="1" A="Explorateur">
               <CGD />
               <WS UN="280760D185EA4CF15CA7FB89D0B20CBB" S="T,0,50:T,0,50" D="Horizontal">

@@ -1,0 +1,46 @@
+﻿<Fonction mc:Ignorable="sads sap" ClassCode="{x:Null}" CustomVBCode="{x:Null}" Id="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Tools="{x:Null}" Added="False" Category="General" CompatibleClass="False" CompatibleFonctions="False" Description="Create a new function" DisplayName="btnExit_Click" FileHelp="VelerSoftware.GeneralPlugin\Function.html" sap:VirtualizedContainerService.HintSize="200,104" Param1="btnExit_Click" Param2="btnExit.Click" Param3="ByVal sender As System.Object, ByVal e As System.EventArgs" Param4="False" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" UseCustomVBCode="False"
+ xmlns="clr-namespace:VelerSoftware.GeneralPlugin;assembly=VelerSoftware.GeneralPlugin"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:vp="clr-namespace:VelerSoftware.Plugins3;assembly=VelerSoftware.Plugins3"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Fonction.Children_Actions>
+    <scg:List x:TypeArguments="vp:Action" Capacity="4">
+      <Commandes_VBNet ClassCode="{x:Null}" CustomVBCode="{x:Null}" Id="{x:Null}" Param10="{x:Null}" Param11="{x:Null}" Param12="{x:Null}" Param13="{x:Null}" Param14="{x:Null}" Param15="{x:Null}" Param16="{x:Null}" Param17="{x:Null}" Param18="{x:Null}" Param19="{x:Null}" Param2="{x:Null}" Param20="{x:Null}" Param21="{x:Null}" Param22="{x:Null}" Param23="{x:Null}" Param24="{x:Null}" Param25="{x:Null}" Param26="{x:Null}" Param27="{x:Null}" Param28="{x:Null}" Param29="{x:Null}" Param3="{x:Null}" Param30="{x:Null}" Param31="{x:Null}" Param32="{x:Null}" Param33="{x:Null}" Param34="{x:Null}" Param35="{x:Null}" Param36="{x:Null}" Param37="{x:Null}" Param38="{x:Null}" Param39="{x:Null}" Param4="{x:Null}" Param40="{x:Null}" Param5="{x:Null}" Param6="{x:Null}" Param7="{x:Null}" Param8="{x:Null}" Param9="{x:Null}" Tools="{x:Null}" Added="False" Category="General" CompatibleClass="True" CompatibleFonctions="True" Description="Run VB.Net code" DisplayName="AI Code" FileHelp="VelerSoftware.GeneralPlugin\Commands Visual Basic.Net.html" Param1="Me.Close()" UseCustomVBCode="False">
+        <Commandes_VBNet.Children_Actions>
+          <scg:List x:TypeArguments="vp:Action" Capacity="0" />
+        </Commandes_VBNet.Children_Actions>
+        <Commandes_VBNet.References>
+          <scg:List x:TypeArguments="x:String" Capacity="0" />
+        </Commandes_VBNet.References>
+        <Commandes_VBNet.Voice_Recognition_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="4">
+            <x:String>Run</x:String>
+            <x:String>Code</x:String>
+            <x:String>Command</x:String>
+          </scg:List>
+        </Commandes_VBNet.Voice_Recognition_Dictionary>
+        <Commandes_VBNet.Voice_Recognition_Expressions_Dictionary>
+          <scg:List x:TypeArguments="x:String" Capacity="0" />
+        </Commandes_VBNet.Voice_Recognition_Expressions_Dictionary>
+      </Commandes_VBNet>
+    </scg:List>
+  </Fonction.Children_Actions>
+  <Fonction.References>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.References>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Fonction.Voice_Recognition_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Dictionary>
+  <Fonction.Voice_Recognition_Expressions_Dictionary>
+    <scg:List x:TypeArguments="x:String" Capacity="0" />
+  </Fonction.Voice_Recognition_Expressions_Dictionary>
+</Fonction>

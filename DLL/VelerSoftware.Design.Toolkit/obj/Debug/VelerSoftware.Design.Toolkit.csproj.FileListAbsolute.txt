@@ -11,13 +11,13 @@ D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.De
 D:\DEVELOPPEMENT\Projets\Projets Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.pdb
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Toolkit.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Toolkit.pdb
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.csproj.AssemblyReference.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.KryptonInputBox.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.VisualTaskDialog.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.KryptonMessageBox.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.Properties.Resources.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.ModalWaitDialog.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.csproj.GenerateResource.cache
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.csproj.CoreCompileInputs.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.pdb
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.csproj.AssemblyReference.cache
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Toolkit\obj\Debug\VelerSoftware.Design.Toolkit.csproj.CoreCompileInputs.cache

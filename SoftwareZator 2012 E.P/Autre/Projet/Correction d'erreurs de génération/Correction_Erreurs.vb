@@ -129,7 +129,7 @@ Public Class CorrectionErreurs
                             If TypeOf Form1.KryptonDockableWorkspace1.PageForUniqueName(Err.FileName).Controls(0) Is DocConcepteurFenetre Then
                                 For Each Tabs As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(Form1.KryptonDockableWorkspace1.PageForUniqueName(Err.FileName).Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
                                     If Tabs.Text = Err.FunctionName Then
-                                        If TypeOf Tabs.Controls(0) Is DocEditeurFonctionsUserControl Then
+                                        If Tabs.Controls.Count > 0 AndAlso TypeOf Tabs.Controls(0) Is DocEditeurFonctionsUserControl Then
                                             If DirectCast(Tabs.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.ItemType.BaseType.BaseType = GetType(VelerSoftware.Plugins3.Action) Then
                                                 Dim Act As VelerSoftware.Plugins3.Action = ClassApplication.SearchAction(DirectCast(DirectCast(Tabs.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren), Err.ActionId, False, False)
                                                 If Act IsNot Nothing Then

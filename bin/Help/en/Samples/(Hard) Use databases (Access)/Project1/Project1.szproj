@@ -5,6 +5,7 @@
   <FormStart value="WindowsForm1.szw" />
   <SplashScreen value="" />
   <StyleXP value="True" />
+  <WindowTheme value="0" />
   <Instance value="False" />
   <MySettings value="True" />
   <Assembly.Title value="Project1" />
@@ -22,11 +23,11 @@
   <ObfuscationLevel value="1" />
   <ShouldCompile value="False" />
   <Open name="WindowsForm1.szw" />
-  <Variable name="Full_File_Name" array="False" description="Is equal to the full file name Microsoft Access database to exploit" group="Texts" />
-  <Variable name="Result" array="False" description="Is equal to the result of an action" group="Variables used temporarily" />
-  <Variable name="Selected_Item" array="False" description="Is equal to the selected item in the list of tables" group="Texts" />
-  <Variable name="Tables_List" array="True" description="Is equal to the list of tables in the database" group="Texts" />
-  <Variable name="X" array="False" description="" group="Numbers" />
+  <Variable name="Full_File_Name" array="False" description="Is equal to the full file name Microsoft Access database to exploit" group="Texts" null="False" />
+  <Variable name="Result" array="False" description="Is equal to the result of an action" group="Variables used temporarily" null="False" />
+  <Variable name="Selected_Item" array="False" description="Is equal to the selected item in the list of tables" group="Texts" null="False" />
+  <Variable name="Tables_List" array="True" description="Is equal to the list of tables in the database" group="Texts" null="False" />
+  <Variable name="X" array="False" description="" group="Numbers" null="False" />
   <Reference isproject="False" value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="mscorlib" copy="False" version="4.0.0.0" />
   <Reference isproject="False" value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="System" copy="False" version="4.0.0.0" />
   <Reference isproject="False" value="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="System.Core" copy="False" version="4.0.0.0" />

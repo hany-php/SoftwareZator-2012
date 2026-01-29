@@ -5,6 +5,7 @@
   <FormStart value="Class1.szc" />
   <SplashScreen value="" />
   <StyleXP value="True" />
+  <WindowTheme value="0" />
   <Instance value="False" />
   <MySettings value="True" />
   <Assembly.Title value="Project1" />
@@ -19,9 +20,10 @@
   <GenerateDirectory value="Bin" />
   <Optimize value="True" />
   <Cpu value="2" />
+  <ObfuscationLevel value="1" />
   <ShouldCompile value="False" />
   <Open name="Class1.szc" />
-  <Variable name="Name" array="False" description="Is equal to the name of the user" group="Texts" />
+  <Variable name="Name" array="False" description="Is equal to the name of the user" group="Texts" null="False" />
   <Reference isproject="False" value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="mscorlib" copy="False" version="4.0.0.0" />
   <Reference isproject="False" value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="System" copy="False" version="4.0.0.0" />
   <Reference isproject="False" value="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="System.Core" copy="False" version="4.0.0.0" />

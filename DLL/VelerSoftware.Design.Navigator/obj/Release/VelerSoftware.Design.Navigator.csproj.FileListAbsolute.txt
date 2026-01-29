@@ -11,10 +11,8 @@ D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Navig
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.GenerateResource.Cache
 D:\Development\Projets\Sources\SoftwareZator 2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.dll
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL COMPILE\VelerSoftware.Design.Navigator.dll
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.AssemblyReference.cache
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.LicenseInstallForm.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.Properties.Resources.resources
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.GenerateResource.cache
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csproj.CoreCompileInputs.cache
-C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSof.AE01A51C.Up2Date
 C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.dll
+C:\Users\hany_\Desktop\SoftwareZator-2012\DLL\VelerSoftware.Design.Navigator\obj\Release\VelerSoftware.Design.Navigator.csprojResolveAssemblyReference.cache
