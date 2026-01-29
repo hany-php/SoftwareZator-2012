@@ -240,19 +240,19 @@ Public Class BoxBoiteAOutils
                 If DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).Level <> 0 AndAlso Not DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp = Nothing Then
                     If Not DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp.StartsWith("http://", StringComparison.OrdinalIgnoreCase) Then
                         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp) Then
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                         Else
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                         End If
                     Else
-                        DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                        If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Concepteur_Fenetre_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                     End If
                 Else
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                    If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                 End If
 
             Else
-                DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
             End If
 
         ElseIf Me.Fonctions_ToolBox.Visible Then
@@ -287,19 +287,19 @@ Public Class BoxBoiteAOutils
                 If DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).Level <> 0 AndAlso Not DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp = Nothing Then
                     If Not DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp.StartsWith("http://", StringComparison.OrdinalIgnoreCase) Then
                         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp) Then
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                         Else
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                         End If
                     Else
-                        DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                        If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                     End If
                 Else
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                    If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                 End If
 
             Else
-                DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
             End If
 
         ElseIf Me.Classes_ToolBox.Visible Then
@@ -332,19 +332,19 @@ Public Class BoxBoiteAOutils
                 If DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).Level <> 0 AndAlso Not DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp = Nothing Then
                     If Not DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp.StartsWith("http://", StringComparison.OrdinalIgnoreCase) Then
                         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp) Then
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\" & My.Settings.Langue & "\Plugins\" & DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                         Else
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                         End If
                     Else
-                        DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                        If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Classes_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                     End If
                 Else
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                    If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                 End If
 
             Else
-                DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
             End If
         End If
     End Sub

@@ -895,13 +895,15 @@ _next:
                     oki = True
                     If Status_SZ = statu.Normal OrElse Status_SZ = statu.Debuggage_En_Cours Then
                         For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockableWorkspace1.AllPages
-                            If TypeOf page.Controls(0) Is DocConcepteurFenetre AndAlso a = DirectCast(page.Controls(0), DocConcepteurFenetre).NomCompletFichier Then
-                                oki = False
-                                Tmp_SZW_File = New VelerSoftware.SZVB.Projet.SZW_File(DirectCast(page.Controls(0), DocConcepteurFenetre).Designer.ComponentContainer.Components(0).Site.Name)
-                                For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
-                                    If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZW_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
-                                Next
-                                Exit For
+                            If page.Controls.Count > 0 Then
+                                If TypeOf page.Controls(0) Is DocConcepteurFenetre AndAlso a = DirectCast(page.Controls(0), DocConcepteurFenetre).NomCompletFichier Then
+                                    oki = False
+                                    Tmp_SZW_File = New VelerSoftware.SZVB.Projet.SZW_File(DirectCast(page.Controls(0), DocConcepteurFenetre).Designer.ComponentContainer.Components(0).Site.Name)
+                                    For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
+                                        If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZW_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
+                                    Next
+                                    Exit For
+                                End If
                             End If
                         Next
                     End If
@@ -968,15 +970,17 @@ _next:
                     oki = True
                     If Status_SZ = statu.Normal OrElse Status_SZ = statu.Debuggage_En_Cours Then
                         For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockableWorkspace1.AllPages
-                            If TypeOf page.Controls(0) Is DocEditeurFonctions AndAlso a = DirectCast(page.Controls(0), DocEditeurFonctions).NomCompletFichier Then
-                                oki = False
-                                Tmp_SZC_File = New VelerSoftware.SZVB.Projet.SZC_File(DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages(0).Text)
-                                For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
-                                    If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then
-                                        Tmp_SZC_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
-                                    End If
-                                Next
-                                Exit For
+                            If page.Controls.Count > 0 Then
+                                If TypeOf page.Controls(0) Is DocEditeurFonctions AndAlso a = DirectCast(page.Controls(0), DocEditeurFonctions).NomCompletFichier Then
+                                    oki = False
+                                    Tmp_SZC_File = New VelerSoftware.SZVB.Projet.SZC_File(DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages(0).Text)
+                                    For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
+                                        If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then
+                                            Tmp_SZC_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
+                                        End If
+                                    Next
+                                    Exit For
+                                End If
                             End If
                         Next
                     End If
@@ -1132,13 +1136,15 @@ _next:
                             oki = True
                             If Status_SZ = statu.Normal OrElse Status_SZ = statu.Debuggage_En_Cours Then
                                 For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockableWorkspace1.AllPages
-                                    If TypeOf page.Controls(0) Is DocConcepteurFenetre AndAlso a = DirectCast(page.Controls(0), DocConcepteurFenetre).NomCompletFichier Then
-                                        oki = False
-                                        Tmp_SZW_File = New VelerSoftware.SZVB.Projet.SZW_File(DirectCast(page.Controls(0), DocConcepteurFenetre).Designer.ComponentContainer.Components(0).Site.Name)
-                                        For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
-                                            If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZW_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
-                                        Next
-                                        Exit For
+                                    If page.Controls.Count > 0 Then
+                                        If TypeOf page.Controls(0) Is DocConcepteurFenetre AndAlso a = DirectCast(page.Controls(0), DocConcepteurFenetre).NomCompletFichier Then
+                                            oki = False
+                                            Tmp_SZW_File = New VelerSoftware.SZVB.Projet.SZW_File(DirectCast(page.Controls(0), DocConcepteurFenetre).Designer.ComponentContainer.Components(0).Site.Name)
+                                            For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
+                                                If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZW_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
+                                            Next
+                                            Exit For
+                                        End If
                                     End If
                                 Next
                             End If
@@ -1205,13 +1211,15 @@ _next:
                             oki = True
                             If Status_SZ = statu.Normal OrElse Status_SZ = statu.Debuggage_En_Cours Then
                                 For Each page As VelerSoftware.Design.Navigator.KryptonPage In Form1.KryptonDockableWorkspace1.AllPages
-                                    If TypeOf page.Controls(0) Is DocEditeurFonctions AndAlso a = DirectCast(page.Controls(0), DocEditeurFonctions).NomCompletFichier Then
-                                        oki = False
-                                        Tmp_SZC_File = New VelerSoftware.SZVB.Projet.SZC_File(DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages(0).Text)
-                                        For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
-                                            If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZC_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
-                                        Next
-                                        Exit For
+                                    If page.Controls.Count > 0 Then
+                                        If TypeOf page.Controls(0) Is DocEditeurFonctions AndAlso a = DirectCast(page.Controls(0), DocEditeurFonctions).NomCompletFichier Then
+                                            oki = False
+                                            Tmp_SZC_File = New VelerSoftware.SZVB.Projet.SZC_File(DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages(0).Text)
+                                            For Each page2 As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(page.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
+                                                If TypeOf page2.Controls(0) Is DocEditeurFonctionsUserControl Then Tmp_SZC_File.Functions.Add(DirectCast(page2.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Text)
+                                            Next
+                                            Exit For
+                                        End If
                                     End If
                                 Next
                             End If

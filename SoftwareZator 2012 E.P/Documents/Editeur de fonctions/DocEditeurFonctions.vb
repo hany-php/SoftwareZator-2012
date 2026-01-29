@@ -840,48 +840,51 @@ Public Class DocEditeurFonctions
     Friend Sub Activate_Page()
         If Me.FinishLoad Then
             With Form1
-                With DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils)
-                    .Vide_ToolBox.Visible = False
-                    .Concepteur_Fenetre_ToolBox.Visible = False
+                If .Box_Boite_A_Outils.Controls.Count > 0 Then
+                    Dim boxBoite As BoxBoiteAOutils = DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils)
+                    boxBoite.Vide_ToolBox.Visible = False
+                    boxBoite.Concepteur_Fenetre_ToolBox.Visible = False
                     If Me.KryptonNavigator2.SelectedPage Is Me.TabONE_KryptonPage Then
-                        .Classes_ToolBox.Visible = True
-                        .Fonctions_ToolBox.Visible = False
+                        boxBoite.Classes_ToolBox.Visible = True
+                        boxBoite.Fonctions_ToolBox.Visible = False
                     Else
-                        .Classes_ToolBox.Visible = False
-                        .Fonctions_ToolBox.Visible = True
+                        boxBoite.Classes_ToolBox.Visible = False
+                        boxBoite.Fonctions_ToolBox.Visible = True
                     End If
-                End With
 
-                SelectedActionChanged(DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).SelectedAction, New System.EventArgs)
-
-                ' Raffraichissement de la boîte à outils de l'éditeur      
-                If DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Classes_ToolBox.Visible Then
-                    With DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Classes_ToolBox
-                        If Not .SelectedNode Is Nothing AndAlso (DirectCast(.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode)).Level <> 0 AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 AndAlso Me.KryptonNavigator2.SelectedPage Is Me.TabONE_KryptonPage Then
-                            DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Clear()
-                            If Not .SelectedNode.Name = Nothing Then
-                                Dim types As Type = .SelectedNode.Tag
-                                If Not types = Nothing Then
-                                    DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Add(New System.Activities.Presentation.Toolbox.ToolboxCategory("Action"))
-                                    DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories(0).Add(New System.Activities.Presentation.Toolbox.ToolboxItemWrapper(types))
+                    ' Raffraichissement de la boîte à outils de l'éditeur      
+                    If boxBoite.Classes_ToolBox.Visible Then
+                        With boxBoite.Classes_ToolBox
+                            If Not .SelectedNode Is Nothing AndAlso (DirectCast(.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode)).Level <> 0 AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 AndAlso Me.KryptonNavigator2.SelectedPage Is Me.TabONE_KryptonPage Then
+                                DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Clear()
+                                If Not .SelectedNode.Name = Nothing Then
+                                    Dim types As Type = .SelectedNode.Tag
+                                    If Not types = Nothing Then
+                                        DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Add(New System.Activities.Presentation.Toolbox.ToolboxCategory("Action"))
+                                        DirectCast(Me.TabONE_KryptonPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories(0).Add(New System.Activities.Presentation.Toolbox.ToolboxItemWrapper(types))
+                                    End If
                                 End If
                             End If
-                        End If
-                    End With
+                        End With
 
-                ElseIf DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Fonctions_ToolBox.Visible Then
-                    With DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Fonctions_ToolBox
-                        If Not .SelectedNode Is Nothing AndAlso (DirectCast(.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode)).Level <> 0 AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 AndAlso Me.KryptonNavigator2.SelectedPage IsNot Me.TabONE_KryptonPage Then
-                            DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Clear()
-                            If Not .SelectedNode.Name = Nothing Then
-                                Dim types As Type = .SelectedNode.Tag
-                                If Not types = Nothing Then
-                                    DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Add(New System.Activities.Presentation.Toolbox.ToolboxCategory("Action"))
-                                    DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories(0).Add(New System.Activities.Presentation.Toolbox.ToolboxItemWrapper(types))
+                    ElseIf boxBoite.Fonctions_ToolBox.Visible Then
+                        With boxBoite.Fonctions_ToolBox
+                            If Not .SelectedNode Is Nothing AndAlso (DirectCast(.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode)).Level <> 0 AndAlso Form1.KryptonDockableWorkspace1.ActivePage.Controls.Count > 0 AndAlso Me.KryptonNavigator2.SelectedPage IsNot Me.TabONE_KryptonPage Then
+                                DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Clear()
+                                If Not .SelectedNode.Name = Nothing Then
+                                    Dim types As Type = .SelectedNode.Tag
+                                    If Not types = Nothing Then
+                                        DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories.Add(New System.Activities.Presentation.Toolbox.ToolboxCategory("Action"))
+                                        DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).ToolboxControl.Categories(0).Add(New System.Activities.Presentation.Toolbox.ToolboxItemWrapper(types))
+                                    End If
                                 End If
                             End If
-                        End If
-                    End With
+                        End With
+                    End If
+                End If
+
+                If Me.KryptonNavigator2.SelectedPage IsNot Nothing AndAlso Me.KryptonNavigator2.SelectedPage.Controls.Count > 0 Then
+                    SelectedActionChanged(DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).SelectedAction, New System.EventArgs)
                 End If
 
                 ' Configuration du ruban
@@ -950,77 +953,80 @@ Public Class DocEditeurFonctions
     End Sub
 
     Public Sub SelectedActionChanged(ByVal sender As Object, ByVal e As System.EventArgs)
-        With DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1
-            If sender Is Nothing Then
-                .SelectedObjects = Nothing
-                .Item.Clear()
-                .ItemSet.Clear()
-                .ShowCustomProperties = True
-                DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = Nothing
-            Else
-                Dim action As VelerSoftware.Plugins3.Action = sender
+        If Form1.Box_Proprietes.Controls.Count > 0 Then
+            Dim boxProp As BoxProprietes = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes)
+            With boxProp.PropertyGrids1
+                If sender Is Nothing Then
+                    .SelectedObjects = Nothing
+                    .Item.Clear()
+                    .ItemSet.Clear()
+                    .ShowCustomProperties = True
+                    boxProp.KryptonRichTextBox1.Rtf = Nothing
+                Else
+                    Dim action As VelerSoftware.Plugins3.Action = sender
 
-                .SelectedObjects = Nothing
-                .Item.Clear()
-                .ItemSet.Clear()
-                .ShowCustomProperties = True
-                .Refresh()
+                    .SelectedObjects = Nothing
+                    .Item.Clear()
+                    .ItemSet.Clear()
+                    .ShowCustomProperties = True
+                    .Refresh()
 
-                Dim prop1 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes1")
-                Dim prop2 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes2")
-                Dim prop3 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes3")
+                    Dim prop1 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes1")
+                    Dim prop2 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes2")
+                    Dim prop3 As String = RM.GetString("Editeur_Fonctions_Action_Proprietes3")
 
-                If Not action.Param1 = Nothing Then .Item.Add(prop1 & " 1", action.Param1, True, prop2, prop3 & " 1", True)
-                If Not action.Param2 = Nothing Then .Item.Add(prop1 & " 2", action.Param2, True, prop2, prop3 & " 2", True)
-                If Not action.Param3 = Nothing Then .Item.Add(prop1 & " 3", action.Param3, True, prop2, prop3 & " 3", True)
-                If Not action.Param4 = Nothing Then .Item.Add(prop1 & " 4", action.Param4, True, prop2, prop3 & " 4", True)
-                If Not action.Param5 = Nothing Then .Item.Add(prop1 & " 5", action.Param5, True, prop2, prop3 & " 5", True)
-                If Not action.Param6 = Nothing Then .Item.Add(prop1 & " 6", action.Param6, True, prop2, prop3 & " 6", True)
-                If Not action.Param7 = Nothing Then .Item.Add(prop1 & " 7", action.Param7, True, prop2, prop3 & " 7", True)
-                If Not action.Param8 = Nothing Then .Item.Add(prop1 & " 8", action.Param8, True, prop2, prop3 & " 8", True)
-                If Not action.Param9 = Nothing Then .Item.Add(prop1 & " 9", action.Param9, True, prop2, prop3 & " 9", True)
-                If Not action.Param10 = Nothing Then .Item.Add(prop1 & " 10", action.Param10, True, prop2, prop3 & " 10", True)
-                If Not action.Param11 = Nothing Then .Item.Add(prop1 & " 11", action.Param11, True, prop2, prop3 & " 11", True)
-                If Not action.Param12 = Nothing Then .Item.Add(prop1 & " 12", action.Param12, True, prop2, prop3 & " 12", True)
-                If Not action.Param13 = Nothing Then .Item.Add(prop1 & " 13", action.Param13, True, prop2, prop3 & " 13", True)
-                If Not action.Param14 = Nothing Then .Item.Add(prop1 & " 14", action.Param14, True, prop2, prop3 & " 14", True)
-                If Not action.Param15 = Nothing Then .Item.Add(prop1 & " 15", action.Param15, True, prop2, prop3 & " 15", True)
-                If Not action.Param16 = Nothing Then .Item.Add(prop1 & " 16", action.Param16, True, prop2, prop3 & " 16", True)
-                If Not action.Param17 = Nothing Then .Item.Add(prop1 & " 17", action.Param17, True, prop2, prop3 & " 17", True)
-                If Not action.Param18 = Nothing Then .Item.Add(prop1 & " 18", action.Param18, True, prop2, prop3 & " 18", True)
-                If Not action.Param19 = Nothing Then .Item.Add(prop1 & " 19", action.Param19, True, prop2, prop3 & " 19", True)
-                If Not action.Param20 = Nothing Then .Item.Add(prop1 & " 20", action.Param20, True, prop2, prop3 & " 20", True)
-                If Not action.Param21 = Nothing Then .Item.Add(prop1 & " 21", action.Param21, True, prop2, prop3 & " 21", True)
-                If Not action.Param22 = Nothing Then .Item.Add(prop1 & " 22", action.Param22, True, prop2, prop3 & " 22", True)
-                If Not action.Param23 = Nothing Then .Item.Add(prop1 & " 23", action.Param23, True, prop2, prop3 & " 23", True)
-                If Not action.Param24 = Nothing Then .Item.Add(prop1 & " 24", action.Param24, True, prop2, prop3 & " 24", True)
-                If Not action.Param25 = Nothing Then .Item.Add(prop1 & " 25", action.Param25, True, prop2, prop3 & " 25", True)
-                If Not action.Param26 = Nothing Then .Item.Add(prop1 & " 26", action.Param26, True, prop2, prop3 & " 26", True)
-                If Not action.Param27 = Nothing Then .Item.Add(prop1 & " 27", action.Param27, True, prop2, prop3 & " 27", True)
-                If Not action.Param28 = Nothing Then .Item.Add(prop1 & " 28", action.Param28, True, prop2, prop3 & " 28", True)
-                If Not action.Param29 = Nothing Then .Item.Add(prop1 & " 29", action.Param29, True, prop2, prop3 & " 29", True)
-                If Not action.Param30 = Nothing Then .Item.Add(prop1 & " 30", action.Param30, True, prop2, prop3 & " 30", True)
-                If Not action.Param31 = Nothing Then .Item.Add(prop1 & " 31", action.Param31, True, prop2, prop3 & " 31", True)
-                If Not action.Param32 = Nothing Then .Item.Add(prop1 & " 32", action.Param32, True, prop2, prop3 & " 32", True)
-                If Not action.Param33 = Nothing Then .Item.Add(prop1 & " 33", action.Param33, True, prop2, prop3 & " 33", True)
-                If Not action.Param34 = Nothing Then .Item.Add(prop1 & " 34", action.Param34, True, prop2, prop3 & " 34", True)
-                If Not action.Param35 = Nothing Then .Item.Add(prop1 & " 35", action.Param35, True, prop2, prop3 & " 35", True)
-                If Not action.Param36 = Nothing Then .Item.Add(prop1 & " 36", action.Param36, True, prop2, prop3 & " 36", True)
-                If Not action.Param37 = Nothing Then .Item.Add(prop1 & " 37", action.Param37, True, prop2, prop3 & " 37", True)
-                If Not action.Param38 = Nothing Then .Item.Add(prop1 & " 38", action.Param38, True, prop2, prop3 & " 38", True)
-                If Not action.Param39 = Nothing Then .Item.Add(prop1 & " 39", action.Param39, True, prop2, prop3 & " 39", True)
-                If Not action.Param40 = Nothing Then .Item.Add(prop1 & " 40", action.Param40, True, prop2, prop3 & " 40", True)
+                    If Not action.Param1 = Nothing Then .Item.Add(prop1 & " 1", action.Param1, True, prop2, prop3 & " 1", True)
+                    If Not action.Param2 = Nothing Then .Item.Add(prop1 & " 2", action.Param2, True, prop2, prop3 & " 2", True)
+                    If Not action.Param3 = Nothing Then .Item.Add(prop1 & " 3", action.Param3, True, prop2, prop3 & " 3", True)
+                    If Not action.Param4 = Nothing Then .Item.Add(prop1 & " 4", action.Param4, True, prop2, prop3 & " 4", True)
+                    If Not action.Param5 = Nothing Then .Item.Add(prop1 & " 5", action.Param5, True, prop2, prop3 & " 5", True)
+                    If Not action.Param6 = Nothing Then .Item.Add(prop1 & " 6", action.Param6, True, prop2, prop3 & " 6", True)
+                    If Not action.Param7 = Nothing Then .Item.Add(prop1 & " 7", action.Param7, True, prop2, prop3 & " 7", True)
+                    If Not action.Param8 = Nothing Then .Item.Add(prop1 & " 8", action.Param8, True, prop2, prop3 & " 8", True)
+                    If Not action.Param9 = Nothing Then .Item.Add(prop1 & " 9", action.Param9, True, prop2, prop3 & " 9", True)
+                    If Not action.Param10 = Nothing Then .Item.Add(prop1 & " 10", action.Param10, True, prop2, prop3 & " 10", True)
+                    If Not action.Param11 = Nothing Then .Item.Add(prop1 & " 11", action.Param11, True, prop2, prop3 & " 11", True)
+                    If Not action.Param12 = Nothing Then .Item.Add(prop1 & " 12", action.Param12, True, prop2, prop3 & " 12", True)
+                    If Not action.Param13 = Nothing Then .Item.Add(prop1 & " 13", action.Param13, True, prop2, prop3 & " 13", True)
+                    If Not action.Param14 = Nothing Then .Item.Add(prop1 & " 14", action.Param14, True, prop2, prop3 & " 14", True)
+                    If Not action.Param15 = Nothing Then .Item.Add(prop1 & " 15", action.Param15, True, prop2, prop3 & " 15", True)
+                    If Not action.Param16 = Nothing Then .Item.Add(prop1 & " 16", action.Param16, True, prop2, prop3 & " 16", True)
+                    If Not action.Param17 = Nothing Then .Item.Add(prop1 & " 17", action.Param17, True, prop2, prop3 & " 17", True)
+                    If Not action.Param18 = Nothing Then .Item.Add(prop1 & " 18", action.Param18, True, prop2, prop3 & " 18", True)
+                    If Not action.Param19 = Nothing Then .Item.Add(prop1 & " 19", action.Param19, True, prop2, prop3 & " 19", True)
+                    If Not action.Param20 = Nothing Then .Item.Add(prop1 & " 20", action.Param20, True, prop2, prop3 & " 20", True)
+                    If Not action.Param21 = Nothing Then .Item.Add(prop1 & " 21", action.Param21, True, prop2, prop3 & " 21", True)
+                    If Not action.Param22 = Nothing Then .Item.Add(prop1 & " 22", action.Param22, True, prop2, prop3 & " 22", True)
+                    If Not action.Param23 = Nothing Then .Item.Add(prop1 & " 23", action.Param23, True, prop2, prop3 & " 23", True)
+                    If Not action.Param24 = Nothing Then .Item.Add(prop1 & " 24", action.Param24, True, prop2, prop3 & " 24", True)
+                    If Not action.Param25 = Nothing Then .Item.Add(prop1 & " 25", action.Param25, True, prop2, prop3 & " 25", True)
+                    If Not action.Param26 = Nothing Then .Item.Add(prop1 & " 26", action.Param26, True, prop2, prop3 & " 26", True)
+                    If Not action.Param27 = Nothing Then .Item.Add(prop1 & " 27", action.Param27, True, prop2, prop3 & " 27", True)
+                    If Not action.Param28 = Nothing Then .Item.Add(prop1 & " 28", action.Param28, True, prop2, prop3 & " 28", True)
+                    If Not action.Param29 = Nothing Then .Item.Add(prop1 & " 29", action.Param29, True, prop2, prop3 & " 29", True)
+                    If Not action.Param30 = Nothing Then .Item.Add(prop1 & " 30", action.Param30, True, prop2, prop3 & " 30", True)
+                    If Not action.Param31 = Nothing Then .Item.Add(prop1 & " 31", action.Param31, True, prop2, prop3 & " 31", True)
+                    If Not action.Param32 = Nothing Then .Item.Add(prop1 & " 32", action.Param32, True, prop2, prop3 & " 32", True)
+                    If Not action.Param33 = Nothing Then .Item.Add(prop1 & " 33", action.Param33, True, prop2, prop3 & " 33", True)
+                    If Not action.Param34 = Nothing Then .Item.Add(prop1 & " 34", action.Param34, True, prop2, prop3 & " 34", True)
+                    If Not action.Param35 = Nothing Then .Item.Add(prop1 & " 35", action.Param35, True, prop2, prop3 & " 35", True)
+                    If Not action.Param36 = Nothing Then .Item.Add(prop1 & " 36", action.Param36, True, prop2, prop3 & " 36", True)
+                    If Not action.Param37 = Nothing Then .Item.Add(prop1 & " 37", action.Param37, True, prop2, prop3 & " 37", True)
+                    If Not action.Param38 = Nothing Then .Item.Add(prop1 & " 38", action.Param38, True, prop2, prop3 & " 38", True)
+                    If Not action.Param39 = Nothing Then .Item.Add(prop1 & " 39", action.Param39, True, prop2, prop3 & " 39", True)
+                    If Not action.Param40 = Nothing Then .Item.Add(prop1 & " 40", action.Param40, True, prop2, prop3 & " 40", True)
 
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes5"), action.DisplayName, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes6"), True)
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes7"), action.Description, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes8"), True)
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes9"), action.Category, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes10"), True)
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes12"), action.References.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes3"), True)
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes14"), action.Voice_Recognition_Dictionary.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes5"), True)
-                .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes16"), action.Voice_Recognition_Expressions_Dictionary.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes7"), True)
-                .Refresh()
-                DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = "{\rtf1" & action.DisplayName & " {\b(Action)}}"
-            End If
-        End With
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes5"), action.DisplayName, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes6"), True)
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes7"), action.Description, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes8"), True)
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes9"), action.Category, True, RM.GetString("Editeur_Fonctions_Action_Proprietes4"), RM.GetString("Editeur_Fonctions_Action_Proprietes10"), True)
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes12"), action.References.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes3"), True)
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes14"), action.Voice_Recognition_Dictionary.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes5"), True)
+                    .Item.Add(RM.GetString("Editeur_Fonctions_Action_Proprietes16"), action.Voice_Recognition_Expressions_Dictionary.AsReadOnly, True, RM.GetString("Editeur_Fonctions_Action_Proprietes11"), RM.GetString("Editeur_Fonctions_Action_Proprietes7"), True)
+                    .Refresh()
+                    boxProp.KryptonRichTextBox1.Rtf = "{\rtf1" & action.DisplayName & " {\b(Action)}}"
+                End If
+            End With
+        End If
     End Sub
 
 #End Region

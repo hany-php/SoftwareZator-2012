@@ -188,93 +188,93 @@ Public Class Options
                 Case 0 ' Office2007Blue
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2007Blue
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Blue()))
                 Case 1 ' Office2007Silver
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2007Silver
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Silver()))
                 Case 2 ' Office2007Black
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2007Black
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2007().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2007Black()))
                 Case 3 ' Office2010Blue
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2010Blue
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Blue()))
                 Case 4 ' Office2010Silver
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2010Silver
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Silver()))
                 Case 5 ' Office2010Black
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.Office2010Black
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderOffice2010().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteOffice2010Black()))
                 Case 6 ' SparkleBlue
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.SparkleBlue
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleBlue()))
                 Case 7 ' SparklePurple
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.SparklePurple
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparklePurple()))
                 Case 8 ' SparkleOrange
                     Form1.KryptonManager1.GlobalPaletteMode = VelerSoftware.Design.Toolkit.PaletteModeManager.SparkleOrange
                     Form1.StatusStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Bases_Donnees.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
-                    DirectCast(Form1.Box_Sortie.Controls(0), BoxSortie).ToolStrip1.Renderer = New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange())
+                    ApplyThemeToPage(Form1.Box_Aide_Rapide, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Bases_Donnees, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Boite_A_Outils, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Erreur_Generation, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Explorateur_Solutions, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Proprietes, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
+                    ApplyThemeToPage(Form1.Box_Sortie, New VelerSoftware.Design.Toolkit.RenderSparkle().RenderToolStrip(New VelerSoftware.Design.Toolkit.PaletteSparkleOrange()))
             End Select
             Form1.StatusStrip1.Visible = My.Settings.Barre_Etat
             Form1.KryptonRibbon1.MinimizedMode = My.Settings.Minimiser_Ruban
@@ -510,6 +510,30 @@ Public Class Options
                     ThemePreviewPictureBox.Image = Nothing
                 End If
             End If
+        End If
+    End Sub
+
+    Private Sub ApplyThemeToPage(ByVal page As VelerSoftware.Design.Navigator.KryptonPage, ByVal renderer As ToolStripRenderer)
+        If page IsNot Nothing AndAlso page.Controls.Count > 0 Then
+            Try
+                If TypeOf page.Controls(0) Is BoxAideRapide Then
+                    DirectCast(page.Controls(0), BoxAideRapide).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxBasesDonnees Then
+                    DirectCast(page.Controls(0), BoxBasesDonnees).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxBoiteAOutils Then
+                    DirectCast(page.Controls(0), BoxBoiteAOutils).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxErreurGeneration Then
+                    DirectCast(page.Controls(0), BoxErreurGeneration).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxExplorateurSolutions Then
+                    DirectCast(page.Controls(0), BoxExplorateurSolutions).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxSortie Then
+                    DirectCast(page.Controls(0), BoxSortie).ToolStrip1.Renderer = renderer
+                ElseIf TypeOf page.Controls(0) Is BoxProprietes Then
+                    DirectCast(page.Controls(0), BoxProprietes).PropertyGrids1.ToolStrip.Renderer = renderer
+                End If
+            Catch ex As Exception
+                ' Silent fail for theme application
+            End Try
         End If
     End Sub
 

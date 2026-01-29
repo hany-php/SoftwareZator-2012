@@ -3,10 +3,10 @@
   <DGD />
   <DM N="DockingManager" C="3">
     <DW N="Workspace" O="0" S="1417, 822">
-      <KW V="1" A="Document 10">
+      <KW V="1" A="Document 1">
         <CGD />
         <WS UN="769BA9E61C494212088C598ACF39BA87" S="T,0,50:T,0,50" D="Horizontal">
-          <WC UN="9EA0DAA41B2B491B168479DAE8622281" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="Document 10" />
+          <WC UN="666E8BEB9252487B88BDD420264F4D51" S="T,0,50:T,0,50" NM="BarTabGroup" AR="True" SP="Document 1" />
         </WS>
       </KW>
     </DW>

@@ -135,22 +135,22 @@ Public Class BoxReconnaissanceVocale
                 If Not DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp = Nothing Then
                     If Not DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp.StartsWith("http://", StringComparison.OrdinalIgnoreCase) Then
                         If My.Computer.FileSystem.FileExists(Application.StartupPath & "\Help\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp) Then
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("file:///" & Application.StartupPath & "\Help\Plugins\" & DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                         Else
-                            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                         End If
                     Else
-                        DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
+                        If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate(DirectCast(Me.Fonctions_ToolBox.SelectedNode, VelerSoftware.SZC.ToolBox.ToolBox.VSTreeNode).FileHelp)
                     End If
                 Else
-                    DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                    If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
                 End If
             Else
-                DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+                If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
             End If
 
         Else
-            DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
+            If Form1.Box_Aide_Rapide.Controls.Count > 0 Then DirectCast(Form1.Box_Aide_Rapide.Controls(0), BoxAideRapide).WebBrowser1.Navigate("about:blank")
         End If
     End Sub
 

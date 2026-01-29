@@ -113,7 +113,8 @@ Public Class ClassProjet
                 ClassApplication.Status_Application(Nothing, True, 10)
 
 
-                With DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1
+                If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                    With DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1
                     ' On vide l'explorateur de solution
                     .Nodes.Clear()
 
@@ -138,6 +139,7 @@ Public Class ClassProjet
                         Charger_Projet_Explorateur_Solutions(RootNode, proj)
                     Next
                 End With
+                End If
 
                 ClassApplication.Status_Application(Nothing, True, 50)
 
@@ -177,16 +179,20 @@ Public Class ClassProjet
                     .QAT_Fermer.Enabled = True
                     .QAT_Generer.Enabled = True
 
-                    With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
-                        .Actualiser_ToolStripButton.Enabled = True
-                        .Nouveau_Dossier_ToolStripButton.Enabled = False
-                        .Nouveau_Fichier_ToolStripButton.Enabled = False
-                        .Proprietes_ToolStripButton.Enabled = True
-                        .Reduire_Projet_ToolStripButton.Enabled = True
-                        .TreeViewMultiSelect1.Enabled = True
-                    End With
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                        With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
+                            .Actualiser_ToolStripButton.Enabled = True
+                            .Nouveau_Dossier_ToolStripButton.Enabled = False
+                            .Nouveau_Fichier_ToolStripButton.Enabled = False
+                            .Proprietes_ToolStripButton.Enabled = True
+                            .Reduire_Projet_ToolStripButton.Enabled = True
+                            .TreeViewMultiSelect1.Enabled = True
+                        End With
+                    End If
 
-                    DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStripButton1.Enabled = True
+                    If Form1.Box_Erreur_Generation IsNot Nothing AndAlso Form1.Box_Erreur_Generation.Controls.Count > 0 Then
+                        DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStripButton1.Enabled = True
+                    End If
 
                     ClassApplication.Status_Application(Nothing, True, 80)
 
@@ -288,7 +294,9 @@ Public Class ClassProjet
                     ClassApplication.Status_Application(Nothing, True, 15)
 
                     ' On vide l'explorateur de solution
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes.Clear()
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                        DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes.Clear()
+                    End If
 
                     ' On créer le noeud de la solution
                     Dim RootNode As New System.Windows.Forms.TreeNode()
@@ -300,7 +308,9 @@ Public Class ClassProjet
                         .ImageIndex = 0
                         .SelectedImageIndex = 0
                     End With
-                    DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes.Add(RootNode)
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                       DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes.Add(RootNode)
+                    End If
 
                     .ProjetDemarrage = .Projets(0).Nom
                     .GenerationOrder.Add(.Projets(0).Nom)
@@ -348,14 +358,16 @@ Public Class ClassProjet
                     .QAT_Fermer.Enabled = True
                     .QAT_Generer.Enabled = True
 
-                    With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
-                        .Actualiser_ToolStripButton.Enabled = True
-                        .Nouveau_Dossier_ToolStripButton.Enabled = True
-                        .Nouveau_Fichier_ToolStripButton.Enabled = True
-                        .Proprietes_ToolStripButton.Enabled = True
-                        .Reduire_Projet_ToolStripButton.Enabled = True
-                        .TreeViewMultiSelect1.Enabled = True
-                    End With
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                        With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
+                            .Actualiser_ToolStripButton.Enabled = True
+                            .Nouveau_Dossier_ToolStripButton.Enabled = True
+                            .Nouveau_Fichier_ToolStripButton.Enabled = True
+                            .Proprietes_ToolStripButton.Enabled = True
+                            .Reduire_Projet_ToolStripButton.Enabled = True
+                            .TreeViewMultiSelect1.Enabled = True
+                        End With
+                    End If
 
                     .Text = "[" & SOLUTION.Nom & "] " & My.Application.Info.CompanyName & " - " & My.Application.Info.ProductName
 
@@ -368,6 +380,16 @@ Public Class ClassProjet
 
             End If
 
+        End If
+
+        If SOLUTION IsNot Nothing AndAlso SOLUTION.Projets.Count > 0 Then
+             Try
+                 ' Notify Antigravity about the open project
+                 Dim projPath As String = SOLUTION.GetProject(SOLUTION.ProjetDemarrage).Emplacement
+                 Global.SoftwareZator.AIControllerLogic.UpdateProjectPath(projPath)
+             Catch
+                 ' Fail silently if AI Controller is not ready
+             End Try
         End If
 
         ClassApplication.Status_Application(RM.GetString("Status1"), False, 0)
@@ -674,35 +696,43 @@ Public Class ClassProjet
 
                     .Info_Bar1.Hide()
 
-                    With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
-                        .Actualiser_ToolStripButton.Enabled = False
-                        .Nouveau_Dossier_ToolStripButton.Enabled = False
-                        .Nouveau_Fichier_ToolStripButton.Enabled = False
-                        .Proprietes_ToolStripButton.Enabled = False
-                        .Reduire_Projet_ToolStripButton.Enabled = False
-                        .TreeViewMultiSelect1.Enabled = False
-                        .TreeViewMultiSelect1.Nodes.Clear()
-                    End With
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                        With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
+                            .Actualiser_ToolStripButton.Enabled = False
+                            .Nouveau_Dossier_ToolStripButton.Enabled = False
+                            .Nouveau_Fichier_ToolStripButton.Enabled = False
+                            .Proprietes_ToolStripButton.Enabled = False
+                            .Reduire_Projet_ToolStripButton.Enabled = False
+                            .TreeViewMultiSelect1.Enabled = False
+                            .TreeViewMultiSelect1.Nodes.Clear()
+                        End With
+                    End If
 
-                    With DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration)
-                        .ToolStripButton1.Enabled = False
-                        .ListView1.Items.Clear()
-                    End With
+                    If Form1.Box_Erreur_Generation IsNot Nothing AndAlso Form1.Box_Erreur_Generation.Controls.Count > 0 Then
+                       With DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration)
+                           .ToolStripButton1.Enabled = False
+                           .ListView1.Items.Clear()
+                       End With
+                    End If
 
                     If .KryptonDockableWorkspace1.AllPages.Length = 0 Then
-                        With DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils)
-                            .Vide_ToolBox.Visible = True
-                            .Concepteur_Fenetre_ToolBox.Visible = False
-                            .Fonctions_ToolBox.Visible = False
-                            .Classes_ToolBox.Visible = False
-                        End With
-                        With DirectCast(.Box_Proprietes.Controls(0), BoxProprietes)
-                            .PropertyGrids1.SelectedObjects = Nothing
-                            .PropertyGrids1.Item.Clear()
-                            .PropertyGrids1.ItemSet.Clear()
-                            .PropertyGrids1.ShowCustomProperties = True
-                            .KryptonRichTextBox1.Rtf = "{\rtf1}}"
-                        End With
+                        If Form1.Box_Boite_A_Outils IsNot Nothing AndAlso Form1.Box_Boite_A_Outils.Controls.Count > 0 Then
+                            With DirectCast(.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils)
+                                .Vide_ToolBox.Visible = True
+                                .Concepteur_Fenetre_ToolBox.Visible = False
+                                .Fonctions_ToolBox.Visible = False
+                                .Classes_ToolBox.Visible = False
+                            End With
+                        End If
+                        If Form1.Box_Proprietes IsNot Nothing AndAlso Form1.Box_Proprietes.Controls.Count > 0 Then
+                            With DirectCast(.Box_Proprietes.Controls(0), BoxProprietes)
+                                .PropertyGrids1.SelectedObjects = Nothing
+                                .PropertyGrids1.Item.Clear()
+                                .PropertyGrids1.ItemSet.Clear()
+                                .PropertyGrids1.ShowCustomProperties = True
+                                .KryptonRichTextBox1.Rtf = "{\rtf1}}"
+                            End With
+                        End If
                     End If
 
                     .Text = My.Application.Info.CompanyName & " - " & My.Application.Info.ProductName
@@ -2048,7 +2078,9 @@ Public Class ClassProjet
             ' Enregistrement de la solution
             Enregistrer_Solution(True)
 
-            ClassProjet.Charger_Projet_Explorateur_Solutions(DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes(0), PROJET)
+            If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                ClassProjet.Charger_Projet_Explorateur_Solutions(DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1.Nodes(0), PROJET)
+            End If
             ' Ouverture des fichiers
             Dim files() As String = New String(-1) {}
             Dim Safefiles() As String = New String(-1) {}
@@ -2110,11 +2142,13 @@ Public Class ClassProjet
                     .ImageIndex = 0
                     .SelectedImageIndex = 0
                 End With
-                With DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1
-                    .Nodes.Add(RootNode)
-                    .SelectedNodes.Clear()
-                    .SelectedNodes.Add(RootNode)
-                End With
+                If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                    With DirectCast(Form1.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).TreeViewMultiSelect1
+                        .Nodes.Add(RootNode)
+                        .SelectedNodes.Clear()
+                        .SelectedNodes.Add(RootNode)
+                    End With
+                End If
 
                 ClassApplication.Status_Application(Nothing, True, 20)
 
@@ -2159,16 +2193,20 @@ Public Class ClassProjet
                     .QAT_Fermer.Enabled = True
                     .QAT_Generer.Enabled = True
 
-                    With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
-                        .Actualiser_ToolStripButton.Enabled = True
-                        .Nouveau_Dossier_ToolStripButton.Enabled = False
-                        .Nouveau_Fichier_ToolStripButton.Enabled = False
-                        .Proprietes_ToolStripButton.Enabled = True
-                        .Reduire_Projet_ToolStripButton.Enabled = True
-                        .TreeViewMultiSelect1.Enabled = True
-                    End With
+                    If Form1.Box_Explorateur_Solutions IsNot Nothing AndAlso Form1.Box_Explorateur_Solutions.Controls.Count > 0 Then
+                        With DirectCast(.Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions)
+                            .Actualiser_ToolStripButton.Enabled = True
+                            .Nouveau_Dossier_ToolStripButton.Enabled = False
+                            .Nouveau_Fichier_ToolStripButton.Enabled = False
+                            .Proprietes_ToolStripButton.Enabled = True
+                            .Reduire_Projet_ToolStripButton.Enabled = True
+                            .TreeViewMultiSelect1.Enabled = True
+                        End With
+                    End If
 
-                    DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStripButton1.Enabled = True
+                    If Form1.Box_Erreur_Generation IsNot Nothing AndAlso Form1.Box_Erreur_Generation.Controls.Count > 0 Then
+                        DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ToolStripButton1.Enabled = True
+                    End If
 
                     ClassApplication.Status_Application(Nothing, True, 80)
 

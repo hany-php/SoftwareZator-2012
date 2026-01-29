@@ -184,7 +184,7 @@ Public Class GenerationComponent
             .KryptonRibbon1.AllowFormIntegrate = False
             .KryptonPanel1.Visible = False
             .StatusStrip1.Visible = False
-            DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ListView1.Items.Clear()
+            If .Box_Erreur_Generation.Controls.Count > 0 Then DirectCast(.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ListView1.Items.Clear()
             ResError_ListViewItem = New Generic.List(Of ListViewItem)
         End With
 
@@ -311,6 +311,7 @@ Public Class GenerationComponent
                 Status_SZ = statu.Normal
 
                 .Log_Generation_OnLogChanged(Nothing, Nothing)
+                .Restore_UI()
             End With
 
         End With
@@ -364,12 +365,14 @@ Public Class GenerationComponent
                 If page.Controls.Count > 0 AndAlso TypeOf page.Controls(0) Is DocStatistiques AndAlso DirectCast(page.Controls(0), DocStatistiques).Nom_Projet = PROJET.Nom Then DirectCast(page.Controls(0), DocStatistiques).Charger(True)
             Next
 
-            With DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ListView1.Items
-                .Clear()
-                For Each ite As ListViewItem In ResError_ListViewItem
-                    .Add(ite)
-                Next
-            End With
+            If Form1.Box_Erreur_Generation.Controls.Count > 0 Then
+                With DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration).ListView1.Items
+                    .Clear()
+                    For Each ite As ListViewItem In ResError_ListViewItem
+                        .Add(ite)
+                    Next
+                End With
+            End If
         End If
 
         Me.Finalisation_Generation()
@@ -378,20 +381,22 @@ Public Class GenerationComponent
             If ResError_ListViewItem.Count > 0 Then
                 If My.Settings.Autoriser_Envoyer_Informations AndAlso My.Settings.Autoriser_Erreur_Generation AndAlso Not Form1.SZ_Send_Informations_BackgroundWorker.IsBusy Then Form1.SZ_Send_Informations_BackgroundWorker.RunWorkerAsync(New DictionaryEntry("bluid_errors", SOLUTION.GetProject(ResError_ListViewItem(0).Text).RapportGeneration.ToString))
 
-                If Not Form1.Box_Erreur_Generation Is Nothing Then
-                    If TypeOf Form1.Box_Erreur_Generation.KryptonParentContainer Is VelerSoftware.Design.Workspace.KryptonWorkspaceCell Then
-                        DirectCast(Form1.Box_Erreur_Generation.KryptonParentContainer, VelerSoftware.Design.Workspace.KryptonWorkspaceCell).SelectedPage = Form1.Box_Erreur_Generation
-                    ElseIf TypeOf Form1.Box_Erreur_Generation.KryptonParentContainer Is VelerSoftware.Design.Navigator.KryptonPage Then
-                        Form1.KryptonDockingManager1.SwitchAutoHiddenGroupToDockedCellRequest("Erreurs de génération")
-                    End If
-                End If
+                'If Not Form1.Box_Erreur_Generation Is Nothing Then
+                '    If TypeOf Form1.Box_Erreur_Generation.KryptonParentContainer Is VelerSoftware.Design.Workspace.KryptonWorkspaceCell Then
+                '        DirectCast(Form1.Box_Erreur_Generation.KryptonParentContainer, VelerSoftware.Design.Workspace.KryptonWorkspaceCell).SelectedPage = Form1.Box_Erreur_Generation
+                '    ElseIf TypeOf Form1.Box_Erreur_Generation.KryptonParentContainer Is VelerSoftware.Design.Navigator.KryptonPage Then
+                '        Form1.KryptonDockingManager1.SwitchAutoHiddenGroupToDockedCellRequest("Erreurs de génération")
+                '    End If
+                'End If
                 If Not Form1.Info_Bar1.Visible Then Form1.Info_Bar1.Show(VelerSoftware.SZVB.Info_Bar.Style.Errors, String.Format(RM.GetString("InfoBar_9_Description"), ResError_ListViewItem(0).Text), RM.GetString("InfoBar_9_Button"), True, "Erreur_Generation_Projet", Nothing)
             End If
-            With DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration)
-                If .ListView1.Items.Count > 0 Then
-                    .ToolStripButton1.Enabled = True
-                End If
-            End With
+            If Form1.Box_Erreur_Generation.Controls.Count > 0 Then
+                With DirectCast(Form1.Box_Erreur_Generation.Controls(0), BoxErreurGeneration)
+                    If .ListView1.Items.Count > 0 Then
+                        .ToolStripButton1.Enabled = True
+                    End If
+                End With
+            End If
         End If
 
         If Generation_Global_OK AndAlso Generation_En_Cours_Type = generation_type.Debug Then Form1.Lancer_Debugger()
@@ -1680,7 +1685,7 @@ Public Class GenerationComponent
                     Case VelerSoftware.SZVB.Projet.Projet.Cpus.x64
                         .CompilerOptions &= " /platform:x64"
                     Case VelerSoftware.SZVB.Projet.Projet.Cpus.AnyCpu
-                        .CompilerOptions &= " /platform:anycpu"
+                        .CompilerOptions &= " /platform:x86" ' Force x86 for Debugger compatibility
                 End Select
 
                 For Each a As String In System.IO.Directory.GetFiles(Application.StartupPath & "\Temp\Building", "*.resources", System.IO.SearchOption.AllDirectories)
@@ -1718,14 +1723,21 @@ Public Class GenerationComponent
                 
                 ' Add Krypton Toolkit reference for theming (if WindowTheme is set)
                 If PROJET.Type = VelerSoftware.SZVB.Projet.Projet.Types.ApplicationWindows Then
+                    ' ComponentFactory.Krypton.Toolkit
                     Dim kryptonDll As String = Application.StartupPath & "\Sources\ComponentFactory.Krypton.Toolkit.dll"
                     If My.Computer.FileSystem.FileExists(kryptonDll) Then
-                        ' Copy Krypton DLL to output directory
                         My.Computer.FileSystem.CopyFile(kryptonDll, My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\ComponentFactory.Krypton.Toolkit.dll"), True)
-                        ' Add as reference
                         para.ReferencedAssemblies.Add(My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\ComponentFactory.Krypton.Toolkit.dll"))
-                        Log_Generation.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Info, "Added Krypton Toolkit reference for theming"))
                     End If
+
+                    ' VelerSoftware.Design.Toolkit (for KryptonButton etc. in AI)
+                    Dim velerToolkitDll As String = Application.StartupPath & "\Sources\VelerSoftware.Design.Toolkit.dll"
+                    If My.Computer.FileSystem.FileExists(velerToolkitDll) Then
+                        My.Computer.FileSystem.CopyFile(velerToolkitDll, My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\VelerSoftware.Design.Toolkit.dll"), True)
+                        para.ReferencedAssemblies.Add(My.Computer.FileSystem.CombinePath(PROJET.Emplacement, PROJET.GenerateDirectory & "\VelerSoftware.Design.Toolkit.dll"))
+                    End If
+                    
+                    Log_Generation.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Info, "Added Krypton and Veler Toolkit references for AI components"))
                 End If
             End With
 

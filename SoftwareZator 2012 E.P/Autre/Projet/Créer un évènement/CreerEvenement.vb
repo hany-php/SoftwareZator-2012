@@ -143,48 +143,52 @@ Public Class CreerEvenement
         If Not ChildForm.SelectionService.SelectionCount = 0 Then
 
             For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In ChildForm.KryptonNavigator2.Pages
-                If Not DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Nothing Then
-                    If DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1.ToLower = Valeur_Propriete.ToLower Then
-                        ok = False
-                        Exit For
+                If TAB.Controls.Count > 0 Then
+                    If Not DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Nothing Then
+                        If DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1.ToLower = Valeur_Propriete.ToLower Then
+                            ok = False
+                            Exit For
+                        End If
                     End If
                 End If
             Next
 
             If ok Then
                 For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In ChildForm.KryptonNavigator2.Pages
-                    If Not DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param2 = Nothing Then
-                        tmp = Split(DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param2, ".")
-                        If tmp(0) = Nom_Ctrl_Actif Then
-                            If Me.ListView2.SelectedItems(0).Text = tmp(tmp.Length - 1) Then
-                                If VelerSoftware.SZVB.VistaDialog.VDialog.Show(Me, String.Format(System.Globalization.CultureInfo.InvariantCulture, RM.GetString("Content20"), Ctrl2, Me.ListView2.SelectedItems(0).Text, Valeur_Propriete), My.Application.Info.Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
-                                    DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Valeur_Propriete
-                                    DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).DisplayName = Valeur_Propriete
-                                    TAB.Text = Valeur_Propriete
-                                    ChildForm.KryptonNavigator1.SelectedIndex = 1
-                                    ChildForm.KryptonNavigator2.SelectedPage = TAB
-                                    ChildForm.DocumentModifier()
-                                    Return True
-                                    Exit Function
-                                Else
-                                    Return False
-                                    Exit Function
+                    If TAB.Controls.Count > 0 Then
+                        If Not DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param2 = Nothing Then
+                            tmp = Split(DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param2, ".")
+                            If tmp(0) = Nom_Ctrl_Actif Then
+                                If Me.ListView2.SelectedItems(0).Text = tmp(tmp.Length - 1) Then
+                                    If VelerSoftware.SZVB.VistaDialog.VDialog.Show(Me, String.Format(System.Globalization.CultureInfo.InvariantCulture, RM.GetString("Content20"), Ctrl2, Me.ListView2.SelectedItems(0).Text, Valeur_Propriete), My.Application.Info.Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
+                                        DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Valeur_Propriete
+                                        DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).DisplayName = Valeur_Propriete
+                                        TAB.Text = Valeur_Propriete
+                                        ChildForm.KryptonNavigator1.SelectedIndex = 1
+                                        ChildForm.KryptonNavigator2.SelectedPage = TAB
+                                        ChildForm.DocumentModifier()
+                                        Return True
+                                        Exit Function
+                                    Else
+                                        Return False
+                                        Exit Function
+                                    End If
                                 End If
-                            End If
-                        ElseIf tmp(0) = "Me" AndAlso Ctrl2 = ChildForm.Host.RootComponent.Site.Name Then
-                            If Me.ListView2.SelectedItems(0).Text = tmp(tmp.Length - 1) Then
-                                If VelerSoftware.SZVB.VistaDialog.VDialog.Show(Me, String.Format(System.Globalization.CultureInfo.InvariantCulture, RM.GetString("Content20"), Ctrl2, Me.ListView2.SelectedItems(0).Text, Valeur_Propriete), My.Application.Info.Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
-                                    DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Valeur_Propriete
-                                    DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).DisplayName = Valeur_Propriete
-                                    TAB.Text = Valeur_Propriete
-                                    ChildForm.KryptonNavigator1.SelectedIndex = 1
-                                    ChildForm.KryptonNavigator2.SelectedPage = TAB
-                                    ChildForm.DocumentModifier()
-                                    Return True
-                                    Exit Function
-                                Else
-                                    Return False
-                                    Exit Function
+                            ElseIf tmp(0) = "Me" AndAlso Ctrl2 = ChildForm.Host.RootComponent.Site.Name Then
+                                If Me.ListView2.SelectedItems(0).Text = tmp(tmp.Length - 1) Then
+                                    If VelerSoftware.SZVB.VistaDialog.VDialog.Show(Me, String.Format(System.Globalization.CultureInfo.InvariantCulture, RM.GetString("Content20"), Ctrl2, Me.ListView2.SelectedItems(0).Text, Valeur_Propriete), My.Application.Info.Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = Windows.Forms.DialogResult.Yes Then
+                                        DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).Param1 = Valeur_Propriete
+                                        DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.ActionWithChildren).DisplayName = Valeur_Propriete
+                                        TAB.Text = Valeur_Propriete
+                                        ChildForm.KryptonNavigator1.SelectedIndex = 1
+                                        ChildForm.KryptonNavigator2.SelectedPage = TAB
+                                        ChildForm.DocumentModifier()
+                                        Return True
+                                        Exit Function
+                                    Else
+                                        Return False
+                                        Exit Function
+                                    End If
                                 End If
                             End If
                         End If

@@ -1408,7 +1408,9 @@ Public Class DocConcepteurFenetre
                     End With
 
 
-                    SelectedActionChanged(DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).SelectedAction, New System.EventArgs)
+                    If Me.KryptonNavigator2.SelectedPage.Controls.Count > 0 Then
+                        SelectedActionChanged(DirectCast(Me.KryptonNavigator2.SelectedPage.Controls(0), DocEditeurFonctionsUserControl).SelectedAction, New System.EventArgs)
+                    End If
 
 
                     ' Raffraichissement de la boîte à outils de l'éditeur
@@ -1509,21 +1511,27 @@ Public Class DocConcepteurFenetre
     Friend Sub Panel1_DragDrop(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles Panel1.DragDrop
         If Me.FinishLoad AndAlso Not Erreur_Chargement_Concepteur_Fenetre Then
             If e.Data.GetDataPresent(GetType(System.Drawing.Design.ToolboxItem)) OrElse e.Data.GetDataPresent(GetType(Object)) Then
-                Dim Nom_Ctrl_Actif As String
-                If Not SelectionService.PrimarySelection.GetType.BaseType.FullName = "System.ComponentModel.Component" Then
-                    If DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.ToString.Contains("[") Then
-                        Nom_Ctrl_Actif = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.ToString.Split("[")(0).TrimEnd(" ")
+                Dim Nom_Ctrl_Actif As String = Nothing
+
+                If Form1.Box_Proprietes.Controls.Count > 0 Then
+                    Dim boxProp As BoxProprietes = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes)
+                    If Not SelectionService.PrimarySelection.GetType.BaseType.FullName = "System.ComponentModel.Component" Then
+                        If boxProp.PropertyGrids1.SelectedObject IsNot Nothing Then
+                            If boxProp.PropertyGrids1.SelectedObject.ToString.Contains("[") Then
+                                Nom_Ctrl_Actif = boxProp.PropertyGrids1.SelectedObject.ToString.Split("[")(0).TrimEnd(" ")
+                            Else
+                                Nom_Ctrl_Actif = boxProp.PropertyGrids1.SelectedObject.GetType.GetProperty("Name").GetValue(boxProp.PropertyGrids1.SelectedObject, Nothing)
+                            End If
+                        End If
                     Else
-                        Nom_Ctrl_Actif = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.GetType.GetProperty("Name").GetValue(DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject, Nothing)
+                        Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
                     End If
-                Else
-                    Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
                 End If
 
                 Dim listTypes() As Type
                 Dim h As New VelerSoftware.SZC.WindowsDesigner.AssemblyControl
                 For Each a As VelerSoftware.SZVB.Projet.Reference In Me.CodeDomHostLoader.Ass
-                    If Not a Is Nothing AndAlso Not a.Assembly Is Nothing AndAlso a.Assembly.FullName = DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Concepteur_Fenetre_ToolBox.SelectedNode.Tag Then
+                    If Not a Is Nothing AndAlso Not a.Assembly Is Nothing AndAlso Form1.Box_Boite_A_Outils.Controls.Count > 0 AndAlso a.Assembly.FullName = DirectCast(Form1.Box_Boite_A_Outils.Controls(0), BoxBoiteAOutils).Concepteur_Fenetre_ToolBox.SelectedNode.Tag Then
 
                         listTypes = h.LoadControlsFromAssembly(a.Assembly)
                         If listTypes.Length > 0 Then
@@ -1670,71 +1678,70 @@ _gg:
         With Me
             If .FinishLoad Then
                 If Not Erreur_Chargement_Concepteur_Fenetre Then
-                    With DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes)
-                        .PropertyGrids1.SelectedObjects = Nothing
-                        .PropertyGrids1.Item.Clear()
-                        .PropertyGrids1.ItemSet.Clear()
-                        .PropertyGrids1.ShowCustomProperties = True
-                        .PropertyGrids1.SelectedObjects = SelectionService.GetSelectedComponents
-                    End With
+                    If Form1.Box_Proprietes.Controls.Count > 0 Then
+                        Dim boxProp As BoxProprietes = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes)
+                        With boxProp
+                            .PropertyGrids1.SelectedObjects = Nothing
+                            .PropertyGrids1.Item.Clear()
+                            .PropertyGrids1.ItemSet.Clear()
+                            .PropertyGrids1.ShowCustomProperties = True
+                            .PropertyGrids1.SelectedObjects = SelectionService.GetSelectedComponents()
+                        End With
 
-                    Try
-                        If Not SelectionService.PrimarySelection Is Nothing Then
-                            If Not DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject Is Nothing Then
-                                Dim Nom_Ctrl_Actif As String
-                                If Not SelectionService.PrimarySelection.GetType.BaseType.FullName = "System.ComponentModel.Component" Then
-                                    If Not SelectionService.PrimarySelection Is Nothing Then
-                                        If DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.ToString.Contains("[") Then
-                                            Nom_Ctrl_Actif = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.ToString.Split("[")(0).TrimEnd(" ")
+                        Try
+                            If Not SelectionService.PrimarySelection Is Nothing Then
+                                If Not boxProp.PropertyGrids1.SelectedObject Is Nothing Then
+                                    Dim Nom_Ctrl_Actif As String
+                                    If Not SelectionService.PrimarySelection.GetType.BaseType.FullName = "System.ComponentModel.Component" Then
+                                        If boxProp.PropertyGrids1.SelectedObject.ToString.Contains("[") Then
+                                            Nom_Ctrl_Actif = boxProp.PropertyGrids1.SelectedObject.ToString.Split("[")(0).TrimEnd(" ")
                                         Else
-                                            Nom_Ctrl_Actif = DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject.GetType.GetProperty("Name").GetValue(DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).PropertyGrids1.SelectedObject, Nothing)
+                                            Nom_Ctrl_Actif = boxProp.PropertyGrids1.SelectedObject.GetType.GetProperty("Name").GetValue(boxProp.PropertyGrids1.SelectedObject, Nothing)
                                         End If
                                     Else
-                                        Nom_Ctrl_Actif = Nothing
+                                        Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
                                     End If
-                                Else
-                                    Nom_Ctrl_Actif = SelectionService.PrimarySelection.ToString.Split("[")(0).TrimEnd(" ")
-                                End If
 
-                                .KryptonTextBox1.Enabled = True
-                                .KryptonLabel1.Enabled = True
-                                DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = "{\rtf1" & Nom_Ctrl_Actif & " {\b(" & SelectionService.PrimarySelection.GetType.FullName & ")}}"
-                                If SelectionService.SelectionCount = 1 Then
-                                    .can_change = False
-                                    .OldName = Nom_Ctrl_Actif
-                                    .KryptonTextBox1.Text = Nom_Ctrl_Actif
-                                    .KryptonButton1.Enabled = True
                                     .KryptonTextBox1.Enabled = True
                                     .KryptonLabel1.Enabled = True
-                                    .can_change = True
+                                    boxProp.KryptonRichTextBox1.Rtf = "{\rtf1" & Nom_Ctrl_Actif & " {\b(" & SelectionService.PrimarySelection.GetType.FullName & ")}}"
+                                    If SelectionService.SelectionCount = 1 Then
+                                        .can_change = False
+                                        .OldName = Nom_Ctrl_Actif
+                                        .KryptonTextBox1.Text = Nom_Ctrl_Actif
+                                        .KryptonButton1.Enabled = True
+                                        .KryptonTextBox1.Enabled = True
+                                        .KryptonLabel1.Enabled = True
+                                        .can_change = True
+                                    Else
+                                        .KryptonButton1.Enabled = False
+                                        .KryptonTextBox1.Enabled = False
+                                        .KryptonLabel1.Enabled = False
+                                        .KryptonTextBox1.Text = Nothing
+                                        boxProp.KryptonRichTextBox1.Rtf = Nothing
+                                    End If
                                 Else
                                     .KryptonButton1.Enabled = False
                                     .KryptonTextBox1.Enabled = False
                                     .KryptonLabel1.Enabled = False
                                     .KryptonTextBox1.Text = Nothing
-                                    DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = Nothing
+                                    boxProp.KryptonRichTextBox1.Rtf = Nothing
                                 End If
                             Else
                                 .KryptonButton1.Enabled = False
                                 .KryptonTextBox1.Enabled = False
                                 .KryptonLabel1.Enabled = False
                                 .KryptonTextBox1.Text = Nothing
-                                DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = Nothing
+                                boxProp.KryptonRichTextBox1.Rtf = Nothing
                             End If
-                        Else
+                        Catch err As Exception
                             .KryptonButton1.Enabled = False
                             .KryptonTextBox1.Enabled = False
                             .KryptonLabel1.Enabled = False
                             .KryptonTextBox1.Text = Nothing
-                            DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = Nothing
-                        End If
-                    Catch err As Exception
-                        .KryptonButton1.Enabled = False
-                        .KryptonTextBox1.Enabled = False
-                        .KryptonLabel1.Enabled = False
-                        .KryptonTextBox1.Text = Nothing
-                        DirectCast(Form1.Box_Proprietes.Controls(0), BoxProprietes).KryptonRichTextBox1.Rtf = Nothing
-                    End Try
+                            boxProp.KryptonRichTextBox1.Rtf = Nothing
+                        End Try
+                    End If
                 End If
             End If
         End With

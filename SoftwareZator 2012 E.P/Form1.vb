@@ -24,6 +24,8 @@ Public Class Form1
     Friend Box_Erreur_Generation As New VelerSoftware.Design.Navigator.KryptonPage
     Friend Box_Debogage As New VelerSoftware.Design.Navigator.KryptonPage
     Friend Box_Reconnaissance_Vocale As New VelerSoftware.Design.Navigator.KryptonPage
+    Friend Box_AI_Assistant As New VelerSoftware.Design.Navigator.KryptonPage
+    Friend Box_Simulator As New VelerSoftware.Design.Navigator.KryptonPage
 
     ' Débogueur
     Friend WithEvents Débogueur As VelerSoftware.SZC.Debugger.WindowsDebugger
@@ -206,7 +208,8 @@ Public Class Form1
             .SZ_Initialisation_BackgroundWorker.RunWorkerAsync()
 
             ' Initialisation de la fenêtre
-            .Text = My.Application.Info.CompanyName & " - " & My.Application.Info.ProductName
+        AIControllerLogic.Initialize()
+        .Text = My.Application.Info.CompanyName & " - " & My.Application.Info.ProductName
 
             .Size = New Size(My.Computer.Screen.WorkingArea.Width - 100, My.Computer.Screen.WorkingArea.Height - 100)
             .Location = New Point((My.Computer.Screen.WorkingArea.Width - Width) / 2, (My.Computer.Screen.WorkingArea.Height - Height) / 2)
@@ -245,10 +248,13 @@ Public Class Form1
             ' Ajout des panneaux
             With .KryptonDockingManager1
                 .AddAutoHiddenGroup("Control", VelerSoftware.Design.Docking.DockingEdge.Bottom, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Sortie(), Dock_Nouveau_Aide_Rapide(), Dock_Nouveau_Erreur_Generation(), Dock_Nouveau_Debogage()})
-                .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Right, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Explorateur_Solution(), Dock_Nouveau_Propriete()})
+                .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Right, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Explorateur_Solution(), Dock_Nouveau_Propriete(), Dock_Nouveau_Simulator()})
                 .AddDockspace("Control", VelerSoftware.Design.Docking.DockingEdge.Left, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Boite_A_Outils(), Dock_Nouveau_Reconnaissance_Vocale()})
                 .AddAutoHiddenGroup("Control", VelerSoftware.Design.Docking.DockingEdge.Left, New VelerSoftware.Design.Navigator.KryptonPage() {Dock_Nouveau_Bases_Donnees()})
             End With
+            
+            ' Initialize View Tab
+            AddSimulatorToTools()
 
             Select Case My.Settings.WindowTheme
                 Case 0 ' Office2007Blue (NEW DEFAULT)
@@ -579,6 +585,52 @@ Public Class Form1
         'Me.SZ_Activation_BackgroundWorker.RunWorkerAsync()
     End Sub
 
+    ''' <summary>
+    ''' Restores the UI to its normal state, showing all hidden panels and ribbons.
+    ''' </summary>
+    Public Sub Restore_UI()
+        If Me.InvokeRequired Then
+            Me.Invoke(Sub() Restore_UI())
+            Return
+        End If
+
+        Try
+            Me.SuspendLayout()
+            
+            ' 1. Basic Visibility
+            Me.KryptonPanel1.Visible = True
+            Me.KryptonRibbon1.Visible = True
+            Me.KryptonRibbon1.AllowFormIntegrate = My.Settings.Activer_Aero
+            Me.StatusStrip1.Visible = My.Settings.Barre_Etat
+            Me.GenerationComponent1.Visible = False
+            Me.Info_Bar1.Hide()
+            
+            ' 2. Docking Restoration
+            ' Pull pages from Auto-Hidden or Floating states back to Docked
+            'If Box_Sortie IsNot Nothing Then 
+            '    KryptonDockingManager1.SwitchAutoHiddenGroupToDockedCellRequest("Sortie")
+            '    ' Select it as active
+            '    Dim cell = KryptonDockableWorkspace1.CellForPage(Box_Sortie)
+            '    If cell IsNot Nothing Then cell.SelectedPage = Box_Sortie
+            'End If
+
+            'If Box_Erreur_Generation IsNot Nothing Then 
+            '    KryptonDockingManager1.SwitchAutoHiddenGroupToDockedCellRequest("Erreurs de génération")
+            'End If
+
+            If Box_AI_Assistant IsNot Nothing Then
+                KryptonDockingManager1.SwitchAutoHiddenGroupToDockedCellRequest("AI Assistant")
+                Dim cell = KryptonDockableWorkspace1.CellForPage(Box_AI_Assistant)
+                If cell IsNot Nothing Then cell.SelectedPage = Box_AI_Assistant
+            End If
+            
+            Me.ResumeLayout(True)
+            Log_SZ.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Info, "UI restoration sequence completed."))
+        Catch ex As Exception
+            Log_SZ.Log.Add(New ClassLog.LogType(ClassLog.LogType.Tip.Error, "UI Restore Error: " & ex.Message))
+        End Try
+    End Sub
+
     Private Sub Form1_FormClosing(ByVal sender As System.Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
         If GenerationComponent1.Visible Then e.Cancel = True
 
@@ -765,7 +817,9 @@ Public Class Form1
             ClassProjet.Ouvrir_Document(files, Safefiles, projects)
             Info_Bar1.Hide()
         ElseIf Info_Bar1.Tag = "Erreur_Generation_Projet" Then
-            DirectCast(Box_Erreur_Generation.Controls(0), BoxErreurGeneration).CorrigerTouteLesErreursToolStripMenuItem_Click(Nothing, Nothing)
+            If Box_Erreur_Generation.Controls.Count > 0 Then
+                DirectCast(Box_Erreur_Generation.Controls(0), BoxErreurGeneration).CorrigerTouteLesErreursToolStripMenuItem_Click(Nothing, Nothing)
+            End If
             Info_Bar1.Hide()
         ElseIf Info_Bar1.Tag = "Read_Only" Then
         ElseIf Info_Bar1.Tag = "Happy_New_Year" Then
@@ -819,7 +873,7 @@ Public Class Form1
 
 
     Private Sub KryptonDockableWorkspace1_ActivePageChanged(ByVal sender As System.Object, ByVal e As VelerSoftware.Design.Workspace.ActivePageChangedEventArgs) Handles KryptonDockableWorkspace1.ActivePageChanged
-        If Not e.NewPage Is Nothing Then
+        If Not e.NewPage Is Nothing AndAlso e.NewPage.Controls.Count > 0 Then
             If TypeOf e.NewPage.Controls(0) Is DocPageDeDemarrage Then
                 DirectCast(e.NewPage.Controls(0), DocPageDeDemarrage).Activate_Page()
             ElseIf TypeOf e.NewPage.Controls(0) Is DocConcepteurFenetre Then
@@ -1007,6 +1061,40 @@ Public Class Form1
         DirectCast(Box_Explorateur_Solutions.Controls(0), BoxExplorateurSolutions).CreateControl()
 
         Return Box_Explorateur_Solutions
+    End Function
+
+#End Region
+
+
+
+#End Region
+
+#Region "Nouveau Panneau Simulator"
+
+    Private Function Dock_Nouveau_Simulator() As VelerSoftware.Design.Navigator.KryptonPage
+        Box_Simulator = New VelerSoftware.Design.Navigator.KryptonPage()
+        With Box_Simulator
+            .Text = "Live Simulator"
+            .TextTitle = "Live Simulator"
+            .TextDescription = "Real-time preview of your application"
+            .UniqueName = "Simulator"
+            
+            .ClearFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.All)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.AllowConfigSave)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.AllowPageDrag)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.AllowPageReorder)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.DockingAllowAutoHidden)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.DockingAllowDocked)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.DockingAllowDropDown)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.DockingAllowFloating)
+            .SetFlags(VelerSoftware.Design.Navigator.KryptonPageFlags.DockingAllowNavigator)
+        End With
+
+        Dim content As New BoxSimulator
+        content.Dock = DockStyle.Fill
+        Box_Simulator.Controls.Add(content)
+
+        Return Box_Simulator
     End Function
 
 #End Region
@@ -1625,8 +1713,6 @@ Public Class Form1
             Return Nothing
         End If
     End Function
-
-#End Region
 
 #End Region
 
@@ -4026,43 +4112,47 @@ Public Class Form1
                     If TypeOf pag.Controls(0) Is DocConcepteurFenetre Then
                         For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(pag.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
                             ' Ajout des breakpoints
-                            For Each key As KeyValuePair(Of Object, System.Activities.Debugger.SourceLocation) In DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).designerSourceLocationMapping
-                                If DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).breakpointList.Contains(key.Value) Then
-                                    With DirectCast(key.Key, VelerSoftware.Plugins3.Action)
-                                        Try
-                                            Select Case DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Debug.IDesignerDebugView)().GetBreakpointLocations(key.Value)
-                                                Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded Or System.Activities.Presentation.Debug.BreakpointTypes.Enabled
-                                                    PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                                Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded
-                                                    PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, False, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                            End Select
-                                        Catch
-                                            PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                        End Try
-                                    End With
-                                End If
-                            Next
+                            If TAB.Controls.Count > 0 Then
+                                For Each key As KeyValuePair(Of Object, System.Activities.Debugger.SourceLocation) In DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).designerSourceLocationMapping
+                                    If DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).breakpointList.Contains(key.Value) Then
+                                        With DirectCast(key.Key, VelerSoftware.Plugins3.Action)
+                                            Try
+                                                Select Case DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Debug.IDesignerDebugView)().GetBreakpointLocations(key.Value)
+                                                    Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded Or System.Activities.Presentation.Debug.BreakpointTypes.Enabled
+                                                        PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                                    Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded
+                                                        PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, False, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                                End Select
+                                            Catch
+                                                PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocConcepteurFenetre).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocConcepteurFenetre).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                            End Try
+                                        End With
+                                    End If
+                                Next
+                            End If
                         Next
 
                     ElseIf TypeOf pag.Controls(0) Is DocEditeurFonctions Then
                         For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(pag.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
                             ' Ajout des breakpoints
-                            For Each key As KeyValuePair(Of Object, System.Activities.Debugger.SourceLocation) In DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).designerSourceLocationMapping
-                                If DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).breakpointList.Contains(key.Value) Then
-                                    With DirectCast(key.Key, VelerSoftware.Plugins3.Action)
-                                        Try
-                                            Select Case DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Debug.IDesignerDebugView)().GetBreakpointLocations(key.Value)
-                                                Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded Or System.Activities.Presentation.Debug.BreakpointTypes.Enabled
-                                                    PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                                Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded
-                                                    PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, False, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                            End Select
-                                        Catch
-                                            PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
-                                        End Try
-                                    End With
-                                End If
-                            Next
+                            If TAB.Controls.Count > 0 Then
+                                For Each key As KeyValuePair(Of Object, System.Activities.Debugger.SourceLocation) In DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).designerSourceLocationMapping
+                                    If DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).breakpointList.Contains(key.Value) Then
+                                        With DirectCast(key.Key, VelerSoftware.Plugins3.Action)
+                                            Try
+                                                Select Case DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Debug.IDesignerDebugView)().GetBreakpointLocations(key.Value)
+                                                    Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded Or System.Activities.Presentation.Debug.BreakpointTypes.Enabled
+                                                        PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                                    Case System.Activities.Presentation.Debug.BreakpointTypes.Bounded
+                                                        PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, False, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                                End Select
+                                            Catch
+                                                PointArrets.Add(New VelerSoftware.SZC.Debugger.Debugger.Breakpoint(DirectCast(pag.Controls(0), DocEditeurFonctions).NomCompletFichier, Application.StartupPath & "\Temp\Debugger\" & DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet & ".vb", DirectCast(DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).WorkflowDesigne.Context.Services.GetService(Of System.Activities.Presentation.Services.ModelService)().Root.GetCurrentValue, VelerSoftware.Plugins3.Action).Param1, .DisplayName, .id, 0, True, DirectCast(pag.Controls(0), DocEditeurFonctions).Nom_Projet, key.Value, Me.Débogueur.DebuggerCore))
+                                            End Try
+                                        End With
+                                    End If
+                                Next
+                            End If
                         Next
                     End If
                 End If
@@ -4146,12 +4236,16 @@ Public Class Form1
             If pag.Controls.Count > 0 Then
                 If TypeOf pag.Controls(0) Is DocConcepteurFenetre Then
                     For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(pag.Controls(0), DocConcepteurFenetre).KryptonNavigator2.Pages
-                        DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).DebuggerService.CurrentLocation = Nothing
+                        If TAB.Controls.Count > 0 Then
+                            DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).DebuggerService.CurrentLocation = Nothing
+                        End If
                     Next
 
                 ElseIf TypeOf pag.Controls(0) Is DocEditeurFonctions Then
                     For Each TAB As VelerSoftware.Design.Navigator.KryptonPage In DirectCast(pag.Controls(0), DocEditeurFonctions).KryptonNavigator2.Pages
-                        DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).DebuggerService.CurrentLocation = Nothing
+                        If TAB.Controls.Count > 0 Then
+                            DirectCast(TAB.Controls(0), DocEditeurFonctionsUserControl).DebuggerService.CurrentLocation = Nothing
+                        End If
                     Next
                 End If
             End If
@@ -4534,6 +4628,83 @@ Public Class Form1
             GC.WaitForPendingFinalizers()
             GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced)
         End With
+    End Sub
+
+#End Region
+
+#Region "Live Simulator Logic"
+
+    Private Sub AddSimulatorToTools()
+        Try
+            ' Check if tab exists
+            If Me.Outils_KryptonRibbonTab Is Nothing Then Return
+
+            ' Check if button already exists to avoid duplicates
+            For Each grp As VelerSoftware.Design.Ribbon.KryptonRibbonGroup In Me.Outils_KryptonRibbonTab.Groups
+                If grp.TextLine1 = "AI Studio" Then Return
+            Next
+
+            ' Create a new group in the Tools tab
+            Dim group As New VelerSoftware.Design.Ribbon.KryptonRibbonGroup()
+            group.TextLine1 = "AI Studio"
+            group.Visible = True
+            
+            Dim lines As New VelerSoftware.Design.Ribbon.KryptonRibbonGroupLines()
+            lines.Visible = True
+            
+            ' Live Simulator Button
+            Dim btnSim As New VelerSoftware.Design.Ribbon.KryptonRibbonGroupButton()
+            btnSim.TextLine1 = "Live Simulator"
+            btnSim.Tag = "Simulator"
+            btnSim.ImageLarge = My.Resources.actualiser
+            btnSim.ImageSmall = My.Resources.actualiser
+            btnSim.Visible = True
+            AddHandler btnSim.Click, AddressOf View_Panel_Click
+            lines.Items.Add(btnSim)
+
+            group.Items.Add(lines)
+            Me.Outils_KryptonRibbonTab.Groups.Add(group)
+
+        Catch ex As Exception
+            ' Silently fail to avoid crashing the whole ribbon if tab is not ready
+        End Try
+    End Sub
+
+    Private Sub View_Panel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        Try
+            Dim btn As VelerSoftware.Design.Ribbon.KryptonRibbonGroupButton = DirectCast(sender, VelerSoftware.Design.Ribbon.KryptonRibbonGroupButton)
+            Dim pageName As String = btn.Tag.ToString()
+            
+            Dim targetPage As VelerSoftware.Design.Navigator.KryptonPage = Nothing
+            
+            Select Case pageName
+                Case "AI Assistant"
+                    If Box_AI_Assistant IsNot Nothing Then targetPage = Box_AI_Assistant
+                Case "Simulator"
+                    If Box_Simulator IsNot Nothing Then targetPage = Box_Simulator
+                Case "Explorateur de solution"
+                    If Box_Explorateur_Solutions IsNot Nothing Then targetPage = Box_Explorateur_Solutions
+                Case "Propriétés"
+                    If Box_Proprietes IsNot Nothing Then targetPage = Box_Proprietes
+                Case "Boîte à outils"
+                    If Box_Boite_A_Outils IsNot Nothing Then targetPage = Box_Boite_A_Outils
+            End Select
+
+            If targetPage IsNot Nothing Then
+                 Dim cell As VelerSoftware.Design.Workspace.KryptonWorkspaceCell = Me.KryptonDockableWorkspace1.CellForPage(targetPage)
+                 If cell IsNot Nothing Then
+                    Me.KryptonDockableWorkspace1.ActiveCell = cell
+                    cell.SelectedPage = targetPage
+                 Else
+                    Try
+                        Me.KryptonDockingManager1.AddToWorkspace("Workspace", New VelerSoftware.Design.Navigator.KryptonPage() {targetPage})
+                    Catch
+                        targetPage.Visible = True
+                    End Try
+                 End If
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
 #End Region
